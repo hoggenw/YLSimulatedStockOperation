@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-
+#import "YLLetfViewController.h"
+#import "YLMainViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -17,6 +18,25 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    UINavigationController *navi=[[UINavigationController alloc]initWithRootViewController:[[YLMainViewController alloc]init]];
+    YLLetfViewController *leftVc=[[YLLetfViewController alloc]init];
+    RESideMenu *sideMenuViewController=[[RESideMenu alloc]initWithContentViewController:navi leftMenuViewController:leftVc rightMenuViewController:nil];
+    sideMenuViewController.parallaxEnabled = NO;
+    sideMenuViewController.scaleContentView = YES;
+    sideMenuViewController.contentViewScaleValue = 0.98;
+    sideMenuViewController.scaleMenuView = NO;
+    sideMenuViewController.contentViewShadowEnabled = YES;
+    sideMenuViewController.contentViewShadowRadius = 4.5;
+    NSUserDefaults *useDef=[NSUserDefaults standardUserDefaults];
+    BOOL isFirstIn=[useDef boolForKey:@"isFirstIn"];
+    if (!isFirstIn) {
+        isFirstIn=YES;
+    
+        
+    }else{
+        
+    }
+        _window.rootViewController=sideMenuViewController;
     return YES;
 }
 
