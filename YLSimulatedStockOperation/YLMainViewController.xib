@@ -237,7 +237,7 @@
                         <constraint firstAttribute="height" constant="50" id="SAu-Af-s1o"/>
                         <constraint firstAttribute="width" constant="60" id="ays-Pi-skU"/>
                     </constraints>
-                    <state key="normal" title="我"/>
+                    <state key="normal" title="自选股"/>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GaI-Hd-8JS">
                     <rect key="frame" x="10" y="530" width="60" height="50"/>
@@ -295,7 +295,7 @@
                         </mask>
                     </variation>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FNF-jQ-fgT">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="自选股" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FNF-jQ-fgT">
                     <rect key="frame" x="535" y="580" width="60" height="20"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="64" id="3i3-pc-mH6"/>

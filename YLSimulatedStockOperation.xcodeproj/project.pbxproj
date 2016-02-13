@@ -18,6 +18,12 @@
 		E886AFC31C6D790C009CC3A3 /* YLMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E886AFC11C6D790C009CC3A3 /* YLMainViewController.m */; };
 		E886AFC41C6D790C009CC3A3 /* YLMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E886AFC21C6D790C009CC3A3 /* YLMainViewController.xib */; };
 		E886AFC71C6D814F009CC3A3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E886AFC61C6D814F009CC3A3 /* ViewController.m */; };
+		E886AFCD1C6F1445009CC3A3 /* YLSIghnStockMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E886AFCB1C6F1445009CC3A3 /* YLSIghnStockMessageViewController.m */; };
+		E886AFCE1C6F1445009CC3A3 /* YLSIghnStockMessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E886AFCC1C6F1445009CC3A3 /* YLSIghnStockMessageViewController.xib */; };
+		E886AFD31C6F5037009CC3A3 /* YLSimulatedStockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E886AFD11C6F5037009CC3A3 /* YLSimulatedStockViewController.m */; };
+		E886AFD41C6F5037009CC3A3 /* YLSimulatedStockViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E886AFD21C6F5037009CC3A3 /* YLSimulatedStockViewController.xib */; };
+		E886AFD91C6F58DF009CC3A3 /* YLSimulatedBuyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E886AFD71C6F58DF009CC3A3 /* YLSimulatedBuyViewController.m */; };
+		E886AFDA1C6F58DF009CC3A3 /* YLSimulatedBuyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E886AFD81C6F58DF009CC3A3 /* YLSimulatedBuyViewController.xib */; };
 		E8E2E9CC1C6BDC0C00C56ABC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E2E9CB1C6BDC0C00C56ABC /* main.m */; };
 		E8E2E9CF1C6BDC0C00C56ABC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E2E9CE1C6BDC0C00C56ABC /* AppDelegate.m */; };
 		E8E2E9D51C6BDC0C00C56ABC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8E2E9D31C6BDC0C00C56ABC /* Main.storyboard */; };
@@ -67,6 +73,15 @@
 		E886AFC21C6D790C009CC3A3 /* YLMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YLMainViewController.xib; sourceTree = "<group>"; };
 		E886AFC51C6D814F009CC3A3 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		E886AFC61C6D814F009CC3A3 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E886AFCA1C6F1445009CC3A3 /* YLSIghnStockMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLSIghnStockMessageViewController.h; sourceTree = "<group>"; };
+		E886AFCB1C6F1445009CC3A3 /* YLSIghnStockMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLSIghnStockMessageViewController.m; sourceTree = "<group>"; };
+		E886AFCC1C6F1445009CC3A3 /* YLSIghnStockMessageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YLSIghnStockMessageViewController.xib; sourceTree = "<group>"; };
+		E886AFD01C6F5037009CC3A3 /* YLSimulatedStockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLSimulatedStockViewController.h; sourceTree = "<group>"; };
+		E886AFD11C6F5037009CC3A3 /* YLSimulatedStockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLSimulatedStockViewController.m; sourceTree = "<group>"; };
+		E886AFD21C6F5037009CC3A3 /* YLSimulatedStockViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YLSimulatedStockViewController.xib; sourceTree = "<group>"; };
+		E886AFD61C6F58DF009CC3A3 /* YLSimulatedBuyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLSimulatedBuyViewController.h; sourceTree = "<group>"; };
+		E886AFD71C6F58DF009CC3A3 /* YLSimulatedBuyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLSimulatedBuyViewController.m; sourceTree = "<group>"; };
+		E886AFD81C6F58DF009CC3A3 /* YLSimulatedBuyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YLSimulatedBuyViewController.xib; sourceTree = "<group>"; };
 		E8E21D0E1C6C2CF700D02ECB /* Base */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Base; path = Base.lproj/YLTheFastNew.h; sourceTree = "<group>"; };
 		E8E21D101C6C2CF700D02ECB /* Base */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Base; path = Base.lproj/YLTheFastNew.m; sourceTree = "<group>"; };
 		E8E2E9C71C6BDC0C00C56ABC /* YLSimulatedStockOperation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YLSimulatedStockOperation.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,10 +146,10 @@
 		E886AFB81C6D7822009CC3A3 /* Conrollers */ = {
 			isa = PBXGroup;
 			children = (
+				E886AFCF1C6F4FF4009CC3A3 /* 模拟炒股页面 */,
+				E886AFC91C6F0E8E009CC3A3 /* 个股信息页面 */,
+				E886AFC81C6F0E73009CC3A3 /* 左视图 */,
 				E886AFBF1C6D78CC009CC3A3 /* 主视图 */,
-				E886AFBA1C6D78B2009CC3A3 /* YLLetfViewController.h */,
-				E886AFBB1C6D78B2009CC3A3 /* YLLetfViewController.m */,
-				E886AFBC1C6D78B2009CC3A3 /* YLLetfViewController.xib */,
 			);
 			name = Conrollers;
 			sourceTree = "<group>";
@@ -156,6 +171,47 @@
 				E886AFC21C6D790C009CC3A3 /* YLMainViewController.xib */,
 			);
 			name = "主视图";
+			sourceTree = "<group>";
+		};
+		E886AFC81C6F0E73009CC3A3 /* 左视图 */ = {
+			isa = PBXGroup;
+			children = (
+				E886AFBB1C6D78B2009CC3A3 /* YLLetfViewController.m */,
+				E886AFBA1C6D78B2009CC3A3 /* YLLetfViewController.h */,
+				E886AFBC1C6D78B2009CC3A3 /* YLLetfViewController.xib */,
+			);
+			name = "左视图";
+			sourceTree = "<group>";
+		};
+		E886AFC91C6F0E8E009CC3A3 /* 个股信息页面 */ = {
+			isa = PBXGroup;
+			children = (
+				E886AFCA1C6F1445009CC3A3 /* YLSIghnStockMessageViewController.h */,
+				E886AFCB1C6F1445009CC3A3 /* YLSIghnStockMessageViewController.m */,
+				E886AFCC1C6F1445009CC3A3 /* YLSIghnStockMessageViewController.xib */,
+			);
+			name = "个股信息页面";
+			sourceTree = "<group>";
+		};
+		E886AFCF1C6F4FF4009CC3A3 /* 模拟炒股页面 */ = {
+			isa = PBXGroup;
+			children = (
+				E886AFD01C6F5037009CC3A3 /* YLSimulatedStockViewController.h */,
+				E886AFD11C6F5037009CC3A3 /* YLSimulatedStockViewController.m */,
+				E886AFD21C6F5037009CC3A3 /* YLSimulatedStockViewController.xib */,
+				E886AFD51C6F58B0009CC3A3 /* 买入页面 */,
+			);
+			name = "模拟炒股页面";
+			sourceTree = "<group>";
+		};
+		E886AFD51C6F58B0009CC3A3 /* 买入页面 */ = {
+			isa = PBXGroup;
+			children = (
+				E886AFD61C6F58DF009CC3A3 /* YLSimulatedBuyViewController.h */,
+				E886AFD71C6F58DF009CC3A3 /* YLSimulatedBuyViewController.m */,
+				E886AFD81C6F58DF009CC3A3 /* YLSimulatedBuyViewController.xib */,
+			);
+			name = "买入页面";
 			sourceTree = "<group>";
 		};
 		E8E21D091C6C2C0E00D02ECB /* view */ = {
@@ -366,6 +422,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E886AFCE1C6F1445009CC3A3 /* YLSIghnStockMessageViewController.xib in Resources */,
+				E886AFD41C6F5037009CC3A3 /* YLSimulatedStockViewController.xib in Resources */,
+				E886AFDA1C6F58DF009CC3A3 /* YLSimulatedBuyViewController.xib in Resources */,
 				E886AFC41C6D790C009CC3A3 /* YLMainViewController.xib in Resources */,
 				E886AFBE1C6D78B2009CC3A3 /* YLLetfViewController.xib in Resources */,
 				E8E2E9DA1C6BDC0C00C56ABC /* LaunchScreen.storyboard in Resources */,
@@ -444,6 +503,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E886AFC31C6D790C009CC3A3 /* YLMainViewController.m in Sources */,
+				E886AFCD1C6F1445009CC3A3 /* YLSIghnStockMessageViewController.m in Sources */,
 				E886AFA81C6C34C3009CC3A3 /* YLFastNewsModel.m in Sources */,
 				E886AFB11C6C56AC009CC3A3 /* YLStockNewsModel.m in Sources */,
 				E886AFAE1C6C4799009CC3A3 /* YLStockValuation.m in Sources */,
@@ -452,6 +512,8 @@
 				E8E2E9CC1C6BDC0C00C56ABC /* main.m in Sources */,
 				E886AFB41C6C56F3009CC3A3 /* YLStockNoticesModel.m in Sources */,
 				E886AFBD1C6D78B2009CC3A3 /* YLLetfViewController.m in Sources */,
+				E886AFD31C6F5037009CC3A3 /* YLSimulatedStockViewController.m in Sources */,
+				E886AFD91C6F58DF009CC3A3 /* YLSimulatedBuyViewController.m in Sources */,
 				E886AFB71C6C5774009CC3A3 /* YLOnlyOneStockNewsModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
