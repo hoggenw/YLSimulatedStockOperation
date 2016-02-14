@@ -7,6 +7,16 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YLMainViewController">
             <connections>
+                <outlet property="changPCreat" destination="b01-2Q-3UV" id="XZX-4H-0L8"/>
+                <outlet property="changeCCreat" destination="ViI-YE-CKh" id="fQj-Mb-dkw"/>
+                <outlet property="changeCountSH" destination="Z76-d7-sqB" id="dAB-hz-hnJ"/>
+                <outlet property="changeCountSZ" destination="5xL-u4-6eq" id="Ue7-tR-heH"/>
+                <outlet property="changePSZ" destination="6fC-VA-Xlg" id="D4n-ED-pLj"/>
+                <outlet property="maketCountCREAT" destination="upV-Xk-hGA" id="Cew-7q-zvm"/>
+                <outlet property="maketCountSZ" destination="Vgn-CL-Ys3" id="SgW-GG-dtl"/>
+                <outlet property="marketCount" destination="dzZ-Lc-mNe" id="40y-dY-hER"/>
+                <outlet property="marketPercentSH" destination="vhU-1N-Uzx" id="UWr-69-9Co"/>
+                <outlet property="niu_hosImageView" destination="0wS-3T-25U" id="ctS-1I-nh9"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -15,15 +25,15 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView multipleTouchEnabled="YES" tag="200" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0wS-3T-25U">
-                    <rect key="frame" x="0.0" y="44" width="600" height="80"/>
+                <imageView tag="200" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="niu_hos.png" translatesAutoresizingMaskIntoConstraints="NO" id="0wS-3T-25U">
+                    <rect key="frame" x="0.0" y="64" width="600" height="80"/>
                     <color key="backgroundColor" red="0.83725920104195017" green="1" blue="0.24157516628397413" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="80" id="qXF-MO-0je"/>
                     </constraints>
                 </imageView>
                 <view tag="201" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ldQ-g3-EHt">
-                    <rect key="frame" x="0.0" y="125" width="196.5" height="100"/>
+                    <rect key="frame" x="0.0" y="145" width="196.5" height="100"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BHe-gZ-brD">
                             <rect key="frame" x="0.0" y="0.0" width="196.5" height="30"/>
@@ -31,15 +41,6 @@
                                 <constraint firstAttribute="height" constant="30" id="578-AW-3bZ"/>
                             </constraints>
                             <state key="normal" title="上证指数">
-                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </state>
-                        </button>
-                        <button opaque="NO" tag="206" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z76-d7-sqB">
-                            <rect key="frame" x="116" y="75" width="75" height="25"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="25" id="8Es-Iz-Nxr"/>
-                            </constraints>
-                            <state key="normal" title="变化的点数">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                         </button>
@@ -68,6 +69,15 @@
                                 </mask>
                             </variation>
                         </button>
+                        <button opaque="NO" tag="206" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z76-d7-sqB">
+                            <rect key="frame" x="116.5" y="75" width="75" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="8Es-Iz-Nxr"/>
+                            </constraints>
+                            <state key="normal" title="变化的点数">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" red="0.74418829326687175" green="1" blue="0.24017320873268877" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
@@ -87,7 +97,7 @@
                     </constraints>
                 </view>
                 <view tag="203" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jf3-uW-PCM">
-                    <rect key="frame" x="403" y="125" width="196.5" height="100"/>
+                    <rect key="frame" x="403" y="145" width="196.5" height="100"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E0h-sE-P3S">
                             <rect key="frame" x="0.0" y="0.0" width="195.5" height="30"/>
@@ -158,7 +168,7 @@
                     </constraints>
                 </view>
                 <view tag="202" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="83i-oc-Tcv">
-                    <rect key="frame" x="201" y="125" width="197" height="100"/>
+                    <rect key="frame" x="201" y="145" width="197" height="100"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dL4-Hc-Khf">
                             <rect key="frame" x="0.0" y="0.0" width="196" height="30"/>
@@ -255,11 +265,6 @@
                     </constraints>
                     <state key="normal" title="个股查询"/>
                 </button>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="9Fy-TE-4zN">
-                    <rect key="frame" x="0.0" y="227" width="600" height="293"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <color key="sectionIndexBackgroundColor" red="1" green="0.87626836124510599" blue="0.17752575394573111" alpha="1" colorSpace="calibratedRGB"/>
-                </tableView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ak6-an-jPf">
                     <rect key="frame" x="225" y="530" width="60" height="50"/>
                     <constraints>
@@ -324,6 +329,11 @@
                     <nil key="highlightedColor"/>
                     <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                 </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="9Fy-TE-4zN">
+                    <rect key="frame" x="0.0" y="247" width="600" height="273"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="sectionIndexBackgroundColor" red="1" green="0.87626836124510599" blue="0.17752575394573111" alpha="1" colorSpace="calibratedRGB"/>
+                </tableView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
@@ -332,7 +342,7 @@
                 <constraint firstAttribute="bottom" secondItem="nV1-af-Mj7" secondAttribute="bottom" id="5jD-uA-UbQ"/>
                 <constraint firstAttribute="bottom" secondItem="D4W-B8-zzQ" secondAttribute="bottom" id="6le-Tx-8hv"/>
                 <constraint firstItem="SMg-4Y-CvN" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="5" id="6qa-bC-9cH"/>
-                <constraint firstItem="0wS-3T-25U" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="44" id="8Db-TF-l3F"/>
+                <constraint firstItem="0wS-3T-25U" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="8Db-TF-l3F"/>
                 <constraint firstItem="FNF-jQ-fgT" firstAttribute="centerX" secondItem="XBB-hc-cRp" secondAttribute="centerX" id="Bmc-lr-Qw5"/>
                 <constraint firstItem="0wS-3T-25U" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ENz-h9-rBI"/>
                 <constraint firstItem="Iax-XK-AZ0" firstAttribute="centerX" secondItem="D4W-B8-zzQ" secondAttribute="centerX" constant="45" id="Htm-Pu-p0D"/>
@@ -380,4 +390,7 @@
             </variation>
         </view>
     </objects>
+    <resources>
+        <image name="niu_hos.png" width="378" height="137"/>
+    </resources>
 </document>
