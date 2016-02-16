@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface YLSIghnStockMessageViewController : UIViewController
-
+@property(nonatomic,copy)NSString *stockNumber;
 @end

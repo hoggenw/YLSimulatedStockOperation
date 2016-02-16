@@ -12,32 +12,85 @@
 /**
  *  获取大盘数据
  */
-+(YLMarketIndexModel *)requestDataFromNet:(NSString *)urlString{
+-(void)requestDataFromNet:(NSString *)urlString{
     YLMarketIndexModel *indexModel=[[YLMarketIndexModel alloc]init];
     NSURLSession *session = [NSURLSession sharedSession];
     NSURLSessionDataTask *task = [session dataTaskWithURL:[NSURL URLWithString:urlString] completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+        if (!error) {
         NSStringEncoding gbkEncoding = CFStringConvertEncodingToNSStringEncoding(kCFStringEncodingGB_18030_2000);
         //使用如下方法 将获取到的数据按照gbkEncoding的方式进行编码，结果将是正常的汉字
         
         NSString *dict =[[NSString alloc]initWithData:data encoding:gbkEncoding];
      
         NSArray *array=[dict componentsSeparatedByString:@"\""];
-        if (array.count>=1) {
+        if (array.count>=2) {
             NSString *useString=array[1];
             NSArray *modelArray=[useString componentsSeparatedByString:@","];
             indexModel.marketName=modelArray[0];
             indexModel.marketCount=modelArray[1];
             indexModel.marketChange=modelArray[2];
             indexModel.changePercent=modelArray[3];
+            if (_needModel) {
+                _needModel(indexModel);
+              
+            }
+        }else{
+            
+        }
         }else{
             
         }
         
     }];
     [task resume];
-    do {
-        ;
-    } while (indexModel.marketName.length==0);
-    return indexModel;
+
+}
+/**
+ *  获取个股数据
+ */
+-(void)requestStockDataFromNet:(NSString *)urlString{
+    YLMarketIndexModel *indexModel=[[YLMarketIndexModel alloc]init];
+    NSURLSession *session = [NSURLSession sharedSession];
+    NSURLSessionDataTask *task = [session dataTaskWithURL:[NSURL URLWithString:urlString] completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+        if (!error) {
+            NSStringEncoding gbkEncoding = CFStringConvertEncodingToNSStringEncoding(kCFStringEncodingGB_18030_2000);
+            //使用如下方法 将获取到的数据按照gbkEncoding的方式进行编码，结果将是正常的汉字
+            
+            NSString *dict =[[NSString alloc]initWithData:data encoding:gbkEncoding];
+            
+            NSArray *array=[dict componentsSeparatedByString:@"\""];
+            if (array.count>=2) {
+                NSString *useString=array[1];
+                NSArray *modelArray=[useString componentsSeparatedByString:@","];
+                if (modelArray.count>=4) {
+                    indexModel.marketName=modelArray[0];
+                    indexModel.marketCount=modelArray[1];
+                    indexModel.marketChange=modelArray[2];
+                    indexModel.changePercent=modelArray[3];
+                    if (_needModel) {
+                        _needModel(indexModel);
+                        
+                    }
+                }else{
+                    if (_needModel) {
+                        _needModel(indexModel);
+                        
+                    }
+                }
+            }else{
+                if (_needModel) {
+                    _needModel(indexModel);
+                    
+                }
+            }
+        }else{
+            if (_needModel) {
+                _needModel(indexModel);
+                
+            }
+        }
+        
+    }];
+    [task resume];
 }
 @end

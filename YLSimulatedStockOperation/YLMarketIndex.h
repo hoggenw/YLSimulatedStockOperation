@@ -9,8 +9,13 @@
 #import <Foundation/Foundation.h>
 @class YLMarketIndexModel;
 @interface YLMarketIndex : NSObject
+@property(nonatomic,copy) void(^needModel)(YLMarketIndexModel*);
 /**
  *  获取大盘数据
  */
-+(YLMarketIndexModel *)requestDataFromNet:(NSString *)urlString;
+-(void)requestDataFromNet:(NSString *)urlString;
+/**
+ *  获取个股数据
+ */
+-(void)requestStockDataFromNet:(NSString *)urlString;
 @end

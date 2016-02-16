@@ -5,3 +5,4 @@ platform :ios, '7.0'
 
 pod 'YYModel'
 pod 'RESideMenu'
+pod 'MBProgressHUD'

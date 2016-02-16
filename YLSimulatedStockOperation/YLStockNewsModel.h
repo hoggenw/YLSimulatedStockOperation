@@ -14,8 +14,6 @@
 
 @property (nonatomic, copy) NSString *ref;
 
-@property (nonatomic, copy) NSString *id;
-
 @property (nonatomic, copy) NSString *title;
 
 @property (nonatomic, copy) NSString *url;

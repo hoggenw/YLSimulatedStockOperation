@@ -7,102 +7,130 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1F1281EF7DAFE3E59B21B8435E3A497E /* RESideMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A928CF3E4071DA68EA6C16FD33A5BB6 /* RESideMenu-dummy.m */; };
-		44009BD560013BBF9E8247498ABF5643 /* RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D60043E6A4D4C251C1079282C2798DA /* RESideMenu.m */; };
-		5B69B84BA0E305DEF04205A0102B2E49 /* RECommonFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = F9026F4AE0C851990BF1A441F71CDACF /* RECommonFunctions.m */; };
-		639C980ED30896C2AFE4BD376745AC86 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B3F809E63F21E126E5ABAA338BB4AAC /* Foundation.framework */; };
-		6AAFCCD7C841EF76B2B58B3256EF1138 /* RECommonFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = B948DA38B981157B3B15D57AF1640671 /* RECommonFunctions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		777ADC97F72F66777FAE2FB326E8146B /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB46736BB38DC23FCF7925004142683 /* NSObject+YYModel.m */; };
-		78A1333C3B78EE7F915ADEAE31905C18 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B3F809E63F21E126E5ABAA338BB4AAC /* Foundation.framework */; };
-		7C0B95CEAA54EF99014686BFAD72514B /* YYClassInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = BA6F5956806A32D3283FEDBC94041430 /* YYClassInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7C94A7975031880BBC0B05C3837C7DE1 /* YYModel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B44B5AEE5E80188AB052136DC0094B4 /* YYModel-dummy.m */; };
-		7DAD64ABE5D72C7833AE5059B06D69FB /* RESideMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = E5C7E9A42C7CBFABBD00F190EBAC1330 /* RESideMenu.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8D832697F703B7244D25B560B1D58AD2 /* NSObject+YYModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 94115FD150C240A6E30C210BF82FF3CC /* NSObject+YYModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9186C51273A826FE6C90FEEBBCB7557D /* UIViewController+RESideMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = 21D0A53E27C4B0BEE0F3B62EBBC75E48 /* UIViewController+RESideMenu.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		98020CEAA67E931622734C24CDA92EED /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01824FAE9B8ABF516633ED06ACB15D6F /* QuartzCore.framework */; };
-		A3147771CB86B559B29284460783C7C3 /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B7185702E3D43B61134193B9B6ADE9 /* YYClassInfo.m */; };
-		B1DFF36F4DE1130E734C75423EA9683F /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EBE600D1F4B1D6EF5115D5E835E995E /* CoreFoundation.framework */; };
-		BBB2A05EC75C71046B8F3F50ABFF3735 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 272643F56613CA0D336AE3DBF19DC404 /* Pods-dummy.m */; };
-		EC8F04972470A39489EFE1111274EB19 /* UIViewController+RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C6F8692AC08D5015F2399C712FB0A5 /* UIViewController+RESideMenu.m */; };
-		F9CC5B70EB0708D33090E5D078B72166 /* YYModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A8F20D91AB11970ACF9C5F81D9513A7 /* YYModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FE31530D4D753F790A6FD8A3F1F7DD08 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B3F809E63F21E126E5ABAA338BB4AAC /* Foundation.framework */; };
+		0527A92EB650C713977F3AA3F5ED259D /* YYClassInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 045BBE895FD753A7CD86EE32BD70BDF8 /* YYClassInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		121A7EF2F7164CE81E150EF153EF8681 /* UIViewController+RESideMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = CAF8A8BB909FEA2773AC3764FE02F832 /* UIViewController+RESideMenu.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2989492A1A182744E36FD61DF1746D94 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A76457A37E7CA69FF4CE2F24F6834A25 /* Foundation.framework */; };
+		4AE86EF478C1C16D50BE57FA61DF6C01 /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C3AD7E5FD8F9A4B630908F469D131C /* YYClassInfo.m */; };
+		54D5D0E04574C07FC9E829EA389ED17C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B199F365063287AB1ADC71711FDD779C /* QuartzCore.framework */; };
+		5D43FEA81C228A90F4CF5578734B542D /* RECommonFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A53123200312FC87254B4206985AD7A /* RECommonFunctions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5EB4F27B76513AE918BA5AE0868E87C8 /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D668434880B4043CE96865AB89C21A6 /* MBProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		70D801E0B95C23BCC270E4EC8659D463 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AE2A1F2129315BD4F354C30AFFFEAC4 /* CoreGraphics.framework */; };
+		7424B79E1565CA9C871774E6DCFD32D6 /* RECommonFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E34AF1A3DC36EF9365210270699D38D /* RECommonFunctions.m */; };
+		7ECD666DCE04FD24ED30DD29299B01D6 /* RESideMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 506BE88FC95EBC742B4746D3CCB20E92 /* RESideMenu-dummy.m */; };
+		82FC12F67E83874B93592218E9FB4CA0 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 01514FD12AA148357B87FE8ECD6BC27B /* MBProgressHUD.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		8A1A75AA0E3B24CAF1DB8357B65D1382 /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C705A0713B4E85376A13B22341EDDEF3 /* NSObject+YYModel.m */; };
+		94829F5F4DFD7FB27A1F0BF3CD899F4C /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3CC1A2E89BBB7BC59727C29F059C6BB /* CoreFoundation.framework */; };
+		99DE7672FA4582EBC90FA87B7807B625 /* RESideMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = 948EA5D0EDE942266BE8514DF82298AF /* RESideMenu.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A2253D5D1AC2BD77D16F5E6BBE0F77E9 /* YYModel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D1B3C9614A38659C42225E9AC33AA312 /* YYModel-dummy.m */; };
+		A878AD3682F994F80D9C1D072605D950 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A76457A37E7CA69FF4CE2F24F6834A25 /* Foundation.framework */; };
+		B19E124692BAE430E66DEDF78CBBFAB1 /* RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 88D416C7164DD45DCDB0D39B1E907578 /* RESideMenu.m */; };
+		C1EDF3E491E82B3D6FB74D1938CB7CA2 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 272643F56613CA0D336AE3DBF19DC404 /* Pods-dummy.m */; };
+		C4574ECF4FA8929BE5DE80AB12441B74 /* YYModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 52D06EA9B87D177F52915C44B7BC999D /* YYModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C540531FA3BA02BBF3470919B62D8529 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A76457A37E7CA69FF4CE2F24F6834A25 /* Foundation.framework */; };
+		E06D5D3BC64F1CDF10D32B1A70127BBB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A76457A37E7CA69FF4CE2F24F6834A25 /* Foundation.framework */; };
+		F0AFAF64DD4615C89EAA3FC0EFEAE9A0 /* NSObject+YYModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A2993121AAF4957D3F54D84F612C0B5 /* NSObject+YYModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FC214077677D4F02E03C6C85F774E028 /* MBProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EC349DD06A4E853A25F8834D86DEBAF6 /* MBProgressHUD-dummy.m */; };
+		FDC952F92E5FD0E0165B80657AE2C4BA /* UIViewController+RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1C7A35721A1EBD93F51BA5F7040C45 /* UIViewController+RESideMenu.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		29ADC041D87B67A470F597C3EFE4B247 /* PBXContainerItemProxy */ = {
+		3BEFB607B40599DA5F150FDFDCADF9B2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = FC41FE6B28DBB5936FDC244F5F60E407;
+			remoteGlobalIDString = 6F8AAB9AFCB1ADB3FFAC7CAF6E150C04;
+			remoteInfo = YYModel;
+		};
+		5B8958C0A2D25C3C4294575E20DC7BB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA34C95E6DE99573516DA0C9C3CE8D0A;
 			remoteInfo = RESideMenu;
 		};
-		74675B983C85E0028871C0C0340E5284 /* PBXContainerItemProxy */ = {
+		E4A579792B585BC474A33CD74699A1AA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 12A2728A5DA293FD3FC18944A11A31E7;
-			remoteInfo = YYModel;
+			remoteGlobalIDString = FE2F1D7B9D9FCEA148517E4657B243F4;
+			remoteInfo = MBProgressHUD;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0030B23E36C7E3D5C5BBA9CD4D821F70 /* RESideMenu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RESideMenu.xcconfig; sourceTree = "<group>"; };
-		00C6F8692AC08D5015F2399C712FB0A5 /* UIViewController+RESideMenu.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+RESideMenu.m"; path = "RESideMenu/UIViewController+RESideMenu.m"; sourceTree = "<group>"; };
-		01824FAE9B8ABF516633ED06ACB15D6F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		00187CBE7F2B1BD001B48963EEBC00FD /* libMBProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMBProgressHUD.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		01514FD12AA148357B87FE8ECD6BC27B /* MBProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		045BBE895FD753A7CD86EE32BD70BDF8 /* YYClassInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYClassInfo.h; path = YYModel/YYClassInfo.h; sourceTree = "<group>"; };
 		10834806BD7B412BC24F347361FA2C8E /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
-		185B30E1A847E580A24C2C57EBC18217 /* YYModel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YYModel.xcconfig; sourceTree = "<group>"; };
-		21D0A53E27C4B0BEE0F3B62EBBC75E48 /* UIViewController+RESideMenu.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+RESideMenu.h"; path = "RESideMenu/UIViewController+RESideMenu.h"; sourceTree = "<group>"; };
+		1E34AF1A3DC36EF9365210270699D38D /* RECommonFunctions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RECommonFunctions.m; path = RESideMenu/RECommonFunctions.m; sourceTree = "<group>"; };
 		272643F56613CA0D336AE3DBF19DC404 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
-		29C9D96CBDF9C8ACC3311EE5DED5E895 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		2FB46736BB38DC23FCF7925004142683 /* NSObject+YYModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+YYModel.m"; path = "YYModel/NSObject+YYModel.m"; sourceTree = "<group>"; };
+		30C3AD7E5FD8F9A4B630908F469D131C /* YYClassInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYClassInfo.m; path = YYModel/YYClassInfo.m; sourceTree = "<group>"; };
 		37DB56D75062CC75FCB0966E1C6E8A8E /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
-		3EBE600D1F4B1D6EF5115D5E835E995E /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/CoreFoundation.framework; sourceTree = DEVELOPER_DIR; };
-		4DB73884817B3B4ECF71951FC8846000 /* libRESideMenu.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRESideMenu.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D23C7C7530D36BC78573D379AC976A0 /* libRESideMenu.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRESideMenu.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		472D1E517389FDB76585DF343BD89E20 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		47C43284A17AEB9CE3340FEDE104B3AB /* libYYModel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libYYModel.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A2993121AAF4957D3F54D84F612C0B5 /* NSObject+YYModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+YYModel.h"; path = "YYModel/NSObject+YYModel.h"; sourceTree = "<group>"; };
+		4A53123200312FC87254B4206985AD7A /* RECommonFunctions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RECommonFunctions.h; path = RESideMenu/RECommonFunctions.h; sourceTree = "<group>"; };
 		4E762F23EC34ED4A6FF3312D84E33A40 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		506BE88FC95EBC742B4746D3CCB20E92 /* RESideMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RESideMenu-dummy.m"; sourceTree = "<group>"; };
+		52D06EA9B87D177F52915C44B7BC999D /* YYModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYModel.h; path = YYModel/YYModel.h; sourceTree = "<group>"; };
+		5D668434880B4043CE96865AB89C21A6 /* MBProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		6911BECA35E7518D864239B7E898EEF3 /* Pods-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-frameworks.sh"; sourceTree = "<group>"; };
-		7A8F20D91AB11970ACF9C5F81D9513A7 /* YYModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYModel.h; path = YYModel/YYModel.h; sourceTree = "<group>"; };
-		81B7185702E3D43B61134193B9B6ADE9 /* YYClassInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYClassInfo.m; path = YYModel/YYClassInfo.m; sourceTree = "<group>"; };
-		8A928CF3E4071DA68EA6C16FD33A5BB6 /* RESideMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RESideMenu-dummy.m"; sourceTree = "<group>"; };
-		8B3F809E63F21E126E5ABAA338BB4AAC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		8B44B5AEE5E80188AB052136DC0094B4 /* YYModel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YYModel-dummy.m"; sourceTree = "<group>"; };
-		8D60043E6A4D4C251C1079282C2798DA /* RESideMenu.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RESideMenu.m; path = RESideMenu/RESideMenu.m; sourceTree = "<group>"; };
-		94115FD150C240A6E30C210BF82FF3CC /* NSObject+YYModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+YYModel.h"; path = "YYModel/NSObject+YYModel.h"; sourceTree = "<group>"; };
+		7C5FBD117D38269B55BEF78E8813A999 /* RESideMenu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RESideMenu.xcconfig; sourceTree = "<group>"; };
+		8551B0FF1059E17E8897998887171670 /* YYModel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YYModel-prefix.pch"; sourceTree = "<group>"; };
+		88D416C7164DD45DCDB0D39B1E907578 /* RESideMenu.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RESideMenu.m; path = RESideMenu/RESideMenu.m; sourceTree = "<group>"; };
+		948EA5D0EDE942266BE8514DF82298AF /* RESideMenu.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RESideMenu.h; path = RESideMenu/RESideMenu.h; sourceTree = "<group>"; };
 		98C98CDFB3F20F2925F6CD1F141BB14F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		9AE2A1F2129315BD4F354C30AFFFEAC4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		9C1C7A35721A1EBD93F51BA5F7040C45 /* UIViewController+RESideMenu.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+RESideMenu.m"; path = "RESideMenu/UIViewController+RESideMenu.m"; sourceTree = "<group>"; };
 		A1A36D34413696BE466E2CA0AFF194DA /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
-		B948DA38B981157B3B15D57AF1640671 /* RECommonFunctions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RECommonFunctions.h; path = RESideMenu/RECommonFunctions.h; sourceTree = "<group>"; };
+		A76457A37E7CA69FF4CE2F24F6834A25 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		AE9854ECF427B6D556F7D53D0847D03B /* YYModel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YYModel.xcconfig; sourceTree = "<group>"; };
+		B199F365063287AB1ADC71711FDD779C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BA6F5956806A32D3283FEDBC94041430 /* YYClassInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYClassInfo.h; path = YYModel/YYClassInfo.h; sourceTree = "<group>"; };
-		E5C7E9A42C7CBFABBD00F190EBAC1330 /* RESideMenu.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RESideMenu.h; path = RESideMenu/RESideMenu.h; sourceTree = "<group>"; };
-		EFE6AA4CB48D7EA864FEE1B8A290FF04 /* libYYModel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libYYModel.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		F9026F4AE0C851990BF1A441F71CDACF /* RECommonFunctions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RECommonFunctions.m; path = RESideMenu/RECommonFunctions.m; sourceTree = "<group>"; };
-		FB46D6306C2099DAD114D4C16ABB846B /* RESideMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RESideMenu-prefix.pch"; sourceTree = "<group>"; };
-		FF477CDB0E0B328561822A8E05610F92 /* YYModel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YYModel-prefix.pch"; sourceTree = "<group>"; };
+		BBE408CA6E3CEF9EDF0BAAC504691536 /* RESideMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RESideMenu-prefix.pch"; sourceTree = "<group>"; };
+		C3CC1A2E89BBB7BC59727C29F059C6BB /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/CoreFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		C705A0713B4E85376A13B22341EDDEF3 /* NSObject+YYModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+YYModel.m"; path = "YYModel/NSObject+YYModel.m"; sourceTree = "<group>"; };
+		C7517A751D55271B9FD51CF4CA51DA7F /* MBProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBProgressHUD.xcconfig; sourceTree = "<group>"; };
+		CAF8A8BB909FEA2773AC3764FE02F832 /* UIViewController+RESideMenu.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+RESideMenu.h"; path = "RESideMenu/UIViewController+RESideMenu.h"; sourceTree = "<group>"; };
+		D1B3C9614A38659C42225E9AC33AA312 /* YYModel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YYModel-dummy.m"; sourceTree = "<group>"; };
+		EC349DD06A4E853A25F8834D86DEBAF6 /* MBProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		FBDE14B053151F129757CAD9BD6E9480 /* MBProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		40635EB9897070D561CECCCC4F08C056 /* Frameworks */ = {
+		88850B5FE0692173C9460D59CF270034 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE31530D4D753F790A6FD8A3F1F7DD08 /* Foundation.framework in Frameworks */,
+				94829F5F4DFD7FB27A1F0BF3CD899F4C /* CoreFoundation.framework in Frameworks */,
+				A878AD3682F994F80D9C1D072605D950 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		904DF297827DF18A9F935981FFAF28F3 /* Frameworks */ = {
+		8FEF1008F4C204746E3C154EDB996E57 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B1DFF36F4DE1130E734C75423EA9683F /* CoreFoundation.framework in Frameworks */,
-				639C980ED30896C2AFE4BD376745AC86 /* Foundation.framework in Frameworks */,
+				C540531FA3BA02BBF3470919B62D8529 /* Foundation.framework in Frameworks */,
+				54D5D0E04574C07FC9E829EA389ED17C /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CEDEBC47E55B07BE7FB4B6C8E1720E6E /* Frameworks */ = {
+		C89EF50D4960A8A2ED159FDF91AD3797 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78A1333C3B78EE7F915ADEAE31905C18 /* Foundation.framework in Frameworks */,
-				98020CEAA67E931622734C24CDA92EED /* QuartzCore.framework in Frameworks */,
+				E06D5D3BC64F1CDF10D32B1A70127BBB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E81C08F5CCC0A5FBFF4559E2173164C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70D801E0B95C23BCC270E4EC8659D463 /* CoreGraphics.framework in Frameworks */,
+				2989492A1A182744E36FD61DF1746D94 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,78 +145,115 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		07D5D1AA0FE28DB99F94A9EBF2549019 /* Support Files */ = {
+		14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				185B30E1A847E580A24C2C57EBC18217 /* YYModel.xcconfig */,
-				8B44B5AEE5E80188AB052136DC0094B4 /* YYModel-dummy.m */,
-				FF477CDB0E0B328561822A8E05610F92 /* YYModel-prefix.pch */,
+				7870E684B630DB59CE6BE2F55DAE270D /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2FC46DB283E915D08910DE2AB662E063 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DE5FBA11DC44BE06E64755BF0D89312F /* MBProgressHUD */,
+				6E2DDBD5F2A86F7A67A6D8177E711987 /* RESideMenu */,
+				64D2808F5AB99AA19B3073BAE7179778 /* YYModel */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3B50E97E1B129E65B78D7B29AC0AAEAF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7C5FBD117D38269B55BEF78E8813A999 /* RESideMenu.xcconfig */,
+				506BE88FC95EBC742B4746D3CCB20E92 /* RESideMenu-dummy.m */,
+				BBE408CA6E3CEF9EDF0BAAC504691536 /* RESideMenu-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/RESideMenu";
+			sourceTree = "<group>";
+		};
+		458E25C519F40CF618004F7BEBF9DC01 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C7517A751D55271B9FD51CF4CA51DA7F /* MBProgressHUD.xcconfig */,
+				EC349DD06A4E853A25F8834D86DEBAF6 /* MBProgressHUD-dummy.m */,
+				FBDE14B053151F129757CAD9BD6E9480 /* MBProgressHUD-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MBProgressHUD";
+			sourceTree = "<group>";
+		};
+		560EBD0C70A3FEB82ED636F837F3658E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AE9854ECF427B6D556F7D53D0847D03B /* YYModel.xcconfig */,
+				D1B3C9614A38659C42225E9AC33AA312 /* YYModel-dummy.m */,
+				8551B0FF1059E17E8897998887171670 /* YYModel-prefix.pch */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/YYModel";
 			sourceTree = "<group>";
 		};
-		091AE478FE7D768DB5DF6F1F76FFDCF0 /* iOS */ = {
+		64D2808F5AB99AA19B3073BAE7179778 /* YYModel */ = {
 			isa = PBXGroup;
 			children = (
-				3EBE600D1F4B1D6EF5115D5E835E995E /* CoreFoundation.framework */,
-				8B3F809E63F21E126E5ABAA338BB4AAC /* Foundation.framework */,
-				01824FAE9B8ABF516633ED06ACB15D6F /* QuartzCore.framework */,
+				4A2993121AAF4957D3F54D84F612C0B5 /* NSObject+YYModel.h */,
+				C705A0713B4E85376A13B22341EDDEF3 /* NSObject+YYModel.m */,
+				045BBE895FD753A7CD86EE32BD70BDF8 /* YYClassInfo.h */,
+				30C3AD7E5FD8F9A4B630908F469D131C /* YYClassInfo.m */,
+				52D06EA9B87D177F52915C44B7BC999D /* YYModel.h */,
+				560EBD0C70A3FEB82ED636F837F3658E /* Support Files */,
+			);
+			path = YYModel;
+			sourceTree = "<group>";
+		};
+		6E2DDBD5F2A86F7A67A6D8177E711987 /* RESideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				4A53123200312FC87254B4206985AD7A /* RECommonFunctions.h */,
+				1E34AF1A3DC36EF9365210270699D38D /* RECommonFunctions.m */,
+				948EA5D0EDE942266BE8514DF82298AF /* RESideMenu.h */,
+				88D416C7164DD45DCDB0D39B1E907578 /* RESideMenu.m */,
+				CAF8A8BB909FEA2773AC3764FE02F832 /* UIViewController+RESideMenu.h */,
+				9C1C7A35721A1EBD93F51BA5F7040C45 /* UIViewController+RESideMenu.m */,
+				3B50E97E1B129E65B78D7B29AC0AAEAF /* Support Files */,
+			);
+			path = RESideMenu;
+			sourceTree = "<group>";
+		};
+		7870E684B630DB59CE6BE2F55DAE270D /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				C3CC1A2E89BBB7BC59727C29F059C6BB /* CoreFoundation.framework */,
+				9AE2A1F2129315BD4F354C30AFFFEAC4 /* CoreGraphics.framework */,
+				A76457A37E7CA69FF4CE2F24F6834A25 /* Foundation.framework */,
+				B199F365063287AB1ADC71711FDD779C /* QuartzCore.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
+		7AA64A01C3AD94AD1C2A228F04D92590 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				091AE478FE7D768DB5DF6F1F76FFDCF0 /* iOS */,
+				00187CBE7F2B1BD001B48963EEBC00FD /* libMBProgressHUD.a */,
+				472D1E517389FDB76585DF343BD89E20 /* libPods.a */,
+				3D23C7C7530D36BC78573D379AC976A0 /* libRESideMenu.a */,
+				47C43284A17AEB9CE3340FEDE104B3AB /* libYYModel.a */,
 			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		58C2B591EEEE67AC9EB8EB20C0122415 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				0030B23E36C7E3D5C5BBA9CD4D821F70 /* RESideMenu.xcconfig */,
-				8A928CF3E4071DA68EA6C16FD33A5BB6 /* RESideMenu-dummy.m */,
-				FB46D6306C2099DAD114D4C16ABB846B /* RESideMenu-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/RESideMenu";
+			name = Products;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
-				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
-				970CF26BA7026279E4FD50FB1B423939 /* Pods */,
-				C18FDE501622CB33D73D66A162273E8B /* Products */,
+				14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */,
+				2FC46DB283E915D08910DE2AB662E063 /* Pods */,
+				7AA64A01C3AD94AD1C2A228F04D92590 /* Products */,
 				037C0CA694176A3C0915F62C9D20B3E6 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		970CF26BA7026279E4FD50FB1B423939 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				A89D2BF79AAC5DBA6BAFA2727A248972 /* RESideMenu */,
-				D87B63D62D5DC18AC52BF1C0F238D7A3 /* YYModel */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		A89D2BF79AAC5DBA6BAFA2727A248972 /* RESideMenu */ = {
-			isa = PBXGroup;
-			children = (
-				B948DA38B981157B3B15D57AF1640671 /* RECommonFunctions.h */,
-				F9026F4AE0C851990BF1A441F71CDACF /* RECommonFunctions.m */,
-				E5C7E9A42C7CBFABBD00F190EBAC1330 /* RESideMenu.h */,
-				8D60043E6A4D4C251C1079282C2798DA /* RESideMenu.m */,
-				21D0A53E27C4B0BEE0F3B62EBBC75E48 /* UIViewController+RESideMenu.h */,
-				00C6F8692AC08D5015F2399C712FB0A5 /* UIViewController+RESideMenu.m */,
-				58C2B591EEEE67AC9EB8EB20C0122415 /* Support Files */,
-			);
-			path = RESideMenu;
 			sourceTree = "<group>";
 		};
 		B3D1D13E0C6553800746CB8FD61CF946 /* Pods */ = {
@@ -206,62 +271,57 @@
 			path = "Target Support Files/Pods";
 			sourceTree = "<group>";
 		};
-		C18FDE501622CB33D73D66A162273E8B /* Products */ = {
+		DE5FBA11DC44BE06E64755BF0D89312F /* MBProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
-				29C9D96CBDF9C8ACC3311EE5DED5E895 /* libPods.a */,
-				4DB73884817B3B4ECF71951FC8846000 /* libRESideMenu.a */,
-				EFE6AA4CB48D7EA864FEE1B8A290FF04 /* libYYModel.a */,
+				5D668434880B4043CE96865AB89C21A6 /* MBProgressHUD.h */,
+				01514FD12AA148357B87FE8ECD6BC27B /* MBProgressHUD.m */,
+				458E25C519F40CF618004F7BEBF9DC01 /* Support Files */,
 			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		D87B63D62D5DC18AC52BF1C0F238D7A3 /* YYModel */ = {
-			isa = PBXGroup;
-			children = (
-				94115FD150C240A6E30C210BF82FF3CC /* NSObject+YYModel.h */,
-				2FB46736BB38DC23FCF7925004142683 /* NSObject+YYModel.m */,
-				BA6F5956806A32D3283FEDBC94041430 /* YYClassInfo.h */,
-				81B7185702E3D43B61134193B9B6ADE9 /* YYClassInfo.m */,
-				7A8F20D91AB11970ACF9C5F81D9513A7 /* YYModel.h */,
-				07D5D1AA0FE28DB99F94A9EBF2549019 /* Support Files */,
-			);
-			path = YYModel;
+			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		DC6930D5A8B7BC2E092CCF64596451E6 /* Headers */ = {
+		D35F97AC36CA1985E375153BC5AEC431 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6AAFCCD7C841EF76B2B58B3256EF1138 /* RECommonFunctions.h in Headers */,
-				7DAD64ABE5D72C7833AE5059B06D69FB /* RESideMenu.h in Headers */,
-				9186C51273A826FE6C90FEEBBCB7557D /* UIViewController+RESideMenu.h in Headers */,
+				F0AFAF64DD4615C89EAA3FC0EFEAE9A0 /* NSObject+YYModel.h in Headers */,
+				0527A92EB650C713977F3AA3F5ED259D /* YYClassInfo.h in Headers */,
+				C4574ECF4FA8929BE5DE80AB12441B74 /* YYModel.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FED634C226F207457C00C07CC3477160 /* Headers */ = {
+		DB09243A869A6C06357B5A2B3E9CBABA /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D832697F703B7244D25B560B1D58AD2 /* NSObject+YYModel.h in Headers */,
-				7C0B95CEAA54EF99014686BFAD72514B /* YYClassInfo.h in Headers */,
-				F9CC5B70EB0708D33090E5D078B72166 /* YYModel.h in Headers */,
+				5D43FEA81C228A90F4CF5578734B542D /* RECommonFunctions.h in Headers */,
+				99DE7672FA4582EBC90FA87B7807B625 /* RESideMenu.h in Headers */,
+				121A7EF2F7164CE81E150EF153EF8681 /* UIViewController+RESideMenu.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF1C003613925663F17E023C73AF519C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EB4F27B76513AE918BA5AE0868E87C8 /* MBProgressHUD.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		12A2728A5DA293FD3FC18944A11A31E7 /* YYModel */ = {
+		6F8AAB9AFCB1ADB3FFAC7CAF6E150C04 /* YYModel */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 973AB7324E338D144FCF08889B7EE28E /* Build configuration list for PBXNativeTarget "YYModel" */;
+			buildConfigurationList = ED1193D92F05B6EE4AE0DCE8E406EE89 /* Build configuration list for PBXNativeTarget "YYModel" */;
 			buildPhases = (
-				019B5AF3253323C4C8C7EB0053136DA5 /* Sources */,
-				904DF297827DF18A9F935981FFAF28F3 /* Frameworks */,
-				FED634C226F207457C00C07CC3477160 /* Headers */,
+				0B2045884A7183D3D1B7C77336BE66FB /* Sources */,
+				88850B5FE0692173C9460D59CF270034 /* Frameworks */,
+				D35F97AC36CA1985E375153BC5AEC431 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -269,34 +329,35 @@
 			);
 			name = YYModel;
 			productName = YYModel;
-			productReference = EFE6AA4CB48D7EA864FEE1B8A290FF04 /* libYYModel.a */;
+			productReference = 47C43284A17AEB9CE3340FEDE104B3AB /* libYYModel.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		AF3A817EFA43CF4F9E81CE642362602B /* Pods */ = {
+		AB49E42904B8BD9821899FA01E2F05BF /* Pods */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7AC9334290C8F743AF3A78E25C1952ED /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildConfigurationList = 55BE84287802E831EA0FA7B0262A2666 /* Build configuration list for PBXNativeTarget "Pods" */;
 			buildPhases = (
-				8523283E0A0318EEAD28AF15581194DF /* Sources */,
-				40635EB9897070D561CECCCC4F08C056 /* Frameworks */,
+				78F2435159230A9F8FAFACF2876D0C36 /* Sources */,
+				C89EF50D4960A8A2ED159FDF91AD3797 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C9D264995AFBFB8AF2CC16E8802C9376 /* PBXTargetDependency */,
-				C7F1821C23DD4D85C0FC24115C3C8A8C /* PBXTargetDependency */,
+				AD0379E2EB628FCF8004F3B430651A98 /* PBXTargetDependency */,
+				FB52A05831205D7AA82BDA0EB8E7E91F /* PBXTargetDependency */,
+				9758EA93A7351528B3481EAE37CAA953 /* PBXTargetDependency */,
 			);
 			name = Pods;
 			productName = Pods;
-			productReference = 29C9D96CBDF9C8ACC3311EE5DED5E895 /* libPods.a */;
+			productReference = 472D1E517389FDB76585DF343BD89E20 /* libPods.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		FC41FE6B28DBB5936FDC244F5F60E407 /* RESideMenu */ = {
+		CA34C95E6DE99573516DA0C9C3CE8D0A /* RESideMenu */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B60A471BC04341C16A9C5B21C118E452 /* Build configuration list for PBXNativeTarget "RESideMenu" */;
+			buildConfigurationList = F3F5D68FBF442EB005A48D7772D51BA1 /* Build configuration list for PBXNativeTarget "RESideMenu" */;
 			buildPhases = (
-				9E1F1A08A96B8CE07912E1A902C7BCFF /* Sources */,
-				CEDEBC47E55B07BE7FB4B6C8E1720E6E /* Frameworks */,
-				DC6930D5A8B7BC2E092CCF64596451E6 /* Headers */,
+				30AACF15419E9F7BB577760A47B3055D /* Sources */,
+				8FEF1008F4C204746E3C154EDB996E57 /* Frameworks */,
+				DB09243A869A6C06357B5A2B3E9CBABA /* Headers */,
 			);
 			buildRules = (
 			);
@@ -304,7 +365,24 @@
 			);
 			name = RESideMenu;
 			productName = RESideMenu;
-			productReference = 4DB73884817B3B4ECF71951FC8846000 /* libRESideMenu.a */;
+			productReference = 3D23C7C7530D36BC78573D379AC976A0 /* libRESideMenu.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		FE2F1D7B9D9FCEA148517E4657B243F4 /* MBProgressHUD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2F5671C4613023EE94A2E62DA06031D /* Build configuration list for PBXNativeTarget "MBProgressHUD" */;
+			buildPhases = (
+				098439AB598DDF1AF51146A2E3E2E562 /* Sources */,
+				E81C08F5CCC0A5FBFF4559E2173164C7 /* Frameworks */,
+				EF1C003613925663F17E023C73AF519C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MBProgressHUD;
+			productName = MBProgressHUD;
+			productReference = 00187CBE7F2B1BD001B48963EEBC00FD /* libMBProgressHUD.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -324,71 +402,87 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = C18FDE501622CB33D73D66A162273E8B /* Products */;
+			productRefGroup = 7AA64A01C3AD94AD1C2A228F04D92590 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AF3A817EFA43CF4F9E81CE642362602B /* Pods */,
-				FC41FE6B28DBB5936FDC244F5F60E407 /* RESideMenu */,
-				12A2728A5DA293FD3FC18944A11A31E7 /* YYModel */,
+				FE2F1D7B9D9FCEA148517E4657B243F4 /* MBProgressHUD */,
+				AB49E42904B8BD9821899FA01E2F05BF /* Pods */,
+				CA34C95E6DE99573516DA0C9C3CE8D0A /* RESideMenu */,
+				6F8AAB9AFCB1ADB3FFAC7CAF6E150C04 /* YYModel */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		019B5AF3253323C4C8C7EB0053136DA5 /* Sources */ = {
+		098439AB598DDF1AF51146A2E3E2E562 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				777ADC97F72F66777FAE2FB326E8146B /* NSObject+YYModel.m in Sources */,
-				A3147771CB86B559B29284460783C7C3 /* YYClassInfo.m in Sources */,
-				7C94A7975031880BBC0B05C3837C7DE1 /* YYModel-dummy.m in Sources */,
+				FC214077677D4F02E03C6C85F774E028 /* MBProgressHUD-dummy.m in Sources */,
+				82FC12F67E83874B93592218E9FB4CA0 /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8523283E0A0318EEAD28AF15581194DF /* Sources */ = {
+		0B2045884A7183D3D1B7C77336BE66FB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BBB2A05EC75C71046B8F3F50ABFF3735 /* Pods-dummy.m in Sources */,
+				8A1A75AA0E3B24CAF1DB8357B65D1382 /* NSObject+YYModel.m in Sources */,
+				4AE86EF478C1C16D50BE57FA61DF6C01 /* YYClassInfo.m in Sources */,
+				A2253D5D1AC2BD77D16F5E6BBE0F77E9 /* YYModel-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9E1F1A08A96B8CE07912E1A902C7BCFF /* Sources */ = {
+		30AACF15419E9F7BB577760A47B3055D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B69B84BA0E305DEF04205A0102B2E49 /* RECommonFunctions.m in Sources */,
-				1F1281EF7DAFE3E59B21B8435E3A497E /* RESideMenu-dummy.m in Sources */,
-				44009BD560013BBF9E8247498ABF5643 /* RESideMenu.m in Sources */,
-				EC8F04972470A39489EFE1111274EB19 /* UIViewController+RESideMenu.m in Sources */,
+				7424B79E1565CA9C871774E6DCFD32D6 /* RECommonFunctions.m in Sources */,
+				7ECD666DCE04FD24ED30DD29299B01D6 /* RESideMenu-dummy.m in Sources */,
+				B19E124692BAE430E66DEDF78CBBFAB1 /* RESideMenu.m in Sources */,
+				FDC952F92E5FD0E0165B80657AE2C4BA /* UIViewController+RESideMenu.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78F2435159230A9F8FAFACF2876D0C36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1EDF3E491E82B3D6FB74D1938CB7CA2 /* Pods-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		C7F1821C23DD4D85C0FC24115C3C8A8C /* PBXTargetDependency */ = {
+		9758EA93A7351528B3481EAE37CAA953 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = YYModel;
-			target = 12A2728A5DA293FD3FC18944A11A31E7 /* YYModel */;
-			targetProxy = 74675B983C85E0028871C0C0340E5284 /* PBXContainerItemProxy */;
+			target = 6F8AAB9AFCB1ADB3FFAC7CAF6E150C04 /* YYModel */;
+			targetProxy = 3BEFB607B40599DA5F150FDFDCADF9B2 /* PBXContainerItemProxy */;
 		};
-		C9D264995AFBFB8AF2CC16E8802C9376 /* PBXTargetDependency */ = {
+		AD0379E2EB628FCF8004F3B430651A98 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MBProgressHUD;
+			target = FE2F1D7B9D9FCEA148517E4657B243F4 /* MBProgressHUD */;
+			targetProxy = E4A579792B585BC474A33CD74699A1AA /* PBXContainerItemProxy */;
+		};
+		FB52A05831205D7AA82BDA0EB8E7E91F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = RESideMenu;
-			target = FC41FE6B28DBB5936FDC244F5F60E407 /* RESideMenu */;
-			targetProxy = 29ADC041D87B67A470F597C3EFE4B247 /* PBXContainerItemProxy */;
+			target = CA34C95E6DE99573516DA0C9C3CE8D0A /* RESideMenu */;
+			targetProxy = 5B8958C0A2D25C3C4294575E20DC7BB5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		042965BFFC7A791DC13C91385812A28E /* Debug */ = {
+		02BABCF3347B97CBFAD835C06FB91E38 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 185B30E1A847E580A24C2C57EBC18217 /* YYModel.xcconfig */;
+			baseConfigurationReference = 7C5FBD117D38269B55BEF78E8813A999 /* RESideMenu.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/YYModel/YYModel-prefix.pch";
+				GCC_PREFIX_HEADER = "Target Support Files/RESideMenu/RESideMenu-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
@@ -435,9 +529,9 @@
 			};
 			name = Release;
 		};
-		18C84C53012118D939C372B29194DFF9 /* Release */ = {
+		4A45CB328AA7FA8994BFF5290DFCFA20 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0030B23E36C7E3D5C5BBA9CD4D821F70 /* RESideMenu.xcconfig */;
+			baseConfigurationReference = 7C5FBD117D38269B55BEF78E8813A999 /* RESideMenu.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/RESideMenu/RESideMenu-prefix.pch";
@@ -453,30 +547,12 @@
 			};
 			name = Release;
 		};
-		44256AF33DB2485B174BF9785C90FADC /* Release */ = {
+		64450D47B5AB9B54FBCF8BDF4D6676F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 185B30E1A847E580A24C2C57EBC18217 /* YYModel.xcconfig */;
+			baseConfigurationReference = AE9854ECF427B6D556F7D53D0847D03B /* YYModel.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/YYModel/YYModel-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		618874874F4E4B585EDE4C817F44419B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0030B23E36C7E3D5C5BBA9CD4D821F70 /* RESideMenu.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/RESideMenu/RESideMenu-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
@@ -528,7 +604,25 @@
 			};
 			name = Debug;
 		};
-		B7EDB3E084DE5B338BE863FC0874F160 /* Release */ = {
+		C5AFFFCB54FD9036E7BC9BA54ADAAF30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7517A751D55271B9FD51CF4CA51DA7F /* MBProgressHUD.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		C900508BC0C54BADA11D8E1FB0C28964 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 98C98CDFB3F20F2925F6CD1F141BB14F /* Pods.release.xcconfig */;
 			buildSettings = {
@@ -545,7 +639,7 @@
 			};
 			name = Release;
 		};
-		C883A9AA3AB7F81B0164C3E96DDBB49A /* Debug */ = {
+		E39C08FF778CEFC2C5A8479724128B42 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4E762F23EC34ED4A6FF3312D84E33A40 /* Pods.debug.xcconfig */;
 			buildSettings = {
@@ -562,6 +656,42 @@
 			};
 			name = Debug;
 		};
+		E7B8141DB24F5AA0D1F847AFEC0DB018 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7517A751D55271B9FD51CF4CA51DA7F /* MBProgressHUD.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F1B1571163A87E99FAAE726633742CE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE9854ECF427B6D556F7D53D0847D03B /* YYModel.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/YYModel/YYModel-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -574,29 +704,38 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7AC9334290C8F743AF3A78E25C1952ED /* Build configuration list for PBXNativeTarget "Pods" */ = {
+		55BE84287802E831EA0FA7B0262A2666 /* Build configuration list for PBXNativeTarget "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C883A9AA3AB7F81B0164C3E96DDBB49A /* Debug */,
-				B7EDB3E084DE5B338BE863FC0874F160 /* Release */,
+				E39C08FF778CEFC2C5A8479724128B42 /* Debug */,
+				C900508BC0C54BADA11D8E1FB0C28964 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		973AB7324E338D144FCF08889B7EE28E /* Build configuration list for PBXNativeTarget "YYModel" */ = {
+		ED1193D92F05B6EE4AE0DCE8E406EE89 /* Build configuration list for PBXNativeTarget "YYModel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				042965BFFC7A791DC13C91385812A28E /* Debug */,
-				44256AF33DB2485B174BF9785C90FADC /* Release */,
+				64450D47B5AB9B54FBCF8BDF4D6676F6 /* Debug */,
+				F1B1571163A87E99FAAE726633742CE3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B60A471BC04341C16A9C5B21C118E452 /* Build configuration list for PBXNativeTarget "RESideMenu" */ = {
+		F2F5671C4613023EE94A2E62DA06031D /* Build configuration list for PBXNativeTarget "MBProgressHUD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				618874874F4E4B585EDE4C817F44419B /* Debug */,
-				18C84C53012118D939C372B29194DFF9 /* Release */,
+				E7B8141DB24F5AA0D1F847AFEC0DB018 /* Debug */,
+				C5AFFFCB54FD9036E7BC9BA54ADAAF30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3F5D68FBF442EB005A48D7772D51BA1 /* Build configuration list for PBXNativeTarget "RESideMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02BABCF3347B97CBFAD835C06FB91E38 /* Debug */,
+				4A45CB328AA7FA8994BFF5290DFCFA20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

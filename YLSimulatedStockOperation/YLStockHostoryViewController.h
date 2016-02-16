@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface YLStockHostoryViewController : UIViewController
+@property(nonatomic,copy)NSString *URLString;
 
 @end
