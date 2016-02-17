@@ -25,6 +25,7 @@
         NSArray *array=[dict componentsSeparatedByString:@"\""];
         if (array.count>=2) {
             NSString *useString=array[1];
+            
             NSArray *modelArray=[useString componentsSeparatedByString:@","];
             indexModel.marketName=modelArray[0];
             indexModel.marketCount=modelArray[1];
@@ -61,6 +62,10 @@
             NSArray *array=[dict componentsSeparatedByString:@"\""];
             if (array.count>=2) {
                 NSString *useString=array[1];
+                NSString *stockString=array[0];
+                NSArray *stockArray=[stockString componentsSeparatedByString:@"="];
+                NSString *stockString1=stockArray[0];
+                indexModel.stockNumber=[[stockString1 componentsSeparatedByString:@"_"]lastObject];
                 NSArray *modelArray=[useString componentsSeparatedByString:@","];
                 if (modelArray.count>=4) {
                     indexModel.marketName=modelArray[0];

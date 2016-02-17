@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface YLSimulatedBuyViewController : UIViewController
-
+@property(nonatomic,copy)NSString *stockNumber;
+@property(nonatomic,copy)NSString *selfTitle;
 @end

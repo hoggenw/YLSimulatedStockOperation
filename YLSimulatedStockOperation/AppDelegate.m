@@ -31,12 +31,15 @@
     BOOL isFirstIn=[useDef boolForKey:@"isFirstIn"];
     if (!isFirstIn) {
         isFirstIn=YES;
-    
+        NSUserDefaults *userDef=[NSUserDefaults standardUserDefaults];
+        NSMutableArray *selfArray=[NSMutableArray array];
+        [userDef setObject:selfArray  forKey:@"selfStocks"];
+        [userDef setBool:isFirstIn forKey:@"isFirstIn"];
         
     }else{
         
     }
-        _window.rootViewController=sideMenuViewController;
+    _window.rootViewController=sideMenuViewController;
     return YES;
 }
 

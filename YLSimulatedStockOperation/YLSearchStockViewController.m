@@ -14,6 +14,9 @@
 @interface YLSearchStockViewController ()<UISearchBarDelegate,UITableViewDataSource,UITableViewDelegate>{
     NSMutableArray *dataArray;
     NSMutableString *searchStockString;
+    BOOL isSave;
+    NSString *stocknumber;
+    BOOL isExist;
 }
 @property (weak, nonatomic) IBOutlet UISearchBar *stcokSeachBar;
 @property (weak, nonatomic) IBOutlet UITableView *mySearchTabelView;
@@ -27,6 +30,8 @@
     self.title=@"个股查询";
     [self setSearchBar];
      [self creatTableViewShow];
+   
+ 
     
 }
 
@@ -60,8 +65,46 @@
         cell=[[YLShowStcokTableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"CELL"];
     }
     cell.model=dataArray[indexPath.row];
+    if ([YLNsuserdefult judgeStockIsExist:searchStockString]) {
+        [cell.saveButton setBackgroundImage:[UIImage imageNamed:@"stock_deleta@3x"] forState:UIControlStateNormal];
+        isSave=YES;
+    }else{
+        [cell.saveButton setBackgroundImage:[UIImage imageNamed:@"mockstock_addred"] forState:UIControlStateNormal];
+        isSave=NO;
+    }
+    [cell.saveButton addTarget:self action:@selector(saveButtonAction:) forControlEvents:UIControlEventTouchUpInside];
     return cell;
 }
+/**cell的回调方法*/
+-(void)saveButtonAction:(UIButton *)sender{
+    if (isSave) {
+        [sender setBackgroundImage:[UIImage imageNamed:@"mockstock_addred"] forState:UIControlStateNormal];
+        isSave=NO;
+        if ([YLNsuserdefult judgeStockIsExist:searchStockString]) {
+            NSArray *array=[YLNsuserdefult getSelfStocksForKey:@"selfStocks"];
+            NSMutableArray *nowArray=[NSMutableArray arrayWithArray:array];
+            [nowArray removeObject:searchStockString];
+            [YLNsuserdefult saveSelfStocks:nowArray forKey:@"selfStocks"];
+        }
+        YLHintView *hView=[[YLHintView alloc]initWithFrame:CGRectMake(0, 0,150, 120)];
+        hView.center=self.view.center;
+        [self.view addSubview:hView];
+        hView.message=@"已从自选股删除";
+        [hView showOnView:self.view ForTimeInterval:1.2];
+    }else{
+        if (![YLNsuserdefult judgeStockIsExist:searchStockString]) {
+            [YLNsuserdefult saveSelfChioceStock:searchStockString forKey:@"selfStocks"];
+        }
+        [sender setBackgroundImage:[UIImage imageNamed:@"stock_deleta@3x"] forState:UIControlStateNormal];
+        isSave=YES;
+        YLHintView *hView=[[YLHintView alloc]initWithFrame:CGRectMake(0, 0,150, 120)];
+        hView.center=self.view.center;
+        [self.view addSubview:hView];
+        hView.message=@"已加入自选股";
+        [hView showOnView:self.view ForTimeInterval:1.2];
+    }
+}
+
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     YLSIghnStockMessageViewController *detailNewVC=[[YLSIghnStockMessageViewController alloc]init];
     detailNewVC.stockNumber=searchStockString;
@@ -98,6 +141,7 @@
                     [hView showOnView:self.view ForTimeInterval:1.2];
                      [MBProgressHUD hideAllHUDsForView:_mySearchTabelView  animated:YES];
                 }else{
+                
                 [weakSelf.mySearchTabelView  reloadData];
                 [MBProgressHUD hideAllHUDsForView:_mySearchTabelView  animated:YES];
                 }
@@ -115,6 +159,11 @@
         [hView showOnView:self.view ForTimeInterval:1.2];
     }
   
+}
+-(void)viewWillAppear:(BOOL)animated{
+     dispatch_async(dispatch_get_main_queue(), ^{
+    [_mySearchTabelView reloadData];
+     });
 }
 
 @end

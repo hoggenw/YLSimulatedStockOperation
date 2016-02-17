@@ -31,6 +31,18 @@
 		BC6199F81C73200D00A2FC18 /* YLShowStcokTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6199F61C73200D00A2FC18 /* YLShowStcokTableViewCell.m */; };
 		BC6199F91C73200D00A2FC18 /* YLShowStcokTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC6199F71C73200D00A2FC18 /* YLShowStcokTableViewCell.xib */; };
 		BC6199FC1C7321BF00A2FC18 /* mockstock_addred@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC6199FB1C7321BF00A2FC18 /* mockstock_addred@3x.png */; };
+		BC9EE5961C73F6DE008745FF /* YLStockNoticeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC9EE5941C73F6DE008745FF /* YLStockNoticeViewController.m */; };
+		BC9EE5971C73F6DE008745FF /* YLStockNoticeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC9EE5951C73F6DE008745FF /* YLStockNoticeViewController.xib */; };
+		BC9EE59C1C740121008745FF /* YLCrashDirectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC9EE59A1C740121008745FF /* YLCrashDirectionViewController.m */; };
+		BC9EE59D1C740121008745FF /* YLCrashDirectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC9EE59B1C740121008745FF /* YLCrashDirectionViewController.xib */; };
+		BC9EE5A21C740F00008745FF /* YLJudgeStockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC9EE5A01C740F00008745FF /* YLJudgeStockViewController.m */; };
+		BC9EE5A31C740F00008745FF /* YLJudgeStockViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC9EE5A11C740F00008745FF /* YLJudgeStockViewController.xib */; };
+		BC9EE5A61C744537008745FF /* YLNsuserdefult.m in Sources */ = {isa = PBXBuildFile; fileRef = BC9EE5A51C744537008745FF /* YLNsuserdefult.m */; };
+		BC9EE5A81C74483C008745FF /* stock_deleta@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC9EE5A71C74483C008745FF /* stock_deleta@3x.png */; };
+		BC9EE5AD1C745A5E008745FF /* YLSelfStcocksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC9EE5AB1C745A5E008745FF /* YLSelfStcocksViewController.m */; };
+		BC9EE5AE1C745A5E008745FF /* YLSelfStcocksViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC9EE5AC1C745A5E008745FF /* YLSelfStcocksViewController.xib */; };
+		BC9EE5B21C745C05008745FF /* YLjUSTStockTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC9EE5B01C745C05008745FF /* YLjUSTStockTableViewCell.m */; };
+		BC9EE5B31C745C05008745FF /* YLjUSTStockTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC9EE5B11C745C05008745FF /* YLjUSTStockTableViewCell.xib */; };
 		E886AFA81C6C34C3009CC3A3 /* YLFastNewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E886AFA71C6C34C3009CC3A3 /* YLFastNewsModel.m */; };
 		E886AFAE1C6C4799009CC3A3 /* YLStockValuation.m in Sources */ = {isa = PBXBuildFile; fileRef = E886AFAD1C6C4799009CC3A3 /* YLStockValuation.m */; };
 		E886AFB11C6C56AC009CC3A3 /* YLStockNewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E886AFB01C6C56AC009CC3A3 /* YLStockNewsModel.m */; };
@@ -114,6 +126,24 @@
 		BC6199F61C73200D00A2FC18 /* YLShowStcokTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLShowStcokTableViewCell.m; sourceTree = "<group>"; };
 		BC6199F71C73200D00A2FC18 /* YLShowStcokTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YLShowStcokTableViewCell.xib; sourceTree = "<group>"; };
 		BC6199FB1C7321BF00A2FC18 /* mockstock_addred@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mockstock_addred@3x.png"; sourceTree = "<group>"; };
+		BC9EE5931C73F6DE008745FF /* YLStockNoticeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLStockNoticeViewController.h; sourceTree = "<group>"; };
+		BC9EE5941C73F6DE008745FF /* YLStockNoticeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLStockNoticeViewController.m; sourceTree = "<group>"; };
+		BC9EE5951C73F6DE008745FF /* YLStockNoticeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YLStockNoticeViewController.xib; sourceTree = "<group>"; };
+		BC9EE5991C740121008745FF /* YLCrashDirectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLCrashDirectionViewController.h; sourceTree = "<group>"; };
+		BC9EE59A1C740121008745FF /* YLCrashDirectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLCrashDirectionViewController.m; sourceTree = "<group>"; };
+		BC9EE59B1C740121008745FF /* YLCrashDirectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YLCrashDirectionViewController.xib; sourceTree = "<group>"; };
+		BC9EE59F1C740F00008745FF /* YLJudgeStockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLJudgeStockViewController.h; sourceTree = "<group>"; };
+		BC9EE5A01C740F00008745FF /* YLJudgeStockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLJudgeStockViewController.m; sourceTree = "<group>"; };
+		BC9EE5A11C740F00008745FF /* YLJudgeStockViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YLJudgeStockViewController.xib; sourceTree = "<group>"; };
+		BC9EE5A41C744537008745FF /* YLNsuserdefult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLNsuserdefult.h; sourceTree = "<group>"; };
+		BC9EE5A51C744537008745FF /* YLNsuserdefult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLNsuserdefult.m; sourceTree = "<group>"; };
+		BC9EE5A71C74483C008745FF /* stock_deleta@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stock_deleta@3x.png"; sourceTree = "<group>"; };
+		BC9EE5AA1C745A5E008745FF /* YLSelfStcocksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLSelfStcocksViewController.h; sourceTree = "<group>"; };
+		BC9EE5AB1C745A5E008745FF /* YLSelfStcocksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLSelfStcocksViewController.m; sourceTree = "<group>"; };
+		BC9EE5AC1C745A5E008745FF /* YLSelfStcocksViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YLSelfStcocksViewController.xib; sourceTree = "<group>"; };
+		BC9EE5AF1C745C05008745FF /* YLjUSTStockTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLjUSTStockTableViewCell.h; sourceTree = "<group>"; };
+		BC9EE5B01C745C05008745FF /* YLjUSTStockTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLjUSTStockTableViewCell.m; sourceTree = "<group>"; };
+		BC9EE5B11C745C05008745FF /* YLjUSTStockTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YLjUSTStockTableViewCell.xib; sourceTree = "<group>"; };
 		D543AB798AA22CDA832BB53F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		E886AFA61C6C34C3009CC3A3 /* YLFastNewsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLFastNewsModel.h; sourceTree = "<group>"; };
 		E886AFA71C6C34C3009CC3A3 /* YLFastNewsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLFastNewsModel.m; sourceTree = "<group>"; };
@@ -218,6 +248,8 @@
 				BC2BC5E41C71F7EC0068A2C1 /* YLJudgeStcok.m */,
 				BC6199F41C731D9100A2FC18 /* YLHintView.h */,
 				BC6199F21C731D8E00A2FC18 /* YLHintView.m */,
+				BC9EE5A41C744537008745FF /* YLNsuserdefult.h */,
+				BC9EE5A51C744537008745FF /* YLNsuserdefult.m */,
 			);
 			name = Utility;
 			sourceTree = "<group>";
@@ -256,9 +288,50 @@
 		BC6199FA1C7321B000A2FC18 /* 个人股票页面 */ = {
 			isa = PBXGroup;
 			children = (
+				BC9EE5A71C74483C008745FF /* stock_deleta@3x.png */,
 				BC6199FB1C7321BF00A2FC18 /* mockstock_addred@3x.png */,
 			);
 			name = "个人股票页面";
+			sourceTree = "<group>";
+		};
+		BC9EE5921C73F6B1008745FF /* 股票公告页面 */ = {
+			isa = PBXGroup;
+			children = (
+				BC9EE5931C73F6DE008745FF /* YLStockNoticeViewController.h */,
+				BC9EE5941C73F6DE008745FF /* YLStockNoticeViewController.m */,
+				BC9EE5951C73F6DE008745FF /* YLStockNoticeViewController.xib */,
+			);
+			name = "股票公告页面";
+			sourceTree = "<group>";
+		};
+		BC9EE5981C7400E5008745FF /* 资金流向 */ = {
+			isa = PBXGroup;
+			children = (
+				BC9EE5991C740121008745FF /* YLCrashDirectionViewController.h */,
+				BC9EE59A1C740121008745FF /* YLCrashDirectionViewController.m */,
+				BC9EE59B1C740121008745FF /* YLCrashDirectionViewController.xib */,
+			);
+			name = "资金流向";
+			sourceTree = "<group>";
+		};
+		BC9EE59E1C740D4F008745FF /* 盘口 */ = {
+			isa = PBXGroup;
+			children = (
+				BC9EE59F1C740F00008745FF /* YLJudgeStockViewController.h */,
+				BC9EE5A01C740F00008745FF /* YLJudgeStockViewController.m */,
+				BC9EE5A11C740F00008745FF /* YLJudgeStockViewController.xib */,
+			);
+			name = "盘口";
+			sourceTree = "<group>";
+		};
+		BC9EE5A91C745A08008745FF /* 自选股 */ = {
+			isa = PBXGroup;
+			children = (
+				BC9EE5AA1C745A5E008745FF /* YLSelfStcocksViewController.h */,
+				BC9EE5AB1C745A5E008745FF /* YLSelfStcocksViewController.m */,
+				BC9EE5AC1C745A5E008745FF /* YLSelfStcocksViewController.xib */,
+			);
+			name = "自选股";
 			sourceTree = "<group>";
 		};
 		C7557E01120C2EEFC2AEDF34 /* Frameworks */ = {
@@ -272,6 +345,10 @@
 		E886AFB81C6D7822009CC3A3 /* Conrollers */ = {
 			isa = PBXGroup;
 			children = (
+				BC9EE5A91C745A08008745FF /* 自选股 */,
+				BC9EE59E1C740D4F008745FF /* 盘口 */,
+				BC9EE5981C7400E5008745FF /* 资金流向 */,
+				BC9EE5921C73F6B1008745FF /* 股票公告页面 */,
 				BC6199EC1C730F1000A2FC18 /* 个股查询 */,
 				E886AFE11C701CFC009CC3A3 /* 牛股历史页面 */,
 				BC6199DB1C72F1B100A2FC18 /* 股票新闻页面 */,
@@ -406,6 +483,9 @@
 				BC6199F51C73200D00A2FC18 /* YLShowStcokTableViewCell.h */,
 				BC6199F61C73200D00A2FC18 /* YLShowStcokTableViewCell.m */,
 				BC6199F71C73200D00A2FC18 /* YLShowStcokTableViewCell.xib */,
+				BC9EE5AF1C745C05008745FF /* YLjUSTStockTableViewCell.h */,
+				BC9EE5B01C745C05008745FF /* YLjUSTStockTableViewCell.m */,
+				BC9EE5B11C745C05008745FF /* YLjUSTStockTableViewCell.xib */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -617,17 +697,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC6199F11C73126400A2FC18 /* YLSearchStockViewController.xib in Resources */,
+				BC9EE59D1C740121008745FF /* YLCrashDirectionViewController.xib in Resources */,
 				E886AFCE1C6F1445009CC3A3 /* YLSIghnStockMessageViewController.xib in Resources */,
+				BC9EE5971C73F6DE008745FF /* YLStockNoticeViewController.xib in Resources */,
 				BC6199E01C72F1F200A2FC18 /* YLStockNewsViewController.xib in Resources */,
 				BC2BC5D31C71A0D40068A2C1 /* YLNewsTableViewCell.xib in Resources */,
 				E886AFD41C6F5037009CC3A3 /* YLSimulatedStockViewController.xib in Resources */,
+				BC9EE5A81C74483C008745FF /* stock_deleta@3x.png in Resources */,
 				BC6199E51C72F87500A2FC18 /* YLStockNewsTableViewCell.xib in Resources */,
 				BC6199F91C73200D00A2FC18 /* YLShowStcokTableViewCell.xib in Resources */,
 				BC2BC5DA1C71CA550068A2C1 /* 612_search_sel@2x.png in Resources */,
+				BC9EE5A31C740F00008745FF /* YLJudgeStockViewController.xib in Resources */,
+				BC9EE5AE1C745A5E008745FF /* YLSelfStcocksViewController.xib in Resources */,
 				BC2BC5DC1C71CA740068A2C1 /* jfi_gold@2x.png in Resources */,
 				E886AFE61C701D2B009CC3A3 /* YLStockHostoryViewController.xib in Resources */,
 				BC2BC5DE1C71CA870068A2C1 /* dec_yqyl@2x.png in Resources */,
 				E886AFDA1C6F58DF009CC3A3 /* YLSimulatedBuyViewController.xib in Resources */,
+				BC9EE5B31C745C05008745FF /* YLjUSTStockTableViewCell.xib in Resources */,
 				E886AFC41C6D790C009CC3A3 /* YLMainViewController.xib in Resources */,
 				BC6199FC1C7321BF00A2FC18 /* mockstock_addred@3x.png in Resources */,
 				BC2BC5D81C71C9B70068A2C1 /* mockstock_user_selected@2x.png in Resources */,
@@ -717,8 +803,11 @@
 				E886AFEA1C702891009CC3A3 /* YLMarketIndex.m in Sources */,
 				BC6199F81C73200D00A2FC18 /* YLShowStcokTableViewCell.m in Sources */,
 				BC2BC5E51C71F7EC0068A2C1 /* YLJudgeStcok.m in Sources */,
+				BC9EE59C1C740121008745FF /* YLCrashDirectionViewController.m in Sources */,
+				BC9EE5B21C745C05008745FF /* YLjUSTStockTableViewCell.m in Sources */,
 				E886AFCD1C6F1445009CC3A3 /* YLSIghnStockMessageViewController.m in Sources */,
 				BC6199F01C73126400A2FC18 /* YLSearchStockViewController.m in Sources */,
+				BC9EE5A21C740F00008745FF /* YLJudgeStockViewController.m in Sources */,
 				BC2BC5D21C71A0D40068A2C1 /* YLNewsTableViewCell.m in Sources */,
 				E886AFA81C6C34C3009CC3A3 /* YLFastNewsModel.m in Sources */,
 				E886AFE51C701D2B009CC3A3 /* YLStockHostoryViewController.m in Sources */,
@@ -727,15 +816,18 @@
 				E886AFAE1C6C4799009CC3A3 /* YLStockValuation.m in Sources */,
 				E886AFC71C6D814F009CC3A3 /* ViewController.m in Sources */,
 				E8E2E9CF1C6BDC0C00C56ABC /* AppDelegate.m in Sources */,
+				BC9EE5AD1C745A5E008745FF /* YLSelfStcocksViewController.m in Sources */,
 				E8E2E9CC1C6BDC0C00C56ABC /* main.m in Sources */,
 				E886AFB41C6C56F3009CC3A3 /* YLStockNoticesModel.m in Sources */,
 				E886AFBD1C6D78B2009CC3A3 /* YLLetfViewController.m in Sources */,
 				BC6199DF1C72F1F200A2FC18 /* YLStockNewsViewController.m in Sources */,
 				E886AFD31C6F5037009CC3A3 /* YLSimulatedStockViewController.m in Sources */,
 				E886AFD91C6F58DF009CC3A3 /* YLSimulatedBuyViewController.m in Sources */,
+				BC9EE5A61C744537008745FF /* YLNsuserdefult.m in Sources */,
 				E886AFB71C6C5774009CC3A3 /* YLOnlyOneStockNewsModel.m in Sources */,
 				BC6199E41C72F87500A2FC18 /* YLStockNewsTableViewCell.m in Sources */,
 				BC6199F31C731D8E00A2FC18 /* YLHintView.m in Sources */,
+				BC9EE5961C73F6DE008745FF /* YLStockNoticeViewController.m in Sources */,
 				BC2BC5D61C71ACBA0068A2C1 /* YLTheFastNew.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

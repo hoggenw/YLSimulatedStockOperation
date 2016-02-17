@@ -258,6 +258,9 @@
                         <constraint firstAttribute="width" constant="60" id="ays-Pi-skU"/>
                     </constraints>
                     <state key="normal" backgroundImage="mockstock_user_selected.png"/>
+                    <connections>
+                        <action selector="selfButtonAction:" destination="-1" eventType="touchUpInside" id="XBH-Qa-Wqu"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GaI-Hd-8JS">
                     <rect key="frame" x="10" y="530" width="60" height="50"/>

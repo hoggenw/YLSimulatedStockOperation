@@ -15,6 +15,7 @@
 #import "YLFastNewsModel.h"
 #import "YLSIghnStockMessageViewController.h"
 #import "YLSearchStockViewController.h"
+#import "YLSelfStcocksViewController.h"
 @interface YLMainViewController ()<UIGestureRecognizerDelegate,UITableViewDelegate,UITableViewDataSource>{
     NSTimer *maketTimer;
     NSMutableArray *dataArray;
@@ -81,6 +82,11 @@
 - (IBAction)searchStock:(UIButton *)sender {
     YLSearchStockViewController *searchVC=[[YLSearchStockViewController alloc]init];
     [self.navigationController pushViewController:searchVC animated:YES];
+}
+/**自选股回调方法*/
+- (IBAction)selfButtonAction:(UIButton *)sender {
+    YLSelfStcocksViewController *selfStcoksVC=[[YLSelfStcocksViewController alloc]init];
+    [self.navigationController pushViewController:selfStcoksVC animated:YES];
 }
 
 /**

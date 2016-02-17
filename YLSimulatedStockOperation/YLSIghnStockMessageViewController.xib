@@ -287,6 +287,9 @@
                     <state key="normal" title="公告">
                         <color key="titleColor" red="1" green="0.87626836119999996" blue="0.1775257539" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
+                    <connections>
+                        <action selector="tellButton:" destination="-1" eventType="touchUpInside" id="3XE-SS-gCm"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2XQ-fk-Fdg">
                     <rect key="frame" x="301" y="560" width="149" height="40"/>
@@ -294,6 +297,9 @@
                     <state key="normal" title="资金流向">
                         <color key="titleColor" red="1" green="0.87626836119999996" blue="0.1775257539" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
+                    <connections>
+                        <action selector="crashButton:" destination="-1" eventType="touchUpInside" id="fyg-TP-Mfj"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IPZ-Iv-5dl">
                     <rect key="frame" x="451" y="560" width="149" height="40"/>
@@ -301,6 +307,9 @@
                     <state key="normal" title="盘口分析">
                         <color key="titleColor" red="1" green="0.87626836119999996" blue="0.1775257539" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
+                    <connections>
+                        <action selector="analysisButton:" destination="-1" eventType="touchUpInside" id="FL1-9Q-hqQ"/>
+                    </connections>
                 </button>
                 <button opaque="NO" tag="303" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jrf-x3-2ZD">
                     <rect key="frame" x="451" y="145" width="149" height="40"/>

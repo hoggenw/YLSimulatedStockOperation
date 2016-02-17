@@ -18,4 +18,20 @@
  *  请求股票新闻
  */
 -(void)requestStockNews:(NSString *)urlString;
+/**
+ *  请求股票公告
+ */
+-(void)requestStockNotice:(NSString *)urlString;
+/**
+ *  请求股票资金数据
+ */
+-(void)requestStockCrashData:(NSString *)urlString;
+/**
+ *  请求股票盘口数据
+ */
+-(void)requestStockJudegeDatas:(NSString *)urlsting;
+/**
+ *  请求评价数据
+ */
+-(void)requestJudgeStock:(NSString *)urlString;
 @end

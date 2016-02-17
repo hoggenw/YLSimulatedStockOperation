@@ -11,6 +11,10 @@
 #import "YLSignStcokMessageRequest.h"
 #import "YLStockNewsViewController.h"
 #import "YLStockNewsViewController.h"
+#import "YLStockNoticeViewController.h"
+#import "YLCrashDirectionViewController.h"
+#import "YLJudgeStockViewController.h"
+#import "YLSimulatedBuyViewController.h"
 @interface YLSIghnStockMessageViewController (){
     NSTimer *firstTimer;
     NSTimer *secondeTimer;
@@ -46,7 +50,19 @@
     firstTimer=[NSTimer scheduledTimerWithTimeInterval:10 target:self selector:@selector(dealStockMessage) userInfo:nil repeats:YES];
     firstTimer.fireDate=[NSDate distantPast];
     [self getPictureShow:nil];
-    //[self judgeIfMarketIndex];
+     [self customTabBarButtonTitle:@"模拟买入" image:nil target:self action:@selector(onRightClicked:)  isLeft:NO];
+    [self judgeIfMarketIndex];
+}
+-(void)onRightClicked:(UIButton*)sender{
+    if ([YLNsuserdefult judgeStockIsExist:_stockNumber]) {
+        
+    }else{
+        [YLNsuserdefult saveSelfChioceStock:_stockNumber forKey:@"selfStocks"];
+    }
+    YLSimulatedBuyViewController *simulateVC=[[YLSimulatedBuyViewController alloc]init];
+    simulateVC.selfTitle=self.title;
+    simulateVC.stockNumber=_stockNumber;
+    [self.navigationController pushViewController:simulateVC animated:YES];
 }
 /**新闻按钮回调方法*/
 - (IBAction)getStockNews:(UIButton *)sender {
@@ -58,7 +74,38 @@
     }
     [self.navigationController pushViewController:stockNewsVC animated:YES];
 }
-
+/**公告按钮回调方法*/
+- (IBAction)tellButton:(UIButton *)sender {
+    YLStockNoticeViewController *stockNoticeVC=[[YLStockNoticeViewController alloc]init];
+    if (_stockNumber) {
+        stockNoticeVC.stockNumber=[YLJudgeStcok judgeStockAndDeal:_stockNumber];
+        stockNoticeVC.selfTitle=self.title;
+    }
+    [self.navigationController pushViewController:stockNoticeVC animated:YES];
+}
+/**
+ *  资金流向回调
+ */
+- (IBAction)crashButton:(UIButton *)sender {
+    YLCrashDirectionViewController *crashVC=[[YLCrashDirectionViewController alloc]init];
+    if (_stockNumber) {
+        crashVC.stockNumber=[YLJudgeStcok judgeStockAndDeal:_stockNumber];
+        crashVC.selfTitle=self.title;
+    }
+    [self.navigationController pushViewController:crashVC animated:YES];
+    
+}
+/**
+ *  盘口分析回调
+ */
+- (IBAction)analysisButton:(UIButton *)sender {
+    YLJudgeStockViewController *judgeVC=[[YLJudgeStockViewController alloc]init];
+    if (_stockNumber) {
+       judgeVC.stockNumber=[YLJudgeStcok judgeStockAndDeal:_stockNumber];
+        judgeVC.selfTitle=self.title;
+    }
+    [self.navigationController pushViewController:judgeVC animated:YES];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -71,16 +118,32 @@
         NSString  *stcokString=[YLJudgeStcok judgeStockAndDeal:_stockNumber];
         if ([stcokString isEqualToString:@"sh000001"]||[stcokString isEqualToString:@"sz399006"]||[stcokString isEqualToString:@"sz399001"]) {
             _newsButton.enabled=NO;
+            [_newsButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
             _tellButton.enabled=NO;
+              [_tellButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
             _crashButton.enabled=NO;
+              [_crashButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
             _analysisButton.enabled=NO;
+              [_analysisButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+            UIBarButtonItem * rightItem = self.navigationItem.rightBarButtonItem;
+            UIButton * button = rightItem.customView;
+            button.enabled=NO;
+           
         }else{
             _newsButton.enabled=YES;
+            [_newsButton setTitleColor:[UIColor yellowColor] forState:UIControlStateNormal];
             _tellButton.enabled=YES;
+            [_tellButton setTitleColor:[UIColor yellowColor] forState:UIControlStateNormal];
             _crashButton.enabled=YES;
+            [_crashButton setTitleColor:[UIColor yellowColor] forState:UIControlStateNormal];
             _analysisButton.enabled=YES;
+            [_analysisButton setTitleColor:[UIColor yellowColor] forState:UIControlStateNormal];
+            UIBarButtonItem * rightItem = self.navigationItem.rightBarButtonItem;
+            UIButton * button = rightItem.customView;
+            button.enabled=YES;
         }
     }
+    
 }
 /**
  *  进入个股信息页面处理数据
@@ -111,7 +174,7 @@
         _openPrice5.text=[NSString stringWithFormat:@"开:%@" ,array[5]];
         NSString *total=array[37];
         CGFloat dTotal=[total doubleValue]/10000.0;
-        _tradeTotol37.text=[NSString stringWithFormat:@"额:%.0lf亿" ,dTotal];
+        _tradeTotol37.text=[NSString stringWithFormat:@"额:%.2lf亿" ,dTotal];
         _chageTrade38.text=[NSString stringWithFormat:@"换:%@" ,array[38]];
         _PE39.text=[NSString stringWithFormat:@"市盈:%@" ,array[39]];
         _PB46.text=[NSString stringWithFormat:@"市净:%@" ,array[46]];
@@ -178,6 +241,28 @@
     if(secondeTimer){
         [secondeTimer invalidate];
         secondeTimer=nil;
+    }
+}
+/**
+ *  设置右边项
+ */
+-(void)customTabBarButtonTitle:(NSString *)title image:(NSString *)imageName target:(id)taget action:(SEL)selector isLeft:(BOOL)isLeft{
+    UIButton *button=[UIButton buttonWithType:UIButtonTypeSystem];
+    [button setBackgroundImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
+    [button setTitle:title forState:UIControlStateNormal];
+    [button addTarget:taget action:selector forControlEvents:UIControlEventTouchDown];
+    button.frame=CGRectMake(0, 0, 65, 30);
+    button.tag=500;
+    [button setBackgroundColor:[UIColor lightGrayColor]];
+    button.layer.cornerRadius=5;
+    button.clipsToBounds=YES;
+    button.titleLabel.font=[UIFont boldSystemFontOfSize:16];
+    //判断是否为左侧按钮
+    UIBarButtonItem *buttonItem=[[UIBarButtonItem alloc]initWithCustomView:button];
+    if (isLeft) {
+        self.navigationItem.leftBarButtonItem=buttonItem;
+    }else{
+        self.navigationItem.rightBarButtonItem=buttonItem;
     }
 }
 @end

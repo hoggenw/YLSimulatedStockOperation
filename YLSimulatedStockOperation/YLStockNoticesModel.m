@@ -9,5 +9,7 @@
 #import "YLStockNoticesModel.h"
 
 @implementation YLStockNoticesModel
-
+-(void)setValue:(id)value forUndefinedKey:(NSString *)key{
+    //
+}
 @end

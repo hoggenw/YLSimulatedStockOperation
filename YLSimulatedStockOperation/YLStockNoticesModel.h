@@ -10,7 +10,9 @@
 
 @interface YLStockNoticesModel : NSObject
 
-@property (nonatomic, copy) NSString *id;
+/**
+ *  新闻公告模型
+ */
 
 @property (nonatomic, copy) NSString *title;
 
