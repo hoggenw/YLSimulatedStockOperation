@@ -14,6 +14,7 @@
 @interface YLSelfStcocksViewController ()<UITableViewDataSource,UITableViewDelegate>{
     NSMutableArray *dataArray;
     NSTimer *timer;
+    NSArray *certerArray;
 }
 @property (weak, nonatomic) IBOutlet UITableView *myTableView;
 
@@ -44,13 +45,12 @@
 }
 /**加载数据*/
 -(void)loadData{
+    
     if (!dataArray) {
         dataArray=[NSMutableArray array];
     }else{
-        dataArray=nil;
-        dataArray=[NSMutableArray array];
+       [dataArray removeAllObjects];
     }
-    
      NSArray *array=[NSArray arrayWithArray:[YLNsuserdefult getSelfStocksForKey:@"selfStocks"]];
     if (array.count==0) {
        [MBProgressHUD hideAllHUDsForView:_myTableView animated:YES]; 
@@ -61,7 +61,8 @@
         newGet.needModel=^(YLMarketIndexModel *model){
             [dataArray addObject:model];
             dispatch_async(dispatch_get_main_queue(), ^{
-                    [weakSelf.myTableView  reloadData];
+                certerArray=dataArray;
+                [weakSelf.myTableView  reloadData];
                 [MBProgressHUD hideAllHUDsForView:_myTableView animated:YES];
             });
             
@@ -90,7 +91,7 @@
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     YLSIghnStockMessageViewController *signDogVc=[[YLSIghnStockMessageViewController alloc]init];
-    YLMarketIndexModel *model=dataArray[indexPath.row];
+    YLMarketIndexModel *model=certerArray[indexPath.row];
     signDogVc.stockNumber=model.stockNumber;
     [self.navigationController pushViewController:signDogVc animated:YES];
     

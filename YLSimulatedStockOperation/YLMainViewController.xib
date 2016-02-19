@@ -291,6 +291,9 @@
                         <constraint firstAttribute="height" constant="50" id="ux5-st-cqD"/>
                     </constraints>
                     <state key="normal" backgroundImage="jfi_gold.png"/>
+                    <connections>
+                        <action selector="simulateButton:" destination="-1" eventType="touchUpInside" id="res-5h-E5e"/>
+                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="行情动态" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SMg-4Y-CvN">
                     <rect key="frame" x="-20" y="580" width="120" height="20"/>

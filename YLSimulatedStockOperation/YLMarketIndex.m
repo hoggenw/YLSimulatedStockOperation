@@ -27,19 +27,29 @@
             NSString *useString=array[1];
             
             NSArray *modelArray=[useString componentsSeparatedByString:@","];
-            indexModel.marketName=modelArray[0];
-            indexModel.marketCount=modelArray[1];
-            indexModel.marketChange=modelArray[2];
-            indexModel.changePercent=modelArray[3];
+            if (modelArray.count>=4) {
+                indexModel.marketName=modelArray[0];
+                indexModel.marketCount=modelArray[1];
+                indexModel.marketChange=modelArray[2];
+                indexModel.changePercent=modelArray[3];
+            }else{
+                
+            }
             if (_needModel) {
                 _needModel(indexModel);
               
             }
         }else{
-            
+            if (_needModel) {
+                _needModel(indexModel);
+                
+            }
         }
         }else{
-            
+            if (_needModel) {
+                _needModel(indexModel);
+                
+            }
         }
         
     }];

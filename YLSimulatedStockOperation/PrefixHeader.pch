@@ -16,4 +16,6 @@
 #import "YLHintView.h"
 #import "YLJudgeStcok.h"
 #import "YLNsuserdefult.h"
+#import <FMDB.h>
+#import "YLDataManager.h"
 #endif

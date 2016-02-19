@@ -50,4 +50,19 @@
     [userDef setObject:stock  forKey:keyString];
     [userDef synchronize];
 }
+/**
+ *  存入剩余资金
+ */
++(void)saveMoney:(NSInteger)money UserForKey:(NSString *)keyString{
+    NSUserDefaults *userDef=[NSUserDefaults standardUserDefaults];
+    [userDef setInteger:money forKey:keyString];
+       [userDef synchronize];
+}
+/**
+ *  取出剩余资金
+ */
++(NSInteger)getMoneyUserForKey:(NSString *)keyString{
+    NSUserDefaults *userDef=[NSUserDefaults standardUserDefaults];
+    return [userDef integerForKey:keyString];
+}
 @end

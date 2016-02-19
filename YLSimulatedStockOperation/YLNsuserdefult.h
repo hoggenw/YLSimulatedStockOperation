@@ -28,4 +28,12 @@
  *  存自选股数组
  */
 +(void)saveSelfStocks:(NSArray*)stock forKey:(NSString *)keyString;
+/**
+ *  存入剩余资金
+ */
++(void)saveMoney:(NSInteger)money UserForKey:(NSString *)keyString;
+/**
+ *  取出剩余资金
+ */
++(NSInteger)getMoneyUserForKey:(NSString *)keyString;
 @end

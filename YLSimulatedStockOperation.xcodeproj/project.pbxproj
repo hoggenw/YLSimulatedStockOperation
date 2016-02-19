@@ -31,6 +31,12 @@
 		BC6199F81C73200D00A2FC18 /* YLShowStcokTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6199F61C73200D00A2FC18 /* YLShowStcokTableViewCell.m */; };
 		BC6199F91C73200D00A2FC18 /* YLShowStcokTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC6199F71C73200D00A2FC18 /* YLShowStcokTableViewCell.xib */; };
 		BC6199FC1C7321BF00A2FC18 /* mockstock_addred@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC6199FB1C7321BF00A2FC18 /* mockstock_addred@3x.png */; };
+		BC71D4301C75EA9D000BEE9B /* YLArrayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BC71D42F1C75EA9D000BEE9B /* YLArrayModel.m */; };
+		BC8700EF1C754ED80024884E /* YLDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8700EE1C754ED80024884E /* YLDataManager.m */; };
+		BC8700F21C7550240024884E /* YLBuyStockModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8700F11C7550240024884E /* YLBuyStockModel.m */; };
+		BC8700F51C75615A0024884E /* haveNotBuy.png in Resources */ = {isa = PBXBuildFile; fileRef = BC8700F41C75615A0024884E /* haveNotBuy.png */; };
+		BC8700F91C7565850024884E /* YLDealStockTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8700F71C7565850024884E /* YLDealStockTableViewCell.m */; };
+		BC8700FA1C7565850024884E /* YLDealStockTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC8700F81C7565850024884E /* YLDealStockTableViewCell.xib */; };
 		BC9EE5961C73F6DE008745FF /* YLStockNoticeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC9EE5941C73F6DE008745FF /* YLStockNoticeViewController.m */; };
 		BC9EE5971C73F6DE008745FF /* YLStockNoticeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC9EE5951C73F6DE008745FF /* YLStockNoticeViewController.xib */; };
 		BC9EE59C1C740121008745FF /* YLCrashDirectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC9EE59A1C740121008745FF /* YLCrashDirectionViewController.m */; };
@@ -47,7 +53,6 @@
 		E886AFAE1C6C4799009CC3A3 /* YLStockValuation.m in Sources */ = {isa = PBXBuildFile; fileRef = E886AFAD1C6C4799009CC3A3 /* YLStockValuation.m */; };
 		E886AFB11C6C56AC009CC3A3 /* YLStockNewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E886AFB01C6C56AC009CC3A3 /* YLStockNewsModel.m */; };
 		E886AFB41C6C56F3009CC3A3 /* YLStockNoticesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E886AFB31C6C56F3009CC3A3 /* YLStockNoticesModel.m */; };
-		E886AFB71C6C5774009CC3A3 /* YLOnlyOneStockNewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E886AFB61C6C5774009CC3A3 /* YLOnlyOneStockNewsModel.m */; };
 		E886AFBD1C6D78B2009CC3A3 /* YLLetfViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E886AFBB1C6D78B2009CC3A3 /* YLLetfViewController.m */; };
 		E886AFBE1C6D78B2009CC3A3 /* YLLetfViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E886AFBC1C6D78B2009CC3A3 /* YLLetfViewController.xib */; };
 		E886AFC31C6D790C009CC3A3 /* YLMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E886AFC11C6D790C009CC3A3 /* YLMainViewController.m */; };
@@ -126,6 +131,16 @@
 		BC6199F61C73200D00A2FC18 /* YLShowStcokTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLShowStcokTableViewCell.m; sourceTree = "<group>"; };
 		BC6199F71C73200D00A2FC18 /* YLShowStcokTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YLShowStcokTableViewCell.xib; sourceTree = "<group>"; };
 		BC6199FB1C7321BF00A2FC18 /* mockstock_addred@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mockstock_addred@3x.png"; sourceTree = "<group>"; };
+		BC71D42E1C75EA9D000BEE9B /* YLArrayModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLArrayModel.h; sourceTree = "<group>"; };
+		BC71D42F1C75EA9D000BEE9B /* YLArrayModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLArrayModel.m; sourceTree = "<group>"; };
+		BC8700ED1C754ED80024884E /* YLDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLDataManager.h; sourceTree = "<group>"; };
+		BC8700EE1C754ED80024884E /* YLDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLDataManager.m; sourceTree = "<group>"; };
+		BC8700F01C7550240024884E /* YLBuyStockModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLBuyStockModel.h; sourceTree = "<group>"; };
+		BC8700F11C7550240024884E /* YLBuyStockModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLBuyStockModel.m; sourceTree = "<group>"; };
+		BC8700F41C75615A0024884E /* haveNotBuy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = haveNotBuy.png; sourceTree = "<group>"; };
+		BC8700F61C7565850024884E /* YLDealStockTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLDealStockTableViewCell.h; sourceTree = "<group>"; };
+		BC8700F71C7565850024884E /* YLDealStockTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLDealStockTableViewCell.m; sourceTree = "<group>"; };
+		BC8700F81C7565850024884E /* YLDealStockTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YLDealStockTableViewCell.xib; sourceTree = "<group>"; };
 		BC9EE5931C73F6DE008745FF /* YLStockNoticeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLStockNoticeViewController.h; sourceTree = "<group>"; };
 		BC9EE5941C73F6DE008745FF /* YLStockNoticeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLStockNoticeViewController.m; sourceTree = "<group>"; };
 		BC9EE5951C73F6DE008745FF /* YLStockNoticeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YLStockNoticeViewController.xib; sourceTree = "<group>"; };
@@ -154,8 +169,6 @@
 		E886AFB01C6C56AC009CC3A3 /* YLStockNewsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLStockNewsModel.m; sourceTree = "<group>"; };
 		E886AFB21C6C56F3009CC3A3 /* YLStockNoticesModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLStockNoticesModel.h; sourceTree = "<group>"; };
 		E886AFB31C6C56F3009CC3A3 /* YLStockNoticesModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLStockNoticesModel.m; sourceTree = "<group>"; };
-		E886AFB51C6C5774009CC3A3 /* YLOnlyOneStockNewsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLOnlyOneStockNewsModel.h; sourceTree = "<group>"; };
-		E886AFB61C6C5774009CC3A3 /* YLOnlyOneStockNewsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLOnlyOneStockNewsModel.m; sourceTree = "<group>"; };
 		E886AFBA1C6D78B2009CC3A3 /* YLLetfViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLLetfViewController.h; sourceTree = "<group>"; };
 		E886AFBB1C6D78B2009CC3A3 /* YLLetfViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLLetfViewController.m; sourceTree = "<group>"; };
 		E886AFBC1C6D78B2009CC3A3 /* YLLetfViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YLLetfViewController.xib; sourceTree = "<group>"; };
@@ -294,6 +307,23 @@
 			name = "个人股票页面";
 			sourceTree = "<group>";
 		};
+		BC8700EC1C754EAB0024884E /* dataManager */ = {
+			isa = PBXGroup;
+			children = (
+				BC8700ED1C754ED80024884E /* YLDataManager.h */,
+				BC8700EE1C754ED80024884E /* YLDataManager.m */,
+			);
+			name = dataManager;
+			sourceTree = "<group>";
+		};
+		BC8700F31C75614F0024884E /* 模拟器页面 */ = {
+			isa = PBXGroup;
+			children = (
+				BC8700F41C75615A0024884E /* haveNotBuy.png */,
+			);
+			name = "模拟器页面";
+			sourceTree = "<group>";
+		};
 		BC9EE5921C73F6B1008745FF /* 股票公告页面 */ = {
 			isa = PBXGroup;
 			children = (
@@ -423,6 +453,7 @@
 		E886AFDB1C7006EB009CC3A3 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				BC8700F31C75614F0024884E /* 模拟器页面 */,
 				BC6199FA1C7321B000A2FC18 /* 个人股票页面 */,
 				E886AFDC1C700705009CC3A3 /* 主页面 */,
 			);
@@ -486,6 +517,9 @@
 				BC9EE5AF1C745C05008745FF /* YLjUSTStockTableViewCell.h */,
 				BC9EE5B01C745C05008745FF /* YLjUSTStockTableViewCell.m */,
 				BC9EE5B11C745C05008745FF /* YLjUSTStockTableViewCell.xib */,
+				BC8700F61C7565850024884E /* YLDealStockTableViewCell.h */,
+				BC8700F71C7565850024884E /* YLDealStockTableViewCell.m */,
+				BC8700F81C7565850024884E /* YLDealStockTableViewCell.xib */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -503,8 +537,10 @@
 				E886AFB01C6C56AC009CC3A3 /* YLStockNewsModel.m */,
 				E886AFB21C6C56F3009CC3A3 /* YLStockNoticesModel.h */,
 				E886AFB31C6C56F3009CC3A3 /* YLStockNoticesModel.m */,
-				E886AFB51C6C5774009CC3A3 /* YLOnlyOneStockNewsModel.h */,
-				E886AFB61C6C5774009CC3A3 /* YLOnlyOneStockNewsModel.m */,
+				BC8700F01C7550240024884E /* YLBuyStockModel.h */,
+				BC8700F11C7550240024884E /* YLBuyStockModel.m */,
+				BC71D42E1C75EA9D000BEE9B /* YLArrayModel.h */,
+				BC71D42F1C75EA9D000BEE9B /* YLArrayModel.m */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -544,6 +580,7 @@
 		E8E2E9C91C6BDC0C00C56ABC /* YLSimulatedStockOperation */ = {
 			isa = PBXGroup;
 			children = (
+				BC8700EC1C754EAB0024884E /* dataManager */,
 				BC2BC5E21C71F7790068A2C1 /* Utility */,
 				E886AFDB1C7006EB009CC3A3 /* Resource */,
 				E886AFB91C6D783E009CC3A3 /* appDele */,
@@ -714,11 +751,13 @@
 				BC2BC5DE1C71CA870068A2C1 /* dec_yqyl@2x.png in Resources */,
 				E886AFDA1C6F58DF009CC3A3 /* YLSimulatedBuyViewController.xib in Resources */,
 				BC9EE5B31C745C05008745FF /* YLjUSTStockTableViewCell.xib in Resources */,
+				BC8700F51C75615A0024884E /* haveNotBuy.png in Resources */,
 				E886AFC41C6D790C009CC3A3 /* YLMainViewController.xib in Resources */,
 				BC6199FC1C7321BF00A2FC18 /* mockstock_addred@3x.png in Resources */,
 				BC2BC5D81C71C9B70068A2C1 /* mockstock_user_selected@2x.png in Resources */,
 				E886AFE01C70109B009CC3A3 /* niu_hos.png in Resources */,
 				E886AFBE1C6D78B2009CC3A3 /* YLLetfViewController.xib in Resources */,
+				BC8700FA1C7565850024884E /* YLDealStockTableViewCell.xib in Resources */,
 				E8E2E9DA1C6BDC0C00C56ABC /* LaunchScreen.storyboard in Resources */,
 				BC2BC5CE1C7176570068A2C1 /* fenlan.png in Resources */,
 				BC2BC5E01C71CE2E0068A2C1 /* 612_mine_sel@2x.png in Resources */,
@@ -803,6 +842,7 @@
 				E886AFEA1C702891009CC3A3 /* YLMarketIndex.m in Sources */,
 				BC6199F81C73200D00A2FC18 /* YLShowStcokTableViewCell.m in Sources */,
 				BC2BC5E51C71F7EC0068A2C1 /* YLJudgeStcok.m in Sources */,
+				BC71D4301C75EA9D000BEE9B /* YLArrayModel.m in Sources */,
 				BC9EE59C1C740121008745FF /* YLCrashDirectionViewController.m in Sources */,
 				BC9EE5B21C745C05008745FF /* YLjUSTStockTableViewCell.m in Sources */,
 				E886AFCD1C6F1445009CC3A3 /* YLSIghnStockMessageViewController.m in Sources */,
@@ -814,17 +854,19 @@
 				BC6199EA1C73074D00A2FC18 /* YLDetailNewsViewController.m in Sources */,
 				E886AFB11C6C56AC009CC3A3 /* YLStockNewsModel.m in Sources */,
 				E886AFAE1C6C4799009CC3A3 /* YLStockValuation.m in Sources */,
+				BC8700F91C7565850024884E /* YLDealStockTableViewCell.m in Sources */,
 				E886AFC71C6D814F009CC3A3 /* ViewController.m in Sources */,
 				E8E2E9CF1C6BDC0C00C56ABC /* AppDelegate.m in Sources */,
+				BC8700EF1C754ED80024884E /* YLDataManager.m in Sources */,
 				BC9EE5AD1C745A5E008745FF /* YLSelfStcocksViewController.m in Sources */,
 				E8E2E9CC1C6BDC0C00C56ABC /* main.m in Sources */,
 				E886AFB41C6C56F3009CC3A3 /* YLStockNoticesModel.m in Sources */,
 				E886AFBD1C6D78B2009CC3A3 /* YLLetfViewController.m in Sources */,
+				BC8700F21C7550240024884E /* YLBuyStockModel.m in Sources */,
 				BC6199DF1C72F1F200A2FC18 /* YLStockNewsViewController.m in Sources */,
 				E886AFD31C6F5037009CC3A3 /* YLSimulatedStockViewController.m in Sources */,
 				E886AFD91C6F58DF009CC3A3 /* YLSimulatedBuyViewController.m in Sources */,
 				BC9EE5A61C744537008745FF /* YLNsuserdefult.m in Sources */,
-				E886AFB71C6C5774009CC3A3 /* YLOnlyOneStockNewsModel.m in Sources */,
 				BC6199E41C72F87500A2FC18 /* YLStockNewsTableViewCell.m in Sources */,
 				BC6199F31C731D8E00A2FC18 /* YLHintView.m in Sources */,
 				BC9EE5961C73F6DE008745FF /* YLStockNoticeViewController.m in Sources */,

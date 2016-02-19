@@ -19,6 +19,7 @@
     NSTimer *firstTimer;
     NSTimer *secondeTimer;
     NSString *pictureURLString;
+    NSString *tockPrice;
 }
 /**基本信息更新的视图*/
 @property (weak, nonatomic) IBOutlet UILabel *costNumber3;
@@ -62,6 +63,7 @@
     YLSimulatedBuyViewController *simulateVC=[[YLSimulatedBuyViewController alloc]init];
     simulateVC.selfTitle=self.title;
     simulateVC.stockNumber=_stockNumber;
+    simulateVC.price=tockPrice;
     [self.navigationController pushViewController:simulateVC animated:YES];
 }
 /**新闻按钮回调方法*/
@@ -167,6 +169,7 @@
     if (array.count>=48) {
         self.title=array[1];
         _costNumber3.text=array[3];
+        tockPrice=array[3];
         _changCount31.text=array[31];
         _changePercent32.text=array[32];
         _mostHigh33.text=[NSString stringWithFormat:@"高:%@" ,array[33]];

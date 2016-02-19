@@ -8,6 +8,8 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YLSimulatedBuyViewController">
             <connections>
                 <outlet property="againLabel2" destination="pmX-75-YKA" id="pt0-YL-pwX"/>
+                <outlet property="buyNumber" destination="cL3-sn-2sY" id="Nma-LW-7Aw"/>
+                <outlet property="explain" destination="AUz-ao-sFc" id="TCn-tZ-UCr"/>
                 <outlet property="labal28" destination="KdQ-No-ibI" id="9ES-1F-wLz"/>
                 <outlet property="label10" destination="BB9-ms-pxd" id="TzQ-l2-Lnt"/>
                 <outlet property="label11" destination="4ei-mf-pfR" id="ksd-yz-lWq"/>
@@ -38,6 +40,8 @@
                 <outlet property="label5" destination="PJd-wm-j3O" id="Xlh-RC-qZ1"/>
                 <outlet property="label9" destination="Djk-Vl-Dsf" id="2ew-bJ-4ne"/>
                 <outlet property="lable3" destination="LQY-4N-9tF" id="Xv0-eJ-szD"/>
+                <outlet property="numberStepper" destination="fKL-9b-9ZJ" id="lNy-ug-fC9"/>
+                <outlet property="priceStepper" destination="dCw-Ec-DTu" id="fDH-Sn-Y2Y"/>
                 <outlet property="stockNameLabel" destination="Vi7-12-4K3" id="mtH-RI-k6g"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -60,7 +64,7 @@
                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m5e-1a-RkM">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m5e-1a-RkM">
                             <rect key="frame" x="100" y="10" width="490" height="25"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
@@ -82,7 +86,7 @@
                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LQY-4N-9tF">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LQY-4N-9tF">
                             <rect key="frame" x="100" y="39" width="380" height="25"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
@@ -93,8 +97,11 @@
                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="dCw-Ec-DTu">
+                        <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.01" minimumValue="0.01" maximumValue="1000" stepValue="0.01" translatesAutoresizingMaskIntoConstraints="NO" id="dCw-Ec-DTu">
                             <rect key="frame" x="496" y="37" width="94" height="29"/>
+                            <connections>
+                                <action selector="priceStepper:" destination="-1" eventType="valueChanged" id="5pG-zR-OZg"/>
+                            </connections>
                         </stepper>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="数量(股)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eVz-Jp-Xdy">
                             <rect key="frame" x="10" y="61" width="70" height="25"/>
@@ -110,7 +117,7 @@
                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cL3-sn-2sY">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cL3-sn-2sY">
                             <rect key="frame" x="100" y="65" width="380" height="25"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
@@ -122,13 +129,7 @@
                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="207-ef-PeT">
-                            <rect key="frame" x="496" y="66" width="94" height="29"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="25" id="8hV-ig-qSz"/>
-                            </constraints>
-                        </stepper>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="资金和可买入古数量的说明" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AUz-ao-sFc">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="资金和可买入古数量的说明" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AUz-ao-sFc">
                             <rect key="frame" x="10" y="95" width="580" height="25"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="25" id="Wyl-xu-V8Q"/>
@@ -137,6 +138,12 @@
                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                             <nil key="highlightedColor"/>
                         </label>
+                        <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="100" minimumValue="100" maximumValue="50000" stepValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="fKL-9b-9ZJ">
+                            <rect key="frame" x="496" y="69" width="94" height="29"/>
+                            <connections>
+                                <action selector="numberStepperAction:" destination="-1" eventType="valueChanged" id="YRP-wV-8Mn"/>
+                            </connections>
+                        </stepper>
                     </subviews>
                     <color key="backgroundColor" red="0.83725920099999995" green="1" blue="0.2415751663" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
@@ -146,13 +153,14 @@
                         <constraint firstItem="m5e-1a-RkM" firstAttribute="top" secondItem="l0a-El-Y33" secondAttribute="top" constant="10" id="4QI-os-aGh"/>
                         <constraint firstItem="db6-9j-R2d" firstAttribute="leading" secondItem="l0a-El-Y33" secondAttribute="leading" constant="10" id="5aV-4t-lwy"/>
                         <constraint firstItem="eVz-Jp-Xdy" firstAttribute="top" secondItem="db6-9j-R2d" secondAttribute="bottom" id="793-1j-wtr"/>
-                        <constraint firstItem="207-ef-PeT" firstAttribute="top" secondItem="dCw-Ec-DTu" secondAttribute="bottom" id="7Wb-Sg-qO9"/>
                         <constraint firstItem="dCw-Ec-DTu" firstAttribute="centerY" secondItem="LQY-4N-9tF" secondAttribute="centerY" id="7l4-60-VOX"/>
                         <constraint firstItem="LQY-4N-9tF" firstAttribute="leading" secondItem="db6-9j-R2d" secondAttribute="trailing" constant="20" id="9XI-om-sTt"/>
                         <constraint firstAttribute="trailing" secondItem="AUz-ao-sFc" secondAttribute="trailing" constant="10" id="G4B-8o-9lD"/>
+                        <constraint firstItem="fKL-9b-9ZJ" firstAttribute="top" secondItem="dCw-Ec-DTu" secondAttribute="bottom" constant="3" id="Mqb-vv-hog"/>
                         <constraint firstItem="AUz-ao-sFc" firstAttribute="leading" secondItem="l0a-El-Y33" secondAttribute="leading" constant="10" id="N2w-aS-3PD"/>
                         <constraint firstItem="cL3-sn-2sY" firstAttribute="leading" secondItem="eVz-Jp-Xdy" secondAttribute="trailing" constant="20" id="NVd-If-XV3"/>
                         <constraint firstItem="m5e-1a-RkM" firstAttribute="leading" secondItem="Vi7-12-4K3" secondAttribute="trailing" id="NqN-tm-fXV"/>
+                        <constraint firstAttribute="trailing" secondItem="fKL-9b-9ZJ" secondAttribute="trailing" constant="10" id="P2f-21-xUt"/>
                         <constraint firstItem="m5e-1a-RkM" firstAttribute="leading" secondItem="Vi7-12-4K3" secondAttribute="trailing" constant="20" id="QTh-n5-Js6"/>
                         <constraint firstAttribute="trailing" secondItem="cL3-sn-2sY" secondAttribute="trailing" constant="120" id="Tii-xw-b82"/>
                         <constraint firstAttribute="trailing" secondItem="LQY-4N-9tF" secondAttribute="trailing" constant="120" id="Vrc-xi-bgF"/>
@@ -160,7 +168,6 @@
                         <constraint firstAttribute="height" constant="120" id="YpS-eP-H1c"/>
                         <constraint firstItem="Vi7-12-4K3" firstAttribute="leading" secondItem="l0a-El-Y33" secondAttribute="leading" constant="10" id="cAg-oj-SR8"/>
                         <constraint firstAttribute="trailing" secondItem="m5e-1a-RkM" secondAttribute="trailing" constant="10" id="dFe-Ft-ZZq"/>
-                        <constraint firstAttribute="trailing" secondItem="207-ef-PeT" secondAttribute="trailing" constant="10" id="dhE-s2-ctw"/>
                         <constraint firstAttribute="bottom" secondItem="AUz-ao-sFc" secondAttribute="bottom" id="esc-dz-qwH"/>
                         <constraint firstItem="db6-9j-R2d" firstAttribute="top" secondItem="Vi7-12-4K3" secondAttribute="bottom" constant="1" id="exY-2f-Rjc"/>
                         <constraint firstItem="Vi7-12-4K3" firstAttribute="top" secondItem="l0a-El-Y33" secondAttribute="top" constant="10" id="kPK-0y-n4D"/>
@@ -183,6 +190,9 @@
                     <state key="normal" title="买入下单">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="buyInOrderAction:" destination="-1" eventType="touchUpInside" id="fyc-xg-Hee"/>
+                    </connections>
                 </button>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HeK-9y-EuO">
                     <rect key="frame" x="0.0" y="229" width="600" height="371"/>
@@ -423,12 +433,6 @@
                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PJd-wm-j3O">
-                            <rect key="frame" x="57" y="166" width="237" height="17"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <color key="textColor" red="0.19432192679999999" green="0.86939626960000005" blue="0.047789106409999997" alpha="1" colorSpace="calibratedRGB"/>
-                            <nil key="highlightedColor"/>
-                        </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="昨收：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="krm-r4-bqP">
                             <rect key="frame" x="5" y="186" width="42" height="17"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -493,6 +497,12 @@
                             <rect key="frame" x="586" y="87" width="9" height="17"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <color key="textColor" red="0.86939626960000005" green="0.1745723985" blue="0.1069997506" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PJd-wm-j3O">
+                            <rect key="frame" x="57" y="166" width="237" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.19432192679999999" green="0.86939626960000005" blue="0.047789106409999997" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>

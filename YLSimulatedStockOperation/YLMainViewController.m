@@ -16,6 +16,7 @@
 #import "YLSIghnStockMessageViewController.h"
 #import "YLSearchStockViewController.h"
 #import "YLSelfStcocksViewController.h"
+#import "YLSimulatedStockViewController.h"
 @interface YLMainViewController ()<UIGestureRecognizerDelegate,UITableViewDelegate,UITableViewDataSource>{
     NSTimer *maketTimer;
     NSMutableArray *dataArray;
@@ -50,6 +51,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [YLDataManager shareManager];
     self.title=@"旺旺股票";
     [self customTabBarButtonTitle:nil image:@"612_mine_sel" target:self action:@selector(onLeftClicked:)  isLeft:YES];
     [self addGestureOnImageView];
@@ -88,6 +90,12 @@
     YLSelfStcocksViewController *selfStcoksVC=[[YLSelfStcocksViewController alloc]init];
     [self.navigationController pushViewController:selfStcoksVC animated:YES];
 }
+/**模拟炒股回调页面*/
+- (IBAction)simulateButton:(UIButton *)sender {
+    YLSimulatedStockViewController *simulateVc=[[YLSimulatedStockViewController alloc]init];
+    [self.navigationController pushViewController:simulateVc animated:YES];
+}
+
 
 /**
  *  添加大盘显示的点击回调方法

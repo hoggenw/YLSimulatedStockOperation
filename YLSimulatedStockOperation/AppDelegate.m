@@ -35,6 +35,7 @@
         NSMutableArray *selfArray=[NSMutableArray array];
         [userDef setObject:selfArray  forKey:@"selfStocks"];
         [userDef setBool:isFirstIn forKey:@"isFirstIn"];
+        [userDef setInteger:100000 forKey:@"Smoney"];
         
     }else{
         

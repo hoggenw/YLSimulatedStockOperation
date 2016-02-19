@@ -11,4 +11,6 @@
 @interface YLSimulatedBuyViewController : UIViewController
 @property(nonatomic,copy)NSString *stockNumber;
 @property(nonatomic,copy)NSString *selfTitle;
+@property(nonatomic,copy)NSString *price;
+@property(nonatomic,assign)BOOL ifSell;
 @end
