@@ -14,7 +14,65 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="set_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="MDl-61-l7p">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bangbang.png" translatesAutoresizingMaskIntoConstraints="NO" id="kPX-jv-RsD">
+                    <rect key="frame" x="30" y="64" width="128" height="128"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="128" id="WKK-Wl-X39"/>
+                        <constraint firstAttribute="width" constant="128" id="XLP-dE-N09"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="旺旺股票" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YvG-3B-vBv">
+                    <rect key="frame" x="29" y="197" width="128" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="128" id="WdK-s6-7zZ"/>
+                        <constraint firstAttribute="height" constant="30" id="qel-EV-4Zf"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ey-QS-MnQ">
+                    <rect key="frame" x="29" y="287" width="429" height="40"/>
+                    <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="40" id="26f-cY-81D"/>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="40" id="3mx-e0-j20"/>
+                        <constraint firstAttribute="height" constant="40" id="X70-jT-Une"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="peZ-Rt-xRO"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="关于我们">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="aboutUsAction:" destination="-1" eventType="touchUpInside" id="BPU-Wt-3hb"/>
+                    </connections>
+                </button>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="YvG-3B-vBv" firstAttribute="top" secondItem="kPX-jv-RsD" secondAttribute="bottom" constant="5" id="2pc-AW-cza"/>
+                <constraint firstAttribute="trailing" secondItem="3Ey-QS-MnQ" secondAttribute="trailing" constant="142" id="3hf-Ra-VyF"/>
+                <constraint firstItem="MDl-61-l7p" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="5ez-zW-nZf"/>
+                <constraint firstAttribute="trailing" secondItem="MDl-61-l7p" secondAttribute="trailing" id="JcP-Uk-Hwa"/>
+                <constraint firstAttribute="bottom" secondItem="MDl-61-l7p" secondAttribute="bottom" id="JhN-5W-FPe"/>
+                <constraint firstItem="3Ey-QS-MnQ" firstAttribute="top" secondItem="YvG-3B-vBv" secondAttribute="bottom" constant="60" id="QYB-B3-zJ9"/>
+                <constraint firstItem="kPX-jv-RsD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="YkP-9Q-eac"/>
+                <constraint firstItem="YvG-3B-vBv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="29" id="guJ-7P-hEp"/>
+                <constraint firstItem="kPX-jv-RsD" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="mah-QN-xRt"/>
+                <constraint firstItem="3Ey-QS-MnQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="29" id="t1W-kw-0V1"/>
+                <constraint firstItem="MDl-61-l7p" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="xQb-cd-60H"/>
+            </constraints>
+            <point key="canvasLocation" x="41" y="-42"/>
         </view>
     </objects>
+    <resources>
+        <image name="bangbang.png" width="60" height="60"/>
+        <image name="set_bg.png" width="375" height="605"/>
+    </resources>
 </document>

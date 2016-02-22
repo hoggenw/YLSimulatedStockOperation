@@ -8,7 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		0B646763F4C466BF2DDE619E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A120724A7CC3DDEA74FBF32F /* libPods.a */; };
-		BC2BC5CE1C7176570068A2C1 /* fenlan.png in Resources */ = {isa = PBXBuildFile; fileRef = BC2BC5CD1C7176570068A2C1 /* fenlan.png */; };
+		BC0953481C76E4C60031305D /* close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC0953471C76E4C60031305D /* close@2x.png */; };
+		BC09534D1C76F71E0031305D /* YLSellOutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC09534B1C76F71E0031305D /* YLSellOutViewController.m */; };
+		BC09534E1C76F71E0031305D /* YLSellOutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC09534C1C76F71E0031305D /* YLSellOutViewController.xib */; };
+		BC0953521C76F9150031305D /* YLSellOutTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC0953501C76F9150031305D /* YLSellOutTableViewCell.m */; };
+		BC0953531C76F9150031305D /* YLSellOutTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC0953511C76F9150031305D /* YLSellOutTableViewCell.xib */; };
 		BC2BC5D21C71A0D40068A2C1 /* YLNewsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2BC5D01C71A0D40068A2C1 /* YLNewsTableViewCell.m */; };
 		BC2BC5D31C71A0D40068A2C1 /* YLNewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC2BC5D11C71A0D40068A2C1 /* YLNewsTableViewCell.xib */; };
 		BC2BC5D61C71ACBA0068A2C1 /* YLTheFastNew.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2BC5D51C71ACBA0068A2C1 /* YLTheFastNew.m */; };
@@ -19,6 +23,15 @@
 		BC2BC5E01C71CE2E0068A2C1 /* 612_mine_sel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC2BC5DF1C71CE2E0068A2C1 /* 612_mine_sel@2x.png */; };
 		BC2BC5E51C71F7EC0068A2C1 /* YLJudgeStcok.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2BC5E41C71F7EC0068A2C1 /* YLJudgeStcok.m */; };
 		BC2BC5E81C71FBFB0068A2C1 /* YLSignStcokMessageRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2BC5E71C71FBFB0068A2C1 /* YLSignStcokMessageRequest.m */; };
+		BC305CC21C7AB81000A1DF3E /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC305CC11C7AB81000A1DF3E /* CFNetwork.framework */; };
+		BC305CC41C7AB82600A1DF3E /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC305CC31C7AB82600A1DF3E /* CoreFoundation.framework */; };
+		BC305CC61C7AB83500A1DF3E /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC305CC51C7AB83500A1DF3E /* CoreTelephony.framework */; };
+		BC305CC81C7AB84C00A1DF3E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC305CC71C7AB84C00A1DF3E /* SystemConfiguration.framework */; };
+		BC305CCA1C7AB85700A1DF3E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC305CC91C7AB85700A1DF3E /* CoreGraphics.framework */; };
+		BC305CCC1C7AB86200A1DF3E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC305CCB1C7AB86200A1DF3E /* Foundation.framework */; };
+		BC305CCE1C7AB86D00A1DF3E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC305CCD1C7AB86D00A1DF3E /* UIKit.framework */; };
+		BC305CD01C7AB89200A1DF3E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC305CCF1C7AB89200A1DF3E /* Security.framework */; };
+		BC305CD21C7AB8E700A1DF3E /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BC305CD11C7AB8E700A1DF3E /* libz.tbd */; };
 		BC6199DF1C72F1F200A2FC18 /* YLStockNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6199DD1C72F1F200A2FC18 /* YLStockNewsViewController.m */; };
 		BC6199E01C72F1F200A2FC18 /* YLStockNewsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC6199DE1C72F1F200A2FC18 /* YLStockNewsViewController.xib */; };
 		BC6199E41C72F87500A2FC18 /* YLStockNewsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6199E21C72F87500A2FC18 /* YLStockNewsTableViewCell.m */; };
@@ -31,12 +44,23 @@
 		BC6199F81C73200D00A2FC18 /* YLShowStcokTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6199F61C73200D00A2FC18 /* YLShowStcokTableViewCell.m */; };
 		BC6199F91C73200D00A2FC18 /* YLShowStcokTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC6199F71C73200D00A2FC18 /* YLShowStcokTableViewCell.xib */; };
 		BC6199FC1C7321BF00A2FC18 /* mockstock_addred@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC6199FB1C7321BF00A2FC18 /* mockstock_addred@3x.png */; };
+		BC67CAE11C7A921F00059C5B /* YLLetfViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC67CAE01C7A921F00059C5B /* YLLetfViewController.m */; };
+		BC67CAE31C7A922600059C5B /* YLLetfViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC67CAE21C7A922600059C5B /* YLLetfViewController.xib */; };
+		BC67CAE61C7A923D00059C5B /* YLAboutUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC67CAE51C7A923D00059C5B /* YLAboutUsViewController.m */; };
+		BC67CAE81C7A924300059C5B /* YLAboutUsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC67CAE71C7A924300059C5B /* YLAboutUsViewController.xib */; };
+		BC67CAEA1C7A927500059C5B /* set_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = BC67CAE91C7A927500059C5B /* set_bg.png */; };
+		BC67CAEC1C7A93C500059C5B /* bangbang@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC67CAEB1C7A93C500059C5B /* bangbang@3x.png */; };
+		BC67CAF01C7A9AA200059C5B /* jpush-ios-2.1.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC67CAEE1C7A9AA200059C5B /* jpush-ios-2.1.0.a */; };
 		BC71D4301C75EA9D000BEE9B /* YLArrayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BC71D42F1C75EA9D000BEE9B /* YLArrayModel.m */; };
 		BC8700EF1C754ED80024884E /* YLDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8700EE1C754ED80024884E /* YLDataManager.m */; };
 		BC8700F21C7550240024884E /* YLBuyStockModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8700F11C7550240024884E /* YLBuyStockModel.m */; };
 		BC8700F51C75615A0024884E /* haveNotBuy.png in Resources */ = {isa = PBXBuildFile; fileRef = BC8700F41C75615A0024884E /* haveNotBuy.png */; };
 		BC8700F91C7565850024884E /* YLDealStockTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8700F71C7565850024884E /* YLDealStockTableViewCell.m */; };
 		BC8700FA1C7565850024884E /* YLDealStockTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC8700F81C7565850024884E /* YLDealStockTableViewCell.xib */; };
+		BC917DCF1C76C5F40066DE65 /* YLRevokTradeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC917DCD1C76C5F40066DE65 /* YLRevokTradeViewController.m */; };
+		BC917DD01C76C5F40066DE65 /* YLRevokTradeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC917DCE1C76C5F40066DE65 /* YLRevokTradeViewController.xib */; };
+		BC917DD41C76CA4E0066DE65 /* YLRevokeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC917DD21C76CA4E0066DE65 /* YLRevokeTableViewCell.m */; };
+		BC917DD51C76CA4E0066DE65 /* YLRevokeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC917DD31C76CA4E0066DE65 /* YLRevokeTableViewCell.xib */; };
 		BC9EE5961C73F6DE008745FF /* YLStockNoticeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC9EE5941C73F6DE008745FF /* YLStockNoticeViewController.m */; };
 		BC9EE5971C73F6DE008745FF /* YLStockNoticeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC9EE5951C73F6DE008745FF /* YLStockNoticeViewController.xib */; };
 		BC9EE59C1C740121008745FF /* YLCrashDirectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC9EE59A1C740121008745FF /* YLCrashDirectionViewController.m */; };
@@ -53,8 +77,6 @@
 		E886AFAE1C6C4799009CC3A3 /* YLStockValuation.m in Sources */ = {isa = PBXBuildFile; fileRef = E886AFAD1C6C4799009CC3A3 /* YLStockValuation.m */; };
 		E886AFB11C6C56AC009CC3A3 /* YLStockNewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E886AFB01C6C56AC009CC3A3 /* YLStockNewsModel.m */; };
 		E886AFB41C6C56F3009CC3A3 /* YLStockNoticesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E886AFB31C6C56F3009CC3A3 /* YLStockNoticesModel.m */; };
-		E886AFBD1C6D78B2009CC3A3 /* YLLetfViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E886AFBB1C6D78B2009CC3A3 /* YLLetfViewController.m */; };
-		E886AFBE1C6D78B2009CC3A3 /* YLLetfViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E886AFBC1C6D78B2009CC3A3 /* YLLetfViewController.xib */; };
 		E886AFC31C6D790C009CC3A3 /* YLMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E886AFC11C6D790C009CC3A3 /* YLMainViewController.m */; };
 		E886AFC41C6D790C009CC3A3 /* YLMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E886AFC21C6D790C009CC3A3 /* YLMainViewController.xib */; };
 		E886AFC71C6D814F009CC3A3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E886AFC61C6D814F009CC3A3 /* ViewController.m */; };
@@ -98,7 +120,13 @@
 /* Begin PBXFileReference section */
 		9447C7FC8BFA452FDBC1C4F6 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		A120724A7CC3DDEA74FBF32F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		BC2BC5CD1C7176570068A2C1 /* fenlan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fenlan.png; sourceTree = "<group>"; };
+		BC0953471C76E4C60031305D /* close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "close@2x.png"; sourceTree = "<group>"; };
+		BC09534A1C76F71E0031305D /* YLSellOutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLSellOutViewController.h; sourceTree = "<group>"; };
+		BC09534B1C76F71E0031305D /* YLSellOutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLSellOutViewController.m; sourceTree = "<group>"; };
+		BC09534C1C76F71E0031305D /* YLSellOutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YLSellOutViewController.xib; sourceTree = "<group>"; };
+		BC09534F1C76F9150031305D /* YLSellOutTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLSellOutTableViewCell.h; sourceTree = "<group>"; };
+		BC0953501C76F9150031305D /* YLSellOutTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLSellOutTableViewCell.m; sourceTree = "<group>"; };
+		BC0953511C76F9150031305D /* YLSellOutTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YLSellOutTableViewCell.xib; sourceTree = "<group>"; };
 		BC2BC5CF1C71A0D40068A2C1 /* YLNewsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLNewsTableViewCell.h; sourceTree = "<group>"; };
 		BC2BC5D01C71A0D40068A2C1 /* YLNewsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLNewsTableViewCell.m; sourceTree = "<group>"; };
 		BC2BC5D11C71A0D40068A2C1 /* YLNewsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YLNewsTableViewCell.xib; sourceTree = "<group>"; };
@@ -113,6 +141,15 @@
 		BC2BC5E41C71F7EC0068A2C1 /* YLJudgeStcok.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLJudgeStcok.m; sourceTree = "<group>"; };
 		BC2BC5E61C71FBFB0068A2C1 /* YLSignStcokMessageRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLSignStcokMessageRequest.h; sourceTree = "<group>"; };
 		BC2BC5E71C71FBFB0068A2C1 /* YLSignStcokMessageRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLSignStcokMessageRequest.m; sourceTree = "<group>"; };
+		BC305CC11C7AB81000A1DF3E /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		BC305CC31C7AB82600A1DF3E /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		BC305CC51C7AB83500A1DF3E /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		BC305CC71C7AB84C00A1DF3E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		BC305CC91C7AB85700A1DF3E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BC305CCB1C7AB86200A1DF3E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BC305CCD1C7AB86D00A1DF3E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BC305CCF1C7AB89200A1DF3E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		BC305CD11C7AB8E700A1DF3E /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		BC6199DC1C72F1F200A2FC18 /* YLStockNewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLStockNewsViewController.h; sourceTree = "<group>"; };
 		BC6199DD1C72F1F200A2FC18 /* YLStockNewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLStockNewsViewController.m; sourceTree = "<group>"; };
 		BC6199DE1C72F1F200A2FC18 /* YLStockNewsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YLStockNewsViewController.xib; sourceTree = "<group>"; };
@@ -131,6 +168,16 @@
 		BC6199F61C73200D00A2FC18 /* YLShowStcokTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLShowStcokTableViewCell.m; sourceTree = "<group>"; };
 		BC6199F71C73200D00A2FC18 /* YLShowStcokTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YLShowStcokTableViewCell.xib; sourceTree = "<group>"; };
 		BC6199FB1C7321BF00A2FC18 /* mockstock_addred@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mockstock_addred@3x.png"; sourceTree = "<group>"; };
+		BC67CADF1C7A921600059C5B /* YLLetfViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLLetfViewController.h; sourceTree = "<group>"; };
+		BC67CAE01C7A921F00059C5B /* YLLetfViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLLetfViewController.m; sourceTree = "<group>"; };
+		BC67CAE21C7A922600059C5B /* YLLetfViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YLLetfViewController.xib; sourceTree = "<group>"; };
+		BC67CAE41C7A923600059C5B /* YLAboutUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLAboutUsViewController.h; sourceTree = "<group>"; };
+		BC67CAE51C7A923D00059C5B /* YLAboutUsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLAboutUsViewController.m; sourceTree = "<group>"; };
+		BC67CAE71C7A924300059C5B /* YLAboutUsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YLAboutUsViewController.xib; sourceTree = "<group>"; };
+		BC67CAE91C7A927500059C5B /* set_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = set_bg.png; sourceTree = "<group>"; };
+		BC67CAEB1C7A93C500059C5B /* bangbang@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bangbang@3x.png"; sourceTree = "<group>"; };
+		BC67CAEE1C7A9AA200059C5B /* jpush-ios-2.1.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jpush-ios-2.1.0.a"; sourceTree = "<group>"; };
+		BC67CAEF1C7A9AA200059C5B /* JPUSHService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPUSHService.h; sourceTree = "<group>"; };
 		BC71D42E1C75EA9D000BEE9B /* YLArrayModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLArrayModel.h; sourceTree = "<group>"; };
 		BC71D42F1C75EA9D000BEE9B /* YLArrayModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLArrayModel.m; sourceTree = "<group>"; };
 		BC8700ED1C754ED80024884E /* YLDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLDataManager.h; sourceTree = "<group>"; };
@@ -141,6 +188,12 @@
 		BC8700F61C7565850024884E /* YLDealStockTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLDealStockTableViewCell.h; sourceTree = "<group>"; };
 		BC8700F71C7565850024884E /* YLDealStockTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLDealStockTableViewCell.m; sourceTree = "<group>"; };
 		BC8700F81C7565850024884E /* YLDealStockTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YLDealStockTableViewCell.xib; sourceTree = "<group>"; };
+		BC917DCC1C76C5F40066DE65 /* YLRevokTradeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLRevokTradeViewController.h; sourceTree = "<group>"; };
+		BC917DCD1C76C5F40066DE65 /* YLRevokTradeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLRevokTradeViewController.m; sourceTree = "<group>"; };
+		BC917DCE1C76C5F40066DE65 /* YLRevokTradeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YLRevokTradeViewController.xib; sourceTree = "<group>"; };
+		BC917DD11C76CA4E0066DE65 /* YLRevokeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLRevokeTableViewCell.h; sourceTree = "<group>"; };
+		BC917DD21C76CA4E0066DE65 /* YLRevokeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLRevokeTableViewCell.m; sourceTree = "<group>"; };
+		BC917DD31C76CA4E0066DE65 /* YLRevokeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YLRevokeTableViewCell.xib; sourceTree = "<group>"; };
 		BC9EE5931C73F6DE008745FF /* YLStockNoticeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLStockNoticeViewController.h; sourceTree = "<group>"; };
 		BC9EE5941C73F6DE008745FF /* YLStockNoticeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLStockNoticeViewController.m; sourceTree = "<group>"; };
 		BC9EE5951C73F6DE008745FF /* YLStockNoticeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YLStockNoticeViewController.xib; sourceTree = "<group>"; };
@@ -169,9 +222,6 @@
 		E886AFB01C6C56AC009CC3A3 /* YLStockNewsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLStockNewsModel.m; sourceTree = "<group>"; };
 		E886AFB21C6C56F3009CC3A3 /* YLStockNoticesModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLStockNoticesModel.h; sourceTree = "<group>"; };
 		E886AFB31C6C56F3009CC3A3 /* YLStockNoticesModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLStockNoticesModel.m; sourceTree = "<group>"; };
-		E886AFBA1C6D78B2009CC3A3 /* YLLetfViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLLetfViewController.h; sourceTree = "<group>"; };
-		E886AFBB1C6D78B2009CC3A3 /* YLLetfViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLLetfViewController.m; sourceTree = "<group>"; };
-		E886AFBC1C6D78B2009CC3A3 /* YLLetfViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YLLetfViewController.xib; sourceTree = "<group>"; };
 		E886AFC01C6D790C009CC3A3 /* YLMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLMainViewController.h; sourceTree = "<group>"; };
 		E886AFC11C6D790C009CC3A3 /* YLMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLMainViewController.m; sourceTree = "<group>"; };
 		E886AFC21C6D790C009CC3A3 /* YLMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YLMainViewController.xib; sourceTree = "<group>"; };
@@ -215,6 +265,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC305CD21C7AB8E700A1DF3E /* libz.tbd in Frameworks */,
+				BC305CD01C7AB89200A1DF3E /* Security.framework in Frameworks */,
+				BC305CCE1C7AB86D00A1DF3E /* UIKit.framework in Frameworks */,
+				BC305CCC1C7AB86200A1DF3E /* Foundation.framework in Frameworks */,
+				BC305CCA1C7AB85700A1DF3E /* CoreGraphics.framework in Frameworks */,
+				BC305CC81C7AB84C00A1DF3E /* SystemConfiguration.framework in Frameworks */,
+				BC305CC61C7AB83500A1DF3E /* CoreTelephony.framework in Frameworks */,
+				BC305CC41C7AB82600A1DF3E /* CoreFoundation.framework in Frameworks */,
+				BC305CC21C7AB81000A1DF3E /* CFNetwork.framework in Frameworks */,
+				BC67CAF01C7A9AA200059C5B /* jpush-ios-2.1.0.a in Frameworks */,
 				0B646763F4C466BF2DDE619E /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -243,6 +303,16 @@
 				D543AB798AA22CDA832BB53F /* Pods.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		BC0953491C76F69B0031305D /* 卖出页面 */ = {
+			isa = PBXGroup;
+			children = (
+				BC09534A1C76F71E0031305D /* YLSellOutViewController.h */,
+				BC09534B1C76F71E0031305D /* YLSellOutViewController.m */,
+				BC09534C1C76F71E0031305D /* YLSellOutViewController.xib */,
+			);
+			name = "卖出页面";
 			sourceTree = "<group>";
 		};
 		BC2BC5E11C71F7100068A2C1 /* 个股数据处理 */ = {
@@ -307,6 +377,22 @@
 			name = "个人股票页面";
 			sourceTree = "<group>";
 		};
+		BC67CAED1C7A9AA200059C5B /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				BC67CAEE1C7A9AA200059C5B /* jpush-ios-2.1.0.a */,
+				BC67CAEF1C7A9AA200059C5B /* JPUSHService.h */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		BC67CAF11C7A9AAA00059C5B /* FrameWorks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = FrameWorks;
+			sourceTree = "<group>";
+		};
 		BC8700EC1C754EAB0024884E /* dataManager */ = {
 			isa = PBXGroup;
 			children = (
@@ -319,9 +405,22 @@
 		BC8700F31C75614F0024884E /* 模拟器页面 */ = {
 			isa = PBXGroup;
 			children = (
+				BC67CAEB1C7A93C500059C5B /* bangbang@3x.png */,
+				BC67CAE91C7A927500059C5B /* set_bg.png */,
+				BC0953471C76E4C60031305D /* close@2x.png */,
 				BC8700F41C75615A0024884E /* haveNotBuy.png */,
 			);
 			name = "模拟器页面";
+			sourceTree = "<group>";
+		};
+		BC917DCB1C76C5A10066DE65 /* 撤单页面 */ = {
+			isa = PBXGroup;
+			children = (
+				BC917DCC1C76C5F40066DE65 /* YLRevokTradeViewController.h */,
+				BC917DCD1C76C5F40066DE65 /* YLRevokTradeViewController.m */,
+				BC917DCE1C76C5F40066DE65 /* YLRevokTradeViewController.xib */,
+			);
+			name = "撤单页面";
 			sourceTree = "<group>";
 		};
 		BC9EE5921C73F6B1008745FF /* 股票公告页面 */ = {
@@ -367,6 +466,15 @@
 		C7557E01120C2EEFC2AEDF34 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BC305CD11C7AB8E700A1DF3E /* libz.tbd */,
+				BC305CCF1C7AB89200A1DF3E /* Security.framework */,
+				BC305CCD1C7AB86D00A1DF3E /* UIKit.framework */,
+				BC305CCB1C7AB86200A1DF3E /* Foundation.framework */,
+				BC305CC91C7AB85700A1DF3E /* CoreGraphics.framework */,
+				BC305CC71C7AB84C00A1DF3E /* SystemConfiguration.framework */,
+				BC305CC51C7AB83500A1DF3E /* CoreTelephony.framework */,
+				BC305CC31C7AB82600A1DF3E /* CoreFoundation.framework */,
+				BC305CC11C7AB81000A1DF3E /* CFNetwork.framework */,
 				A120724A7CC3DDEA74FBF32F /* libPods.a */,
 			);
 			name = Frameworks;
@@ -412,9 +520,12 @@
 		E886AFC81C6F0E73009CC3A3 /* 左视图 */ = {
 			isa = PBXGroup;
 			children = (
-				E886AFBB1C6D78B2009CC3A3 /* YLLetfViewController.m */,
-				E886AFBA1C6D78B2009CC3A3 /* YLLetfViewController.h */,
-				E886AFBC1C6D78B2009CC3A3 /* YLLetfViewController.xib */,
+				BC67CADF1C7A921600059C5B /* YLLetfViewController.h */,
+				BC67CAE01C7A921F00059C5B /* YLLetfViewController.m */,
+				BC67CAE21C7A922600059C5B /* YLLetfViewController.xib */,
+				BC67CAE41C7A923600059C5B /* YLAboutUsViewController.h */,
+				BC67CAE51C7A923D00059C5B /* YLAboutUsViewController.m */,
+				BC67CAE71C7A924300059C5B /* YLAboutUsViewController.xib */,
 			);
 			name = "左视图";
 			sourceTree = "<group>";
@@ -432,10 +543,12 @@
 		E886AFCF1C6F4FF4009CC3A3 /* 模拟炒股页面 */ = {
 			isa = PBXGroup;
 			children = (
+				BC0953491C76F69B0031305D /* 卖出页面 */,
+				E886AFD51C6F58B0009CC3A3 /* 买入页面 */,
+				BC917DCB1C76C5A10066DE65 /* 撤单页面 */,
 				E886AFD01C6F5037009CC3A3 /* YLSimulatedStockViewController.h */,
 				E886AFD11C6F5037009CC3A3 /* YLSimulatedStockViewController.m */,
 				E886AFD21C6F5037009CC3A3 /* YLSimulatedStockViewController.xib */,
-				E886AFD51C6F58B0009CC3A3 /* 买入页面 */,
 			);
 			name = "模拟炒股页面";
 			sourceTree = "<group>";
@@ -465,7 +578,6 @@
 			children = (
 				BC2BC5DF1C71CE2E0068A2C1 /* 612_mine_sel@2x.png */,
 				E886AFDF1C70109B009CC3A3 /* niu_hos.png */,
-				BC2BC5CD1C7176570068A2C1 /* fenlan.png */,
 				BC2BC5D91C71CA550068A2C1 /* 612_search_sel@2x.png */,
 				BC2BC5D71C71C9B70068A2C1 /* mockstock_user_selected@2x.png */,
 				BC2BC5DD1C71CA870068A2C1 /* dec_yqyl@2x.png */,
@@ -520,6 +632,12 @@
 				BC8700F61C7565850024884E /* YLDealStockTableViewCell.h */,
 				BC8700F71C7565850024884E /* YLDealStockTableViewCell.m */,
 				BC8700F81C7565850024884E /* YLDealStockTableViewCell.xib */,
+				BC917DD11C76CA4E0066DE65 /* YLRevokeTableViewCell.h */,
+				BC917DD21C76CA4E0066DE65 /* YLRevokeTableViewCell.m */,
+				BC917DD31C76CA4E0066DE65 /* YLRevokeTableViewCell.xib */,
+				BC09534F1C76F9150031305D /* YLSellOutTableViewCell.h */,
+				BC0953501C76F9150031305D /* YLSellOutTableViewCell.m */,
+				BC0953511C76F9150031305D /* YLSellOutTableViewCell.xib */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -558,6 +676,7 @@
 		E8E2E9BE1C6BDC0C00C56ABC = {
 			isa = PBXGroup;
 			children = (
+				BC67CAF11C7A9AAA00059C5B /* FrameWorks */,
 				E8E2E9C91C6BDC0C00C56ABC /* YLSimulatedStockOperation */,
 				E8E2E9E31C6BDC0C00C56ABC /* YLSimulatedStockOperationTests */,
 				E8E2E9EE1C6BDC0C00C56ABC /* YLSimulatedStockOperationUITests */,
@@ -580,6 +699,7 @@
 		E8E2E9C91C6BDC0C00C56ABC /* YLSimulatedStockOperation */ = {
 			isa = PBXGroup;
 			children = (
+				BC67CAED1C7A9AA200059C5B /* lib */,
 				BC8700EC1C754EAB0024884E /* dataManager */,
 				BC2BC5E21C71F7790068A2C1 /* Utility */,
 				E886AFDB1C7006EB009CC3A3 /* Resource */,
@@ -697,6 +817,12 @@
 				TargetAttributes = {
 					E8E2E9C61C6BDC0C00C56ABC = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = HATZKSVUJU;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					E8E2E9DF1C6BDC0C00C56ABC = {
 						CreatedOnToolsVersion = 7.2;
@@ -733,8 +859,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC917DD51C76CA4E0066DE65 /* YLRevokeTableViewCell.xib in Resources */,
 				BC6199F11C73126400A2FC18 /* YLSearchStockViewController.xib in Resources */,
 				BC9EE59D1C740121008745FF /* YLCrashDirectionViewController.xib in Resources */,
+				BC67CAE31C7A922600059C5B /* YLLetfViewController.xib in Resources */,
 				E886AFCE1C6F1445009CC3A3 /* YLSIghnStockMessageViewController.xib in Resources */,
 				BC9EE5971C73F6DE008745FF /* YLStockNoticeViewController.xib in Resources */,
 				BC6199E01C72F1F200A2FC18 /* YLStockNewsViewController.xib in Resources */,
@@ -742,12 +870,19 @@
 				E886AFD41C6F5037009CC3A3 /* YLSimulatedStockViewController.xib in Resources */,
 				BC9EE5A81C74483C008745FF /* stock_deleta@3x.png in Resources */,
 				BC6199E51C72F87500A2FC18 /* YLStockNewsTableViewCell.xib in Resources */,
+				BC67CAE81C7A924300059C5B /* YLAboutUsViewController.xib in Resources */,
 				BC6199F91C73200D00A2FC18 /* YLShowStcokTableViewCell.xib in Resources */,
+				BC67CAEA1C7A927500059C5B /* set_bg.png in Resources */,
+				BC917DD01C76C5F40066DE65 /* YLRevokTradeViewController.xib in Resources */,
+				BC67CAEC1C7A93C500059C5B /* bangbang@3x.png in Resources */,
 				BC2BC5DA1C71CA550068A2C1 /* 612_search_sel@2x.png in Resources */,
 				BC9EE5A31C740F00008745FF /* YLJudgeStockViewController.xib in Resources */,
 				BC9EE5AE1C745A5E008745FF /* YLSelfStcocksViewController.xib in Resources */,
 				BC2BC5DC1C71CA740068A2C1 /* jfi_gold@2x.png in Resources */,
 				E886AFE61C701D2B009CC3A3 /* YLStockHostoryViewController.xib in Resources */,
+				BC0953481C76E4C60031305D /* close@2x.png in Resources */,
+				BC09534E1C76F71E0031305D /* YLSellOutViewController.xib in Resources */,
+				BC0953531C76F9150031305D /* YLSellOutTableViewCell.xib in Resources */,
 				BC2BC5DE1C71CA870068A2C1 /* dec_yqyl@2x.png in Resources */,
 				E886AFDA1C6F58DF009CC3A3 /* YLSimulatedBuyViewController.xib in Resources */,
 				BC9EE5B31C745C05008745FF /* YLjUSTStockTableViewCell.xib in Resources */,
@@ -756,10 +891,8 @@
 				BC6199FC1C7321BF00A2FC18 /* mockstock_addred@3x.png in Resources */,
 				BC2BC5D81C71C9B70068A2C1 /* mockstock_user_selected@2x.png in Resources */,
 				E886AFE01C70109B009CC3A3 /* niu_hos.png in Resources */,
-				E886AFBE1C6D78B2009CC3A3 /* YLLetfViewController.xib in Resources */,
 				BC8700FA1C7565850024884E /* YLDealStockTableViewCell.xib in Resources */,
 				E8E2E9DA1C6BDC0C00C56ABC /* LaunchScreen.storyboard in Resources */,
-				BC2BC5CE1C7176570068A2C1 /* fenlan.png in Resources */,
 				BC2BC5E01C71CE2E0068A2C1 /* 612_mine_sel@2x.png in Resources */,
 				E8E2E9D71C6BDC0C00C56ABC /* Assets.xcassets in Resources */,
 				E8E2E9D51C6BDC0C00C56ABC /* Main.storyboard in Resources */,
@@ -841,6 +974,7 @@
 				BC2BC5E81C71FBFB0068A2C1 /* YLSignStcokMessageRequest.m in Sources */,
 				E886AFEA1C702891009CC3A3 /* YLMarketIndex.m in Sources */,
 				BC6199F81C73200D00A2FC18 /* YLShowStcokTableViewCell.m in Sources */,
+				BC917DD41C76CA4E0066DE65 /* YLRevokeTableViewCell.m in Sources */,
 				BC2BC5E51C71F7EC0068A2C1 /* YLJudgeStcok.m in Sources */,
 				BC71D4301C75EA9D000BEE9B /* YLArrayModel.m in Sources */,
 				BC9EE59C1C740121008745FF /* YLCrashDirectionViewController.m in Sources */,
@@ -853,20 +987,24 @@
 				E886AFE51C701D2B009CC3A3 /* YLStockHostoryViewController.m in Sources */,
 				BC6199EA1C73074D00A2FC18 /* YLDetailNewsViewController.m in Sources */,
 				E886AFB11C6C56AC009CC3A3 /* YLStockNewsModel.m in Sources */,
+				BC09534D1C76F71E0031305D /* YLSellOutViewController.m in Sources */,
+				BC67CAE61C7A923D00059C5B /* YLAboutUsViewController.m in Sources */,
 				E886AFAE1C6C4799009CC3A3 /* YLStockValuation.m in Sources */,
+				BC917DCF1C76C5F40066DE65 /* YLRevokTradeViewController.m in Sources */,
 				BC8700F91C7565850024884E /* YLDealStockTableViewCell.m in Sources */,
 				E886AFC71C6D814F009CC3A3 /* ViewController.m in Sources */,
 				E8E2E9CF1C6BDC0C00C56ABC /* AppDelegate.m in Sources */,
+				BC0953521C76F9150031305D /* YLSellOutTableViewCell.m in Sources */,
 				BC8700EF1C754ED80024884E /* YLDataManager.m in Sources */,
 				BC9EE5AD1C745A5E008745FF /* YLSelfStcocksViewController.m in Sources */,
 				E8E2E9CC1C6BDC0C00C56ABC /* main.m in Sources */,
 				E886AFB41C6C56F3009CC3A3 /* YLStockNoticesModel.m in Sources */,
-				E886AFBD1C6D78B2009CC3A3 /* YLLetfViewController.m in Sources */,
 				BC8700F21C7550240024884E /* YLBuyStockModel.m in Sources */,
 				BC6199DF1C72F1F200A2FC18 /* YLStockNewsViewController.m in Sources */,
 				E886AFD31C6F5037009CC3A3 /* YLSimulatedStockViewController.m in Sources */,
 				E886AFD91C6F58DF009CC3A3 /* YLSimulatedBuyViewController.m in Sources */,
 				BC9EE5A61C744537008745FF /* YLNsuserdefult.m in Sources */,
+				BC67CAE11C7A921F00059C5B /* YLLetfViewController.m in Sources */,
 				BC6199E41C72F87500A2FC18 /* YLStockNewsTableViewCell.m in Sources */,
 				BC6199F31C731D8E00A2FC18 /* YLHintView.m in Sources */,
 				BC9EE5961C73F6DE008745FF /* YLStockNoticeViewController.m in Sources */,
@@ -1012,10 +1150,16 @@
 			baseConfigurationReference = 9447C7FC8BFA452FDBC1C4F6 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/YLSimulatedStockOperation/PrefixHeader.pch";
 				INFOPLIST_FILE = YLSimulatedStockOperation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = hoggenWang.YLSimulatedStockOperation;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/YLSimulatedStockOperation/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hoggenwang.3344;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -1025,10 +1169,16 @@
 			baseConfigurationReference = D543AB798AA22CDA832BB53F /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/YLSimulatedStockOperation/PrefixHeader.pch";
 				INFOPLIST_FILE = YLSimulatedStockOperation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = hoggenWang.YLSimulatedStockOperation;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/YLSimulatedStockOperation/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hoggenwang.3344;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

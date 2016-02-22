@@ -18,4 +18,7 @@
 #import "YLNsuserdefult.h"
 #import <FMDB.h>
 #import "YLDataManager.h"
+#import <DateTools.h>
+// 极光推送头文件
+#import "JPUSHService.h"
 #endif

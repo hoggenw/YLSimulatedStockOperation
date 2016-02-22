@@ -19,6 +19,7 @@
     
     [super viewDidLoad];
     _myWebView.delegate=self;
+    self.view.backgroundColor=[UIColor lightGrayColor];
     if (_URLString==nil) {
     NSString *urlString=@"http://res.gupiaoxianji.com/banner_html/stock_html/stocks.html";
         

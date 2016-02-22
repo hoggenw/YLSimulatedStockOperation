@@ -1,9 +1,9 @@
 //
 //  YLLetfViewController.h
-//  YLSimulatedStockOperation
+//  YLPrivateFinancialManagement
 //
-//  Created by Waterstrong on 2/12/16.
-//  Copyright © 2016 hoggenWang. All rights reserved.
+//  Created by 千锋 on 16/1/23.
+//  Copyright (c) 2016年 mobiletrain. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

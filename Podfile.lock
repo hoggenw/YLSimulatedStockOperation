@@ -1,4 +1,5 @@
 PODS:
+  - DateTools (1.7.0)
   - FMDB (2.6):
     - FMDB/standard (= 2.6)
   - FMDB/standard (2.6)
@@ -7,12 +8,14 @@ PODS:
   - YYModel (0.9.12)
 
 DEPENDENCIES:
+  - DateTools
   - FMDB
   - MBProgressHUD
   - RESideMenu
   - YYModel
 
 SPEC CHECKSUMS:
+  DateTools: 53288ee8b905fdc75897a1e6b5cc0144b14cba60
   FMDB: c1968bab3ab0aed38f66cb778ae1e7fa9a652b6e
   MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
   RESideMenu: f24c508404b49c667344c54aba7e590883533958

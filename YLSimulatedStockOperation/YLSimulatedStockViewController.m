@@ -14,6 +14,8 @@
 #import "YLMarketIndexModel.h"
 #import "YLSearchStockViewController.h"
 #import "YLArrayModel.h"
+#import "YLRevokTradeViewController.h"
+#import "YLSellOutViewController.h"
 @interface YLSimulatedStockViewController ()<UITableViewDataSource,UITableViewDelegate>{
     NSMutableArray *dataArray;
     YLArrayModel *arrayModel;
@@ -57,6 +59,16 @@
 - (IBAction)buyInButtonAction:(UIButton *)sender {
     YLSearchStockViewController *searchVC=[[YLSearchStockViewController alloc]init];
     [self.navigationController pushViewController:searchVC animated:YES];
+}
+/**撤单视图*/
+- (IBAction)revokeTrade:(UIButton *)sender {
+    YLRevokTradeViewController *revokeVC=[[YLRevokTradeViewController alloc]init];
+    [self.navigationController pushViewController:revokeVC animated:YES];
+}
+/**卖出视图*/
+- (IBAction)sellOutButton:(UIButton *)sender {
+    YLSellOutViewController *sellVC=[[YLSellOutViewController alloc]init];
+    [self.navigationController pushViewController:sellVC animated:YES];
 }
 
 /**
@@ -118,20 +130,21 @@
                 buyModel=array[index];
                 for (YLMarketIndexModel *model in arrayModel.buyStocksArray) {
                     if ([model.marketName isEqualToString:buyModel.stockName]) {
-                        if(buyModel.ifTrade==YES){
+                        if(buyModel.ifTrade){
                         CGFloat addMoney=[model.marketCount doubleValue]*[buyModel.buyNumber doubleValue];
                         stocksTotalMoney+=addMoney;
                         break;
                         }else{
                             CGFloat addMoney=[buyModel.buyPrice doubleValue]*[buyModel.buyNumber doubleValue];
-                            stocksTotalMoney+=addMoney;
+                        stocksTotalMoney+=addMoney;
                             break;
                         }
                     }
                 }
             }
             stockValueSting=[NSString stringWithFormat:@"%.0lf",stocksTotalMoney];
-            totalMoneyString=[NSString stringWithFormat:@"%.1lf",stocksTotalMoney+mytotalMoney];
+             mytotalMoney=[YLNsuserdefult getMoneyUserForKey:@"Smoney"];
+            totalMoneyString=[NSString stringWithFormat:@"%.1lf",(stocksTotalMoney+mytotalMoney)];
             CGFloat foo=([totalMoneyString doubleValue]-100000)/100000;
             totalPercentString=[NSString stringWithFormat:@"%.2lf%%",foo*100];
             dispatch_async(dispatch_get_main_queue(), ^{

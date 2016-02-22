@@ -1,18 +1,85 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="YLRevokeTableViewCell">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m02-00-qCA">
+                        <rect key="frame" x="8" y="19" width="67" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wwy-A4-pVm">
+                        <rect key="frame" x="75" y="19" width="68" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1DA-MG-YK7">
+                        <rect key="frame" x="143" y="19" width="67" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SBi-IK-c0N">
+                        <rect key="frame" x="277" y="12" width="35" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="35" id="RwB-aT-XrQ"/>
+                            <constraint firstAttribute="height" constant="35" id="wDK-XK-xEu"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="close.png"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SLm-ou-vgq">
+                        <rect key="frame" x="210" y="19" width="67" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="0.78822973249999995" green="1" blue="0.83581308710000002" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="wwy-A4-pVm" firstAttribute="centerY" secondItem="1DA-MG-YK7" secondAttribute="centerY" id="CEP-Ox-u8Z"/>
+                    <constraint firstItem="m02-00-qCA" firstAttribute="width" secondItem="wwy-A4-pVm" secondAttribute="width" id="MxT-HC-hGX"/>
+                    <constraint firstItem="SBi-IK-c0N" firstAttribute="leading" secondItem="SLm-ou-vgq" secondAttribute="trailing" id="Pp2-5P-ywE"/>
+                    <constraint firstItem="1DA-MG-YK7" firstAttribute="centerY" secondItem="SLm-ou-vgq" secondAttribute="centerY" id="VZB-6t-uET"/>
+                    <constraint firstItem="m02-00-qCA" firstAttribute="centerY" secondItem="wwy-A4-pVm" secondAttribute="centerY" id="VrQ-Ys-ELd"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="SBi-IK-c0N" secondAttribute="trailing" id="WEd-P3-oJ3"/>
+                    <constraint firstItem="1DA-MG-YK7" firstAttribute="leading" secondItem="wwy-A4-pVm" secondAttribute="trailing" id="WN4-PV-Lj0"/>
+                    <constraint firstItem="SLm-ou-vgq" firstAttribute="leading" secondItem="1DA-MG-YK7" secondAttribute="trailing" id="bcm-oI-cVA"/>
+                    <constraint firstItem="wwy-A4-pVm" firstAttribute="width" secondItem="1DA-MG-YK7" secondAttribute="width" id="dMr-m8-BVH"/>
+                    <constraint firstItem="1DA-MG-YK7" firstAttribute="width" secondItem="SLm-ou-vgq" secondAttribute="width" id="f37-JG-332"/>
+                    <constraint firstItem="wwy-A4-pVm" firstAttribute="leading" secondItem="m02-00-qCA" secondAttribute="trailing" id="lvv-dN-Q24"/>
+                    <constraint firstItem="m02-00-qCA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="pnj-JL-mTM"/>
+                    <constraint firstItem="SBi-IK-c0N" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="qUO-ly-pAP"/>
+                    <constraint firstItem="SLm-ou-vgq" firstAttribute="centerY" secondItem="SBi-IK-c0N" secondAttribute="centerY" id="ujb-T7-JEy"/>
+                </constraints>
             </tableViewCellContentView>
+            <constraints>
+                <constraint firstItem="SBi-IK-c0N" firstAttribute="centerY" secondItem="KGk-i7-Jjw" secondAttribute="centerY" id="xgu-gE-fDh"/>
+            </constraints>
+            <connections>
+                <outlet property="buyOrSell" destination="SLm-ou-vgq" id="VxD-PD-k6d"/>
+                <outlet property="cellButton" destination="SBi-IK-c0N" id="WjU-Ba-vWx"/>
+                <outlet property="stockNane" destination="m02-00-qCA" id="Epf-Qw-Iw6"/>
+                <outlet property="stockNumbers" destination="1DA-MG-YK7" id="7Ni-wb-lpo"/>
+                <outlet property="stockPrice" destination="wwy-A4-pVm" id="DeD-fx-WbU"/>
+            </connections>
+            <point key="canvasLocation" x="652" y="336"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="close.png" width="24" height="24"/>
+    </resources>
 </document>

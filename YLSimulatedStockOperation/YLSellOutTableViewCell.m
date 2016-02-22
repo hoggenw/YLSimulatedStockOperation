@@ -7,9 +7,16 @@
 //
 
 #import "YLSellOutTableViewCell.h"
-
+#import "YLBuyStockModel.h"
 @implementation YLSellOutTableViewCell
 
+
+-(void)setModel:(YLBuyStockModel *)model{
+    _model=model;
+    _stockNane.text=model.stockName;
+    _buyPrice.text=model.buyPrice;
+    _buyNumber.text=model.buyNumber;
+}
 - (void)awakeFromNib {
     // Initialization code
 }

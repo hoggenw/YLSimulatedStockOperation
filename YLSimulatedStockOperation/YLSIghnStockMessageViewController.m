@@ -256,7 +256,6 @@
     [button addTarget:taget action:selector forControlEvents:UIControlEventTouchDown];
     button.frame=CGRectMake(0, 0, 65, 30);
     button.tag=500;
-    [button setBackgroundColor:[UIColor lightGrayColor]];
     button.layer.cornerRadius=5;
     button.clipsToBounds=YES;
     button.titleLabel.font=[UIFont boldSystemFontOfSize:16];

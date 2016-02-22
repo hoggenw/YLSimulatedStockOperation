@@ -9,6 +9,7 @@
 #import "YLSimulatedBuyViewController.h"
 #import "YLSignStcokMessageRequest.h"
 #import "YLBuyStockModel.h"
+
 @interface YLSimulatedBuyViewController (){
     NSTimer *firstTimer;
     NSInteger mytotalMoney;
@@ -56,6 +57,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *explain;
 @property (weak, nonatomic) IBOutlet UIStepper *priceStepper;
 @property (weak, nonatomic) IBOutlet UIStepper *numberStepper;
+/**卖出买入button*/
+@property (weak, nonatomic) IBOutlet UIButton *sellButoon;
 
 @end
 
@@ -64,10 +67,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title=_selfTitle;
-    [self customTabBarButtonTitle:@"返回" image:nil target:self action:@selector(onLeftClicked:)  isLeft:YES];
     _stockNameLabel.text=_selfTitle;
     firstTimer=[NSTimer scheduledTimerWithTimeInterval:10 target:self selector:@selector(dealStockMessage) userInfo:nil repeats:YES];
     firstTimer.fireDate=[NSDate distantPast];
+    if (_ifSell) {
+        [_sellButoon setTitle:@"卖出下单" forState:UIControlStateNormal];
+    }
     [self reloadstockBuyIn];
    
    
@@ -80,11 +85,33 @@
 }
 /**更新买入界面*/
 -(void)reloadstockBuyIn{
+    if (_ifSell) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            _lable3.text=_price;
+            _buyNumber.text=_stockBuyNumber;
+            _explain.text=[NSString stringWithFormat:@"最多可以卖出的股票数量%@",_stockBuyNumber];
+            _numberStepper.autorepeat=YES;
+            _numberStepper.maximumValue=[_stockBuyNumber integerValue];
+            _numberStepper.value=[_stockBuyNumber integerValue];
+            _numberStepper.minimumValue=0;
+            _numberStepper.stepValue=100;
+        });
+        _priceStepper.autorepeat=YES;
+        _priceStepper.value=[_price doubleValue];
+        _priceStepper.minimumValue=0.01;
+        _priceStepper.maximumValue=2000;
+        _priceStepper.stepValue=0.01;
+        
+    }else{
     mytotalMoney=[YLNsuserdefult getMoneyUserForKey:@"Smoney"];
     dispatch_async(dispatch_get_main_queue(), ^{
         _lable3.text=_price;
         NSInteger intPrice=[[NSString stringWithFormat:@"%.0lf",[_price doubleValue]*100] integerValue];
+        if(intPrice!=0){
         _buyNumber.text=[NSString stringWithFormat:@"%ld",(mytotalMoney/(intPrice)*100)];
+        }else{
+            _buyNumber.text=@"0";
+        }
         _explain.text=[NSString stringWithFormat:@"可用资金%ld 最多可买入股票数量%@",mytotalMoney,_buyNumber.text];
         _numberStepper.autorepeat=YES;
         _numberStepper.maximumValue=[_buyNumber.text integerValue];
@@ -97,9 +124,58 @@
     _priceStepper.minimumValue=0.01;
     _priceStepper.maximumValue=2000;
     _priceStepper.stepValue=0.01;
+    }
 }
 /**买入下单*/
 - (IBAction)buyInOrderAction:(UIButton *)sender {
+    if (_ifSell) {
+        NSString *string=[NSString stringWithFormat:@"你确定以【%@】卖出%@股【%@】吗?",_lable3.text,_buyNumber.text,_stockNameLabel.text];
+        UIAlertController *ac=[UIAlertController alertControllerWithTitle:@"提示" message:string  preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *okAction=[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            if ([_buyNumber.text integerValue]==0) {
+                YLHintView *hView=[[YLHintView alloc]initWithFrame:CGRectMake(0, 0,150, 120)];
+                hView.center=self.view.center;
+                [self.view addSubview:hView];
+                hView.message=@"抱歉，卖出数量不能为0";
+                [hView showOnView:self.view ForTimeInterval:1.2];
+                
+            }else{
+                YLBuyStockModel *model=[[YLBuyStockModel alloc]init];
+                NSDate *nowDate=[NSDate date];
+                model.mainKey=nowDate;
+                model.stockName=_stockNameLabel.text;
+                model.stockNumber=_label2.text;
+                model.buyPrice=_lable3.text;
+                model.buyNumber=_buyNumber.text;
+                //33最高，34最低
+                if ([model.buyPrice doubleValue]<[_label33.text doubleValue]) {
+                    
+                    NSInteger money=[YLNsuserdefult getMoneyUserForKey:@"Smoney"];
+                    money=money +([model.buyNumber integerValue]*[model.buyPrice integerValue]);
+                    [YLNsuserdefult saveMoney:money UserForKey:@"Smoney"];
+                    [[YLDataManager shareManager]deleteBuyStockData:_SELLModel];
+                    ;
+                }else{
+                    model.ifSell=YES;
+                    [[YLDataManager shareManager] insertSELLStockData:model];
+                }
+                YLHintView *hView=[[YLHintView alloc]initWithFrame:CGRectMake(0, 0,150, 120)];
+                hView.center=self.view.center;
+                [self.view addSubview:hView];
+                hView.message=@"下单成功";
+                [hView showOnView:self.view ForTimeInterval:1.2];
+                [self reloadstockBuyIn];
+                [self customTabBarButtonTitle:@"返回" image:nil target:self action:@selector(onLeftClicked:)  isLeft:YES];
+            }
+            
+        }];
+        UIAlertAction *cancelAction=[UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
+        [ac addAction:okAction];
+        [ac addAction:cancelAction];
+        [self presentViewController:ac animated:YES completion:nil];
+
+        
+    }else{
     NSString *string=[NSString stringWithFormat:@"你确定以【%@】买入%@股【%@】吗？（提醒：依据沪深交易规则，当日买入的股票需等到下个交易日才能卖出！）",_lable3.text,_buyNumber.text,_stockNameLabel.text];
     UIAlertController *ac=[UIAlertController alertControllerWithTitle:@"提示" message:string  preferredStyle:UIAlertControllerStyleAlert];
     UIAlertAction *okAction=[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
@@ -136,6 +212,7 @@
             [hView showOnView:self.view ForTimeInterval:1.2];
             [[YLDataManager shareManager]insertBuyStockData:model];
             [self reloadstockBuyIn];
+            [self customTabBarButtonTitle:@"返回" image:nil target:self action:@selector(onLeftClicked:)  isLeft:YES];
         }
         
     }];
@@ -143,6 +220,7 @@
     [ac addAction:okAction];
     [ac addAction:cancelAction];
     [self presentViewController:ac animated:YES completion:nil];
+    }
 }
 
 

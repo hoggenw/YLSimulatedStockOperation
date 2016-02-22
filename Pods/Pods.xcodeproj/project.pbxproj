@@ -7,139 +7,182 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		033AB5D145306586422139FDCBD337CF /* YYModel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C83F3FA95A07C4645426206F9594BBB5 /* YYModel-dummy.m */; };
-		044B923507E30CF1ECCDD9EB5FDF4C51 /* YYClassInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 245C4BA6E46755BA2A5101E08D7A4A68 /* YYClassInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0EF8E9AA652DBE2745A7D5C8CD2E3BDE /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = A3C5A8AC539ED769BCEAEA3151F311D9 /* FMDatabasePool.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		0F8A8E0D6FAEBF758E0B4D620335F094 /* FMDatabasePool.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C09E94A6FC3AA4A0BB208AAB9A1A7B1 /* FMDatabasePool.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1867E55E2D752D2946D15F44F405C607 /* RESideMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = 483FEE4704CBDC3B3B101DE46619CEDB /* RESideMenu.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1F52877C49047CFF0113E7C05314ED3B /* UIViewController+RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 07E37E88B5CFA4841CF07FB8DEE12793 /* UIViewController+RESideMenu.m */; };
-		282081E035E7A843068E8BCC2E07C217 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFBE6998BBBFA8B1EEF1996243C9207 /* FMDatabaseQueue.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		0448FE78DA85D09FE8472DF661E5B60B /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3CC1A2E89BBB7BC59727C29F059C6BB /* CoreFoundation.framework */; };
+		08DDB39F398641BB7B5DE3E676A8170F /* DTTimePeriodCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = C37897B58D569C768B0D267AF7BA192C /* DTTimePeriodCollection.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		0C118EA84A58649A57D7BDE7CF5BC9A7 /* NSDate+DateTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 5765252556B67ADDF753D4F32A359882 /* NSDate+DateTools.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		0EF8E9AA652DBE2745A7D5C8CD2E3BDE /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = C76D5F90C5E66AE2C032411D1E70BD4A /* FMDatabasePool.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		0F8A8E0D6FAEBF758E0B4D620335F094 /* FMDatabasePool.h in Headers */ = {isa = PBXBuildFile; fileRef = 990D752C2F26DBE98CFC9F8CA6FD388C /* FMDatabasePool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		13A089AE10466FE5220E1D506EDF80BD /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 272643F56613CA0D336AE3DBF19DC404 /* Pods-dummy.m */; };
+		282081E035E7A843068E8BCC2E07C217 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = E4BE5BF529A54683170B486278D5B5E0 /* FMDatabaseQueue.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		2989492A1A182744E36FD61DF1746D94 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A76457A37E7CA69FF4CE2F24F6834A25 /* Foundation.framework */; };
-		2C45F33EB2E2C6A6A137F8897B0642EA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A76457A37E7CA69FF4CE2F24F6834A25 /* Foundation.framework */; };
-		313531CEDA0294311D87B4F4C3F073F4 /* FMDB.h in Headers */ = {isa = PBXBuildFile; fileRef = B48222C1E6B255DBC86682DB64B0F5E8 /* FMDB.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3D0F69C4CA35EB6A1F686BA88B19B4F6 /* FMDB-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A499037F0750D5693635EA39673D1F1F /* FMDB-dummy.m */; };
-		519584A95A506029F2B8DE3D96B623E6 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3CC1A2E89BBB7BC59727C29F059C6BB /* CoreFoundation.framework */; };
-		52F7B54CF5C95C4F1F6E177A1A1DEEEA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A76457A37E7CA69FF4CE2F24F6834A25 /* Foundation.framework */; };
+		313531CEDA0294311D87B4F4C3F073F4 /* FMDB.h in Headers */ = {isa = PBXBuildFile; fileRef = 45C93962FC96BA4A0228824CF16D53A8 /* FMDB.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3971D598267558B94FF665FECDA82111 /* DTTimePeriodChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 32816277FAF7D87B12C9097A17E9C103 /* DTTimePeriodChain.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		3A857F0D8287B963EF24F24B2613794A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B199F365063287AB1ADC71711FDD779C /* QuartzCore.framework */; };
+		3D0F69C4CA35EB6A1F686BA88B19B4F6 /* FMDB-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E5BBF6D6926C0B7CA39CC4E8B665029 /* FMDB-dummy.m */; };
 		587B76A3E381AF7C3EFFDF6754D39288 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A76457A37E7CA69FF4CE2F24F6834A25 /* Foundation.framework */; };
-		5EB4F27B76513AE918BA5AE0868E87C8 /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = CCF3CBC6A8B367DBA5A0F77A07CE85BD /* MBProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		66963F085A745A2006B08D59BA878E29 /* YYModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AD3587CACCB4992D50DC3225CE9FBE5 /* YYModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6D88938CA74BDE200E7CE8BD67984574 /* UIViewController+RESideMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = C77E85EFD83E882DF05A7A86EC71184F /* UIViewController+RESideMenu.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D536050A4A63CEB0BADB65A3B7F1072 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A76457A37E7CA69FF4CE2F24F6834A25 /* Foundation.framework */; };
+		5EB4F27B76513AE918BA5AE0868E87C8 /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 81C6D7A90741938A59981B4C625D7F8D /* MBProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6C8E458BA1C159DDB8D24C215B0CFEE7 /* DTTimePeriodGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = AD011ECCFAF8AD65B3FA247382099C35 /* DTTimePeriodGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		70528E7EBDD7860D6CD13AB83B5FD74A /* DTError.h in Headers */ = {isa = PBXBuildFile; fileRef = A7B71BB3A9B52C9086ED2F711958DA7C /* DTError.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		70D801E0B95C23BCC270E4EC8659D463 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AE2A1F2129315BD4F354C30AFFFEAC4 /* CoreGraphics.framework */; };
-		719125F47776C714245AED1872AB3E52 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A76457A37E7CA69FF4CE2F24F6834A25 /* Foundation.framework */; };
-		742ACC21D30BE4320221D1795B10FBD0 /* RECommonFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0040A56AF85EB8B4DC211FD030D6B6A0 /* RECommonFunctions.m */; };
-		80A0199FFC33B43751E2754485286DB9 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 272643F56613CA0D336AE3DBF19DC404 /* Pods-dummy.m */; };
-		82FC12F67E83874B93592218E9FB4CA0 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FB525410D11A194080D262D87B14C30 /* MBProgressHUD.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		888D90233DD99A87EF6B89E1AEDB822E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B199F365063287AB1ADC71711FDD779C /* QuartzCore.framework */; };
-		8B4A73D35E82C90CF2DFAA8202899CD6 /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FE2EE5B601818267C84B9E34A49A35F1 /* NSObject+YYModel.m */; };
-		8F831F4E13667AC13BC217EB41553D02 /* RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 40F5E4568B417AEF8C49265D9A031C0A /* RESideMenu.m */; };
-		A350C5704A1F233DAD830E081E00F8C1 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B0CE96E6756C692A8FA700105343065B /* FMDatabaseAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		AC9A8FB7A1F365243F704CEDAB7903D6 /* NSObject+YYModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 32C1E7370A231FFD8F5265C529052EEF /* NSObject+YYModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B418C9BDCF8C6BAC2E3942F157BB6D4C /* FMDatabaseAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A28BE8F1DB700089B80E4B6A790BE5F /* FMDatabaseAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CA027706DD6805766F1F4EC548E72440 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 334DE3DB1373BB3CA5171B23FFBAA657 /* FMDatabase.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		D0C5FF5485EAA2CDA03E9796B407697A /* FMDatabaseQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 09B23B4CAB68DF2566EFCB42A9C8F6AB /* FMDatabaseQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D0D5FFE53407F16C9CD3D0ECF43ACE93 /* FMDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = F608FFD889B0F0CA1CAFA54BF9E644FF /* FMDatabase.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DEFA3504695E9DFDE1177DAB22884470 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = C5023DC1DC62A023B6D8E1CCB9C3C8E4 /* FMResultSet.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		E5467FA9CF6E4431B1F5E9E0E8DBC25C /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B8C7A7FB9A2CA94E9C6825B8440F7A /* YYClassInfo.m */; };
-		F1E6BA0D109E2DD4968FF908C9384C28 /* RESideMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C2DFE283DE567C8FF05C9EEC5C62FF9 /* RESideMenu-dummy.m */; };
-		F977B243321331B58666E9284634101A /* FMResultSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 43558002FB3ADFCDAEB60DA330F23916 /* FMResultSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FC214077677D4F02E03C6C85F774E028 /* MBProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8302BBDEDA9C75F42C26E361ED4EAD98 /* MBProgressHUD-dummy.m */; };
-		FF458CD0923328BDE0B4B94E0650CB2C /* RECommonFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = 93862B5A8764F7B240B0ED7F748C9893 /* RECommonFunctions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		728A4BD9F3E427E5AF4DCB58998232FD /* RECommonFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 186D9A33636C5D5BDA88D19E598D82D3 /* RECommonFunctions.m */; };
+		74C48EFBDA0E387C6324AC50A75B3BF9 /* NSObject+YYModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DF353965ACA293DFF5F811B009461A3 /* NSObject+YYModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		76055803B99AE8B4EDE17DE198A223A1 /* UIViewController+RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = B64B190FF6B49023350681A2034AFDE1 /* UIViewController+RESideMenu.m */; };
+		77193852511922CC5CC888DEDEA6CC64 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A76457A37E7CA69FF4CE2F24F6834A25 /* Foundation.framework */; };
+		82FC12F67E83874B93592218E9FB4CA0 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 7265A1A1AC8D20376F1BA0AF5B06870D /* MBProgressHUD.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		83D92013498D5D49260C25FD7FDAC766 /* RESideMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 903A39755C315B3D4AA518ECF53D1F7C /* RESideMenu-dummy.m */; };
+		84D4326AA99002FA84A23DE02C1F73E3 /* RECommonFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = AB0C6A6DA7D1799DF63D211661BE4199 /* RECommonFunctions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		87F6857EA95527BE19E4C4317B02937D /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9951D79A5C3FB4F8829B7F528DBA63CE /* NSObject+YYModel.m */; };
+		8A4D02E5A1631C4387C72B7192D7090C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A76457A37E7CA69FF4CE2F24F6834A25 /* Foundation.framework */; };
+		8AE9B20A227D1963CB4C72E58DEB6D5E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A76457A37E7CA69FF4CE2F24F6834A25 /* Foundation.framework */; };
+		8DBAE4BE8A114ED7FA30E5811C7C9F15 /* DTTimePeriodGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = FC7D2D638303A41E0F67769107DA0B89 /* DTTimePeriodGroup.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		955D57A9B6A68BAE5CE2958C53A154B5 /* RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 954B7D9CA9B9B4C02DE750B5F78F0013 /* RESideMenu.m */; };
+		9BB39E24A540F8ACB5F3912384561B41 /* YYModel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 303A818A9FD149503ABABE842683F0B6 /* YYModel-dummy.m */; };
+		9C3E095663A91660777D0C284588F704 /* DTTimePeriod.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EBFBE28C395A74A442484DB4D315149 /* DTTimePeriod.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9DA2609B71A9860982B0687802F8D6CB /* DTTimePeriodChain.h in Headers */ = {isa = PBXBuildFile; fileRef = 5907014F65175F93938DB505DDB22B59 /* DTTimePeriodChain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9FA5214185E65D17922869C0B36627AE /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = C97C3D85F2C0820AD69ABF577A21CDBD /* YYClassInfo.m */; };
+		A350C5704A1F233DAD830E081E00F8C1 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DFFDAC4A5E5BA98FB6B4B92F3C98DB /* FMDatabaseAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		A6B1DF59915B1E66F5B492E3DC382FBD /* DateTools-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 05B0A4019A086B8FBF5882BC56AE07CB /* DateTools-dummy.m */; };
+		AEF39CCCA47BF107AEC783739E8D6844 /* DTConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 7757EA7F2AF5B85EC6DA83BA2AA10724 /* DTConstants.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		B418C9BDCF8C6BAC2E3942F157BB6D4C /* FMDatabaseAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = BE8321D9FF6CC5C9D7637C75C72DA7D6 /* FMDatabaseAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B41E7D31B34527CF5A001926809E5DC8 /* DTTimePeriodCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = B119BD7B0AC41F34BAF27CBB9454228B /* DTTimePeriodCollection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C6E277CA70064AE2D1F7361009CEB41B /* DateTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F35980F0AFBA241FA4DA9DF80D24DBF /* DateTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C970B0E8B954315B8570486CEBB9E911 /* YYModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 883ACF6D30FA0394DA019AECE4594752 /* YYModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CA027706DD6805766F1F4EC548E72440 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 61B50D9D8CB98483B64C40B10111F05B /* FMDatabase.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		D0C5FF5485EAA2CDA03E9796B407697A /* FMDatabaseQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 8735484A678D2D360302C056861FE040 /* FMDatabaseQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D0D5FFE53407F16C9CD3D0ECF43ACE93 /* FMDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 640432F3241EE80AB5CB85076AD328B2 /* FMDatabase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DE6303DE14BD8A3A264FE96645E8075A /* DTConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = CE01821F786C329F44FF4105AAC83F0E /* DTConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DEFA3504695E9DFDE1177DAB22884470 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = A8240C3B055DB5835C5AA693846A55CB /* FMResultSet.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		E8F4D6E6815D80D30338CB1A7C5BF3AD /* YYClassInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = A6456ED85F64E678FBE2ADA53A49A6B2 /* YYClassInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EAD8F7B9B19071EB9D3EAA582AD7FAAF /* NSDate+DateTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 3330B45AA7F5833B55D1D90CB934479B /* NSDate+DateTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC79D7D14DF1EAB0AEBA249F04CF8EFF /* RESideMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = 73007BBDCE0030D2DD9A309158CCB6B0 /* RESideMenu.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ECDC9BE70EBB30AFA33016F779BB7E3D /* DTError.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A2D0D13AEBFD5B4F92368BB4B658DF /* DTError.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		EE73E659C371F31758399470003C4ED1 /* UIViewController+RESideMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D733ECA1E1618182FA8C7245353C26D /* UIViewController+RESideMenu.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EF8197F179C59888AD8DC30DF746D15E /* DTTimePeriod.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AC4D45E8410D4C36CC08B8D3A7BDF0E /* DTTimePeriod.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		F977B243321331B58666E9284634101A /* FMResultSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 0414E18461912D8C6C1D2DB1801DBD30 /* FMResultSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FC214077677D4F02E03C6C85F774E028 /* MBProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ED5E1DDC93E86D47F601326AD1B1C70D /* MBProgressHUD-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A108AB7BCDB650ABABB54CD66D7C5720 /* PBXContainerItemProxy */ = {
+		0B5C66AC28975C0EEEF82878610AD415 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9F12FB4A63E20F601CFB2E64A65B57C1;
-			remoteInfo = FMDB;
+			remoteGlobalIDString = 4A7951144BD43D83588C673A15814EB2;
+			remoteInfo = RESideMenu;
 		};
-		B284A4A50B9643B92536D73BE7788CC3 /* PBXContainerItemProxy */ = {
+		45CA127EA8E33D2F7FD19E1C6060FF5A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 51349825F0FFA52E6A06AFF90434564C;
+			remoteInfo = YYModel;
+		};
+		B8C14BD8A1F387CC4431A6398F105874 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = FE2F1D7B9D9FCEA148517E4657B243F4;
 			remoteInfo = MBProgressHUD;
 		};
-		BAAC6B9DCB1CFA79019C4D0E481130DB /* PBXContainerItemProxy */ = {
+		D6D7AEE11F42DDA10AE8FD82B6B71344 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A6DD06FA9E4F9107B4A277100B2AE495;
-			remoteInfo = RESideMenu;
+			remoteGlobalIDString = 9F12FB4A63E20F601CFB2E64A65B57C1;
+			remoteInfo = FMDB;
 		};
-		EE3B4DDD1334DC03DF450B6A3B4E35FF /* PBXContainerItemProxy */ = {
+		FFC78CC40BE128252FA43090FD937A16 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9FD431A5D530157DB4B0351E4D365193;
-			remoteInfo = YYModel;
+			remoteGlobalIDString = 31FF44B5E2FF8CF00090950A8B67AFF6;
+			remoteInfo = DateTools;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0040A56AF85EB8B4DC211FD030D6B6A0 /* RECommonFunctions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RECommonFunctions.m; path = RESideMenu/RECommonFunctions.m; sourceTree = "<group>"; };
-		0208C83D6536F65E0E85FAD3D04E7805 /* MBProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBProgressHUD.xcconfig; sourceTree = "<group>"; };
-		07E37E88B5CFA4841CF07FB8DEE12793 /* UIViewController+RESideMenu.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+RESideMenu.m"; path = "RESideMenu/UIViewController+RESideMenu.m"; sourceTree = "<group>"; };
-		09B23B4CAB68DF2566EFCB42A9C8F6AB /* FMDatabaseQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabaseQueue.h; path = src/fmdb/FMDatabaseQueue.h; sourceTree = "<group>"; };
-		0B417F133C5AC4D2105AC60CE0F49D72 /* FMDB-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FMDB-prefix.pch"; sourceTree = "<group>"; };
-		0C09E94A6FC3AA4A0BB208AAB9A1A7B1 /* FMDatabasePool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabasePool.h; path = src/fmdb/FMDatabasePool.h; sourceTree = "<group>"; };
+		0414E18461912D8C6C1D2DB1801DBD30 /* FMResultSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = src/fmdb/FMResultSet.h; sourceTree = "<group>"; };
+		0522E7596167987CC7F4DEE02FDF6CCD /* libYYModel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libYYModel.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		05B0A4019A086B8FBF5882BC56AE07CB /* DateTools-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DateTools-dummy.m"; sourceTree = "<group>"; };
 		10834806BD7B412BC24F347361FA2C8E /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
-		1AD3587CACCB4992D50DC3225CE9FBE5 /* YYModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYModel.h; path = YYModel/YYModel.h; sourceTree = "<group>"; };
-		1DB00FFB2FB858778FDE5A7FD250FCF5 /* libYYModel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libYYModel.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		1FFBE6998BBBFA8B1EEF1996243C9207 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseQueue.m; path = src/fmdb/FMDatabaseQueue.m; sourceTree = "<group>"; };
-		245C4BA6E46755BA2A5101E08D7A4A68 /* YYClassInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYClassInfo.h; path = YYModel/YYClassInfo.h; sourceTree = "<group>"; };
+		186D9A33636C5D5BDA88D19E598D82D3 /* RECommonFunctions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RECommonFunctions.m; path = RESideMenu/RECommonFunctions.m; sourceTree = "<group>"; };
+		1F3F9C5A174C0BBC004A9EDBB8F8CF75 /* FMDB-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FMDB-prefix.pch"; sourceTree = "<group>"; };
 		272643F56613CA0D336AE3DBF19DC404 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
-		2A28BE8F1DB700089B80E4B6A790BE5F /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabaseAdditions.h; path = src/fmdb/FMDatabaseAdditions.h; sourceTree = "<group>"; };
-		32C1E7370A231FFD8F5265C529052EEF /* NSObject+YYModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+YYModel.h"; path = "YYModel/NSObject+YYModel.h"; sourceTree = "<group>"; };
-		334DE3DB1373BB3CA5171B23FFBAA657 /* FMDatabase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = src/fmdb/FMDatabase.m; sourceTree = "<group>"; };
+		303A818A9FD149503ABABE842683F0B6 /* YYModel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YYModel-dummy.m"; sourceTree = "<group>"; };
+		32816277FAF7D87B12C9097A17E9C103 /* DTTimePeriodChain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTTimePeriodChain.m; path = DateTools/DTTimePeriodChain.m; sourceTree = "<group>"; };
+		3330B45AA7F5833B55D1D90CB934479B /* NSDate+DateTools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+DateTools.h"; path = "DateTools/NSDate+DateTools.h"; sourceTree = "<group>"; };
 		37DB56D75062CC75FCB0966E1C6E8A8E /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
-		381DB89CFB4E2AF580BE13996A7934DD /* RESideMenu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RESideMenu.xcconfig; sourceTree = "<group>"; };
-		40F5E4568B417AEF8C49265D9A031C0A /* RESideMenu.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RESideMenu.m; path = RESideMenu/RESideMenu.m; sourceTree = "<group>"; };
-		43558002FB3ADFCDAEB60DA330F23916 /* FMResultSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = src/fmdb/FMResultSet.h; sourceTree = "<group>"; };
-		483FEE4704CBDC3B3B101DE46619CEDB /* RESideMenu.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RESideMenu.h; path = RESideMenu/RESideMenu.h; sourceTree = "<group>"; };
+		3CFC9E69D0E3E6D3353694CF74C36AFE /* DateTools-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DateTools-prefix.pch"; sourceTree = "<group>"; };
+		3E5BBF6D6926C0B7CA39CC4E8B665029 /* FMDB-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FMDB-dummy.m"; sourceTree = "<group>"; };
+		3EBFBE28C395A74A442484DB4D315149 /* DTTimePeriod.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTTimePeriod.h; path = DateTools/DTTimePeriod.h; sourceTree = "<group>"; };
+		45C93962FC96BA4A0228824CF16D53A8 /* FMDB.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDB.h; path = src/fmdb/FMDB.h; sourceTree = "<group>"; };
+		4AC4D45E8410D4C36CC08B8D3A7BDF0E /* DTTimePeriod.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTTimePeriod.m; path = DateTools/DTTimePeriod.m; sourceTree = "<group>"; };
+		4CC23DA9A0B9CFBD9B33BEBB78CBAADF /* libRESideMenu.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRESideMenu.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E762F23EC34ED4A6FF3312D84E33A40 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		516396EF0A92F755F8AD9FAA9E933E8B /* libFMDB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFMDB.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5765252556B67ADDF753D4F32A359882 /* NSDate+DateTools.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+DateTools.m"; path = "DateTools/NSDate+DateTools.m"; sourceTree = "<group>"; };
+		5907014F65175F93938DB505DDB22B59 /* DTTimePeriodChain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTTimePeriodChain.h; path = DateTools/DTTimePeriodChain.h; sourceTree = "<group>"; };
+		5D733ECA1E1618182FA8C7245353C26D /* UIViewController+RESideMenu.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+RESideMenu.h"; path = "RESideMenu/UIViewController+RESideMenu.h"; sourceTree = "<group>"; };
+		61B50D9D8CB98483B64C40B10111F05B /* FMDatabase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = src/fmdb/FMDatabase.m; sourceTree = "<group>"; };
+		640432F3241EE80AB5CB85076AD328B2 /* FMDatabase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = src/fmdb/FMDatabase.h; sourceTree = "<group>"; };
 		6911BECA35E7518D864239B7E898EEF3 /* Pods-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-frameworks.sh"; sourceTree = "<group>"; };
-		6CA8C4C9F1987343827F6F140679F9AB /* RESideMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RESideMenu-prefix.pch"; sourceTree = "<group>"; };
-		719014E43EE22896EC37F1B1FDC0FA6A /* libMBProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMBProgressHUD.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		8302BBDEDA9C75F42C26E361ED4EAD98 /* MBProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD-dummy.m"; sourceTree = "<group>"; };
-		8C2DFE283DE567C8FF05C9EEC5C62FF9 /* RESideMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RESideMenu-dummy.m"; sourceTree = "<group>"; };
-		8D670D130CD2E7427F75566CA059A048 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		8FB525410D11A194080D262D87B14C30 /* MBProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
-		93862B5A8764F7B240B0ED7F748C9893 /* RECommonFunctions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RECommonFunctions.h; path = RESideMenu/RECommonFunctions.h; sourceTree = "<group>"; };
+		69881FD10003678169A52BD7A3DFEBC9 /* RESideMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RESideMenu-prefix.pch"; sourceTree = "<group>"; };
+		6DF353965ACA293DFF5F811B009461A3 /* NSObject+YYModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+YYModel.h"; path = "YYModel/NSObject+YYModel.h"; sourceTree = "<group>"; };
+		6F33A6703C614822447A76D7F7DDFBB0 /* MBProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBProgressHUD.xcconfig; sourceTree = "<group>"; };
+		6F964C9CAC0AA5E7F830EE6DA4F3347B /* MBProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-prefix.pch"; sourceTree = "<group>"; };
+		7265A1A1AC8D20376F1BA0AF5B06870D /* MBProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		73007BBDCE0030D2DD9A309158CCB6B0 /* RESideMenu.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RESideMenu.h; path = RESideMenu/RESideMenu.h; sourceTree = "<group>"; };
+		763993C3E26523F7E6797CE6C085A325 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7757EA7F2AF5B85EC6DA83BA2AA10724 /* DTConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTConstants.m; path = DateTools/DTConstants.m; sourceTree = "<group>"; };
+		7F35980F0AFBA241FA4DA9DF80D24DBF /* DateTools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DateTools.h; path = DateTools/DateTools.h; sourceTree = "<group>"; };
+		81C6D7A90741938A59981B4C625D7F8D /* MBProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		8735484A678D2D360302C056861FE040 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabaseQueue.h; path = src/fmdb/FMDatabaseQueue.h; sourceTree = "<group>"; };
+		87DFFDAC4A5E5BA98FB6B4B92F3C98DB /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseAdditions.m; path = src/fmdb/FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		883ACF6D30FA0394DA019AECE4594752 /* YYModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYModel.h; path = YYModel/YYModel.h; sourceTree = "<group>"; };
+		903A39755C315B3D4AA518ECF53D1F7C /* RESideMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RESideMenu-dummy.m"; sourceTree = "<group>"; };
+		954B7D9CA9B9B4C02DE750B5F78F0013 /* RESideMenu.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RESideMenu.m; path = RESideMenu/RESideMenu.m; sourceTree = "<group>"; };
 		98C98CDFB3F20F2925F6CD1F141BB14F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		990D752C2F26DBE98CFC9F8CA6FD388C /* FMDatabasePool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabasePool.h; path = src/fmdb/FMDatabasePool.h; sourceTree = "<group>"; };
+		992AB4F1AE994163C96897BCA7DFE112 /* YYModel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YYModel-prefix.pch"; sourceTree = "<group>"; };
+		9951D79A5C3FB4F8829B7F528DBA63CE /* NSObject+YYModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+YYModel.m"; path = "YYModel/NSObject+YYModel.m"; sourceTree = "<group>"; };
 		9AE2A1F2129315BD4F354C30AFFFEAC4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
-		9CFE062261C4F4020858C67E83DD1EDE /* libFMDB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFMDB.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DF81EBD60BE86A910007A7B71BC9CA2 /* libDateTools.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDateTools.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1A36D34413696BE466E2CA0AFF194DA /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
-		A3B8C7A7FB9A2CA94E9C6825B8440F7A /* YYClassInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYClassInfo.m; path = YYModel/YYClassInfo.m; sourceTree = "<group>"; };
-		A3C5A8AC539ED769BCEAEA3151F311D9 /* FMDatabasePool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabasePool.m; path = src/fmdb/FMDatabasePool.m; sourceTree = "<group>"; };
-		A499037F0750D5693635EA39673D1F1F /* FMDB-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FMDB-dummy.m"; sourceTree = "<group>"; };
+		A6456ED85F64E678FBE2ADA53A49A6B2 /* YYClassInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYClassInfo.h; path = YYModel/YYClassInfo.h; sourceTree = "<group>"; };
 		A76457A37E7CA69FF4CE2F24F6834A25 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		B0CE96E6756C692A8FA700105343065B /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseAdditions.m; path = src/fmdb/FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		A7B71BB3A9B52C9086ED2F711958DA7C /* DTError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTError.h; path = DateTools/DTError.h; sourceTree = "<group>"; };
+		A8240C3B055DB5835C5AA693846A55CB /* FMResultSet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = src/fmdb/FMResultSet.m; sourceTree = "<group>"; };
+		AB0C6A6DA7D1799DF63D211661BE4199 /* RECommonFunctions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RECommonFunctions.h; path = RESideMenu/RECommonFunctions.h; sourceTree = "<group>"; };
+		AD011ECCFAF8AD65B3FA247382099C35 /* DTTimePeriodGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTTimePeriodGroup.h; path = DateTools/DTTimePeriodGroup.h; sourceTree = "<group>"; };
+		B119BD7B0AC41F34BAF27CBB9454228B /* DTTimePeriodCollection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTTimePeriodCollection.h; path = DateTools/DTTimePeriodCollection.h; sourceTree = "<group>"; };
 		B199F365063287AB1ADC71711FDD779C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		B48222C1E6B255DBC86682DB64B0F5E8 /* FMDB.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDB.h; path = src/fmdb/FMDB.h; sourceTree = "<group>"; };
+		B64B190FF6B49023350681A2034AFDE1 /* UIViewController+RESideMenu.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+RESideMenu.m"; path = "RESideMenu/UIViewController+RESideMenu.m"; sourceTree = "<group>"; };
+		B6A2D0D13AEBFD5B4F92368BB4B658DF /* DTError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTError.m; path = DateTools/DTError.m; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BE8321D9FF6CC5C9D7637C75C72DA7D6 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabaseAdditions.h; path = src/fmdb/FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		BFB820700B0C5C81E3FB18AEC39B2748 /* YYModel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YYModel.xcconfig; sourceTree = "<group>"; };
+		C37897B58D569C768B0D267AF7BA192C /* DTTimePeriodCollection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTTimePeriodCollection.m; path = DateTools/DTTimePeriodCollection.m; sourceTree = "<group>"; };
 		C3CC1A2E89BBB7BC59727C29F059C6BB /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/CoreFoundation.framework; sourceTree = DEVELOPER_DIR; };
-		C5023DC1DC62A023B6D8E1CCB9C3C8E4 /* FMResultSet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = src/fmdb/FMResultSet.m; sourceTree = "<group>"; };
-		C77E85EFD83E882DF05A7A86EC71184F /* UIViewController+RESideMenu.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+RESideMenu.h"; path = "RESideMenu/UIViewController+RESideMenu.h"; sourceTree = "<group>"; };
-		C83F3FA95A07C4645426206F9594BBB5 /* YYModel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YYModel-dummy.m"; sourceTree = "<group>"; };
-		CAF782E6CD8BADC661D5B70706C08A95 /* MBProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-prefix.pch"; sourceTree = "<group>"; };
-		CCF3CBC6A8B367DBA5A0F77A07CE85BD /* MBProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
-		CFD5E44D08172B2EA9127626EF2FD7C3 /* YYModel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YYModel-prefix.pch"; sourceTree = "<group>"; };
-		D66340AC5C9178FC7263A1D573DE54C3 /* libRESideMenu.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRESideMenu.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		E41C16DE0E098CCC2EA844444D8412A1 /* FMDB.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FMDB.xcconfig; sourceTree = "<group>"; };
-		F608FFD889B0F0CA1CAFA54BF9E644FF /* FMDatabase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = src/fmdb/FMDatabase.h; sourceTree = "<group>"; };
-		F63CB6C25E89955AA3978FDB8C654668 /* YYModel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YYModel.xcconfig; sourceTree = "<group>"; };
-		FE2EE5B601818267C84B9E34A49A35F1 /* NSObject+YYModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+YYModel.m"; path = "YYModel/NSObject+YYModel.m"; sourceTree = "<group>"; };
+		C76D5F90C5E66AE2C032411D1E70BD4A /* FMDatabasePool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabasePool.m; path = src/fmdb/FMDatabasePool.m; sourceTree = "<group>"; };
+		C97C3D85F2C0820AD69ABF577A21CDBD /* YYClassInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYClassInfo.m; path = YYModel/YYClassInfo.m; sourceTree = "<group>"; };
+		CA94802F2831C3D8BA687A855C2D267F /* FMDB.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FMDB.xcconfig; sourceTree = "<group>"; };
+		CE01821F786C329F44FF4105AAC83F0E /* DTConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTConstants.h; path = DateTools/DTConstants.h; sourceTree = "<group>"; };
+		E4BE5BF529A54683170B486278D5B5E0 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseQueue.m; path = src/fmdb/FMDatabaseQueue.m; sourceTree = "<group>"; };
+		ED5E1DDC93E86D47F601326AD1B1C70D /* MBProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		F47B0FED1892D0CC917E48229AA3D892 /* RESideMenu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RESideMenu.xcconfig; sourceTree = "<group>"; };
+		F54B55615DCD726A122D7CFD0AE6C287 /* DateTools.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DateTools.xcconfig; sourceTree = "<group>"; };
+		F643F6815C40CB3AB65FEF5E9B7487C9 /* DateTools.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = DateTools.bundle; path = DateTools/DateTools.bundle; sourceTree = "<group>"; };
+		FC7D2D638303A41E0F67769107DA0B89 /* DTTimePeriodGroup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTTimePeriodGroup.m; path = DateTools/DTTimePeriodGroup.m; sourceTree = "<group>"; };
+		FDB91E904789114B106BB7B069CC5554 /* libMBProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMBProgressHUD.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		7CBC9F4853BBFEF949A09070DBDF6F21 /* Frameworks */ = {
+		530FD65C498B21E3CC0C04855EB59B4C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				719125F47776C714245AED1872AB3E52 /* Foundation.framework in Frameworks */,
-				888D90233DD99A87EF6B89E1AEDB822E /* QuartzCore.framework in Frameworks */,
+				77193852511922CC5CC888DEDEA6CC64 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,20 +194,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B7E5F05ACB9B2D6DBA69C0E766CD7DA2 /* Frameworks */ = {
+		BE0C2F359A46BE6DB9D4AB5C1D9B52A2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				519584A95A506029F2B8DE3D96B623E6 /* CoreFoundation.framework in Frameworks */,
-				2C45F33EB2E2C6A6A137F8897B0642EA /* Foundation.framework in Frameworks */,
+				5D536050A4A63CEB0BADB65A3B7F1072 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D12A90F7AAE919E9126CDE5C064987E9 /* Frameworks */ = {
+		BE9703AA72FD39ACA5C46FCB17B1760C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52F7B54CF5C95C4F1F6E177A1A1DEEEA /* Foundation.framework in Frameworks */,
+				8AE9B20A227D1963CB4C72E58DEB6D5E /* Foundation.framework in Frameworks */,
+				3A857F0D8287B963EF24F24B2613794A /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,6 +217,15 @@
 			files = (
 				70D801E0B95C23BCC270E4EC8659D463 /* CoreGraphics.framework in Frameworks */,
 				2989492A1A182744E36FD61DF1746D94 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F19614C9E6985607ACAB3DA6D49C4B43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0448FE78DA85D09FE8472DF661E5B60B /* CoreFoundation.framework in Frameworks */,
+				8A4D02E5A1631C4387C72B7192D7090C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,24 +240,15 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		098537AE385CC01FDEC0922C934D514E /* Support Files */ = {
+		0B956B8748869528B9590284EC623A9C /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				F63CB6C25E89955AA3978FDB8C654668 /* YYModel.xcconfig */,
-				C83F3FA95A07C4645426206F9594BBB5 /* YYModel-dummy.m */,
-				CFD5E44D08172B2EA9127626EF2FD7C3 /* YYModel-prefix.pch */,
+				F47B0FED1892D0CC917E48229AA3D892 /* RESideMenu.xcconfig */,
+				903A39755C315B3D4AA518ECF53D1F7C /* RESideMenu-dummy.m */,
+				69881FD10003678169A52BD7A3DFEBC9 /* RESideMenu-prefix.pch */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/YYModel";
-			sourceTree = "<group>";
-		};
-		0BD9074C716453521904188D9B2D70B8 /* FMDB */ = {
-			isa = PBXGroup;
-			children = (
-				91ECF33BB7059B7433339B8798DBE572 /* standard */,
-				3C9BE8C96B30C177EC0D4583C689576B /* Support Files */,
-			);
-			path = FMDB;
+			path = "../Target Support Files/RESideMenu";
 			sourceTree = "<group>";
 		};
 		14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */ = {
@@ -216,40 +259,45 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		2FACF686FDFE8B9496DB49E5D2FA5175 /* Pods */ = {
+		1C1E99A86A64E36EFF6DBD490B73E770 /* FMDB */ = {
 			isa = PBXGroup;
 			children = (
-				0BD9074C716453521904188D9B2D70B8 /* FMDB */,
-				9880950CD2F982DAF670D627014F555C /* MBProgressHUD */,
-				4A68F04B016E0FBA49EB2076D5D04367 /* RESideMenu */,
-				AB28BCC03CCB8E143970A37E63E95CD8 /* YYModel */,
+				94F14AED08DC8487EFC559304976472D /* standard */,
+				E6C68FDC40D848F5F76371CF3564B3C4 /* Support Files */,
 			);
-			name = Pods;
+			path = FMDB;
 			sourceTree = "<group>";
 		};
-		3C9BE8C96B30C177EC0D4583C689576B /* Support Files */ = {
+		4E8775911176E3E0DCF5EE6C0A6F82A5 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				E41C16DE0E098CCC2EA844444D8412A1 /* FMDB.xcconfig */,
-				A499037F0750D5693635EA39673D1F1F /* FMDB-dummy.m */,
-				0B417F133C5AC4D2105AC60CE0F49D72 /* FMDB-prefix.pch */,
+				F643F6815C40CB3AB65FEF5E9B7487C9 /* DateTools.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		56EE51E404FD3BADB2A793CBBA4D9095 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9DF81EBD60BE86A910007A7B71BC9CA2 /* libDateTools.a */,
+				516396EF0A92F755F8AD9FAA9E933E8B /* libFMDB.a */,
+				FDB91E904789114B106BB7B069CC5554 /* libMBProgressHUD.a */,
+				763993C3E26523F7E6797CE6C085A325 /* libPods.a */,
+				4CC23DA9A0B9CFBD9B33BEBB78CBAADF /* libRESideMenu.a */,
+				0522E7596167987CC7F4DEE02FDF6CCD /* libYYModel.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6B6DE06C195EF10270700162E686712E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F54B55615DCD726A122D7CFD0AE6C287 /* DateTools.xcconfig */,
+				05B0A4019A086B8FBF5882BC56AE07CB /* DateTools-dummy.m */,
+				3CFC9E69D0E3E6D3353694CF74C36AFE /* DateTools-prefix.pch */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/FMDB";
-			sourceTree = "<group>";
-		};
-		4A68F04B016E0FBA49EB2076D5D04367 /* RESideMenu */ = {
-			isa = PBXGroup;
-			children = (
-				93862B5A8764F7B240B0ED7F748C9893 /* RECommonFunctions.h */,
-				0040A56AF85EB8B4DC211FD030D6B6A0 /* RECommonFunctions.m */,
-				483FEE4704CBDC3B3B101DE46619CEDB /* RESideMenu.h */,
-				40F5E4568B417AEF8C49265D9A031C0A /* RESideMenu.m */,
-				C77E85EFD83E882DF05A7A86EC71184F /* UIViewController+RESideMenu.h */,
-				07E37E88B5CFA4841CF07FB8DEE12793 /* UIViewController+RESideMenu.m */,
-				A1E22A1F83D563B533B87AD3866AE6CE /* Support Files */,
-			);
-			path = RESideMenu;
+			path = "../Target Support Files/DateTools";
 			sourceTree = "<group>";
 		};
 		7870E684B630DB59CE6BE2F55DAE270D /* iOS */ = {
@@ -268,62 +316,49 @@
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
 				14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */,
-				2FACF686FDFE8B9496DB49E5D2FA5175 /* Pods */,
-				D81F4D482C85A450521ACF449CEA7CEF /* Products */,
+				D594176042520749D90C783E123584FD /* Pods */,
+				56EE51E404FD3BADB2A793CBBA4D9095 /* Products */,
 				037C0CA694176A3C0915F62C9D20B3E6 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		91ECF33BB7059B7433339B8798DBE572 /* standard */ = {
+		94F14AED08DC8487EFC559304976472D /* standard */ = {
 			isa = PBXGroup;
 			children = (
-				F608FFD889B0F0CA1CAFA54BF9E644FF /* FMDatabase.h */,
-				334DE3DB1373BB3CA5171B23FFBAA657 /* FMDatabase.m */,
-				2A28BE8F1DB700089B80E4B6A790BE5F /* FMDatabaseAdditions.h */,
-				B0CE96E6756C692A8FA700105343065B /* FMDatabaseAdditions.m */,
-				0C09E94A6FC3AA4A0BB208AAB9A1A7B1 /* FMDatabasePool.h */,
-				A3C5A8AC539ED769BCEAEA3151F311D9 /* FMDatabasePool.m */,
-				09B23B4CAB68DF2566EFCB42A9C8F6AB /* FMDatabaseQueue.h */,
-				1FFBE6998BBBFA8B1EEF1996243C9207 /* FMDatabaseQueue.m */,
-				B48222C1E6B255DBC86682DB64B0F5E8 /* FMDB.h */,
-				43558002FB3ADFCDAEB60DA330F23916 /* FMResultSet.h */,
-				C5023DC1DC62A023B6D8E1CCB9C3C8E4 /* FMResultSet.m */,
+				640432F3241EE80AB5CB85076AD328B2 /* FMDatabase.h */,
+				61B50D9D8CB98483B64C40B10111F05B /* FMDatabase.m */,
+				BE8321D9FF6CC5C9D7637C75C72DA7D6 /* FMDatabaseAdditions.h */,
+				87DFFDAC4A5E5BA98FB6B4B92F3C98DB /* FMDatabaseAdditions.m */,
+				990D752C2F26DBE98CFC9F8CA6FD388C /* FMDatabasePool.h */,
+				C76D5F90C5E66AE2C032411D1E70BD4A /* FMDatabasePool.m */,
+				8735484A678D2D360302C056861FE040 /* FMDatabaseQueue.h */,
+				E4BE5BF529A54683170B486278D5B5E0 /* FMDatabaseQueue.m */,
+				45C93962FC96BA4A0228824CF16D53A8 /* FMDB.h */,
+				0414E18461912D8C6C1D2DB1801DBD30 /* FMResultSet.h */,
+				A8240C3B055DB5835C5AA693846A55CB /* FMResultSet.m */,
 			);
 			name = standard;
 			sourceTree = "<group>";
 		};
-		9880950CD2F982DAF670D627014F555C /* MBProgressHUD */ = {
+		983EB10DFC45DC38B5CF4DCE3DA19FB1 /* MBProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
-				CCF3CBC6A8B367DBA5A0F77A07CE85BD /* MBProgressHUD.h */,
-				8FB525410D11A194080D262D87B14C30 /* MBProgressHUD.m */,
-				B6F12ABDEECF69D9AA994E57109BF5EE /* Support Files */,
+				81C6D7A90741938A59981B4C625D7F8D /* MBProgressHUD.h */,
+				7265A1A1AC8D20376F1BA0AF5B06870D /* MBProgressHUD.m */,
+				C87EC75B3AD23B5DF66E1D37FFE00C12 /* Support Files */,
 			);
 			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
-		A1E22A1F83D563B533B87AD3866AE6CE /* Support Files */ = {
+		AB8A199E06C1A263976D6EE6E2CFA565 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				381DB89CFB4E2AF580BE13996A7934DD /* RESideMenu.xcconfig */,
-				8C2DFE283DE567C8FF05C9EEC5C62FF9 /* RESideMenu-dummy.m */,
-				6CA8C4C9F1987343827F6F140679F9AB /* RESideMenu-prefix.pch */,
+				BFB820700B0C5C81E3FB18AEC39B2748 /* YYModel.xcconfig */,
+				303A818A9FD149503ABABE842683F0B6 /* YYModel-dummy.m */,
+				992AB4F1AE994163C96897BCA7DFE112 /* YYModel-prefix.pch */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/RESideMenu";
-			sourceTree = "<group>";
-		};
-		AB28BCC03CCB8E143970A37E63E95CD8 /* YYModel */ = {
-			isa = PBXGroup;
-			children = (
-				32C1E7370A231FFD8F5265C529052EEF /* NSObject+YYModel.h */,
-				FE2EE5B601818267C84B9E34A49A35F1 /* NSObject+YYModel.m */,
-				245C4BA6E46755BA2A5101E08D7A4A68 /* YYClassInfo.h */,
-				A3B8C7A7FB9A2CA94E9C6825B8440F7A /* YYClassInfo.m */,
-				1AD3587CACCB4992D50DC3225CE9FBE5 /* YYModel.h */,
-				098537AE385CC01FDEC0922C934D514E /* Support Files */,
-			);
-			path = YYModel;
+			path = "../Target Support Files/YYModel";
 			sourceTree = "<group>";
 		};
 		B3D1D13E0C6553800746CB8FD61CF946 /* Pods */ = {
@@ -341,39 +376,116 @@
 			path = "Target Support Files/Pods";
 			sourceTree = "<group>";
 		};
-		B6F12ABDEECF69D9AA994E57109BF5EE /* Support Files */ = {
+		C87EC75B3AD23B5DF66E1D37FFE00C12 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				0208C83D6536F65E0E85FAD3D04E7805 /* MBProgressHUD.xcconfig */,
-				8302BBDEDA9C75F42C26E361ED4EAD98 /* MBProgressHUD-dummy.m */,
-				CAF782E6CD8BADC661D5B70706C08A95 /* MBProgressHUD-prefix.pch */,
+				6F33A6703C614822447A76D7F7DDFBB0 /* MBProgressHUD.xcconfig */,
+				ED5E1DDC93E86D47F601326AD1B1C70D /* MBProgressHUD-dummy.m */,
+				6F964C9CAC0AA5E7F830EE6DA4F3347B /* MBProgressHUD-prefix.pch */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/MBProgressHUD";
 			sourceTree = "<group>";
 		};
-		D81F4D482C85A450521ACF449CEA7CEF /* Products */ = {
+		D594176042520749D90C783E123584FD /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				9CFE062261C4F4020858C67E83DD1EDE /* libFMDB.a */,
-				719014E43EE22896EC37F1B1FDC0FA6A /* libMBProgressHUD.a */,
-				8D670D130CD2E7427F75566CA059A048 /* libPods.a */,
-				D66340AC5C9178FC7263A1D573DE54C3 /* libRESideMenu.a */,
-				1DB00FFB2FB858778FDE5A7FD250FCF5 /* libYYModel.a */,
+				DC75E068A97A067DDCC774791FD1831F /* DateTools */,
+				1C1E99A86A64E36EFF6DBD490B73E770 /* FMDB */,
+				983EB10DFC45DC38B5CF4DCE3DA19FB1 /* MBProgressHUD */,
+				E816904CC126B010D25E0099B74F3113 /* RESideMenu */,
+				E4CB8A9A57FA4C2F75DB25DB6C04CFF6 /* YYModel */,
 			);
-			name = Products;
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DC75E068A97A067DDCC774791FD1831F /* DateTools */ = {
+			isa = PBXGroup;
+			children = (
+				7F35980F0AFBA241FA4DA9DF80D24DBF /* DateTools.h */,
+				CE01821F786C329F44FF4105AAC83F0E /* DTConstants.h */,
+				7757EA7F2AF5B85EC6DA83BA2AA10724 /* DTConstants.m */,
+				A7B71BB3A9B52C9086ED2F711958DA7C /* DTError.h */,
+				B6A2D0D13AEBFD5B4F92368BB4B658DF /* DTError.m */,
+				3EBFBE28C395A74A442484DB4D315149 /* DTTimePeriod.h */,
+				4AC4D45E8410D4C36CC08B8D3A7BDF0E /* DTTimePeriod.m */,
+				5907014F65175F93938DB505DDB22B59 /* DTTimePeriodChain.h */,
+				32816277FAF7D87B12C9097A17E9C103 /* DTTimePeriodChain.m */,
+				B119BD7B0AC41F34BAF27CBB9454228B /* DTTimePeriodCollection.h */,
+				C37897B58D569C768B0D267AF7BA192C /* DTTimePeriodCollection.m */,
+				AD011ECCFAF8AD65B3FA247382099C35 /* DTTimePeriodGroup.h */,
+				FC7D2D638303A41E0F67769107DA0B89 /* DTTimePeriodGroup.m */,
+				3330B45AA7F5833B55D1D90CB934479B /* NSDate+DateTools.h */,
+				5765252556B67ADDF753D4F32A359882 /* NSDate+DateTools.m */,
+				4E8775911176E3E0DCF5EE6C0A6F82A5 /* Resources */,
+				6B6DE06C195EF10270700162E686712E /* Support Files */,
+			);
+			path = DateTools;
+			sourceTree = "<group>";
+		};
+		E4CB8A9A57FA4C2F75DB25DB6C04CFF6 /* YYModel */ = {
+			isa = PBXGroup;
+			children = (
+				6DF353965ACA293DFF5F811B009461A3 /* NSObject+YYModel.h */,
+				9951D79A5C3FB4F8829B7F528DBA63CE /* NSObject+YYModel.m */,
+				A6456ED85F64E678FBE2ADA53A49A6B2 /* YYClassInfo.h */,
+				C97C3D85F2C0820AD69ABF577A21CDBD /* YYClassInfo.m */,
+				883ACF6D30FA0394DA019AECE4594752 /* YYModel.h */,
+				AB8A199E06C1A263976D6EE6E2CFA565 /* Support Files */,
+			);
+			path = YYModel;
+			sourceTree = "<group>";
+		};
+		E6C68FDC40D848F5F76371CF3564B3C4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CA94802F2831C3D8BA687A855C2D267F /* FMDB.xcconfig */,
+				3E5BBF6D6926C0B7CA39CC4E8B665029 /* FMDB-dummy.m */,
+				1F3F9C5A174C0BBC004A9EDBB8F8CF75 /* FMDB-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FMDB";
+			sourceTree = "<group>";
+		};
+		E816904CC126B010D25E0099B74F3113 /* RESideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				AB0C6A6DA7D1799DF63D211661BE4199 /* RECommonFunctions.h */,
+				186D9A33636C5D5BDA88D19E598D82D3 /* RECommonFunctions.m */,
+				73007BBDCE0030D2DD9A309158CCB6B0 /* RESideMenu.h */,
+				954B7D9CA9B9B4C02DE750B5F78F0013 /* RESideMenu.m */,
+				5D733ECA1E1618182FA8C7245353C26D /* UIViewController+RESideMenu.h */,
+				B64B190FF6B49023350681A2034AFDE1 /* UIViewController+RESideMenu.m */,
+				0B956B8748869528B9590284EC623A9C /* Support Files */,
+			);
+			path = RESideMenu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		4B4410FDF5EE47034FE3D042964B1733 /* Headers */ = {
+		18046E87AF76047C089156531A68925B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC9A8FB7A1F365243F704CEDAB7903D6 /* NSObject+YYModel.h in Headers */,
-				044B923507E30CF1ECCDD9EB5FDF4C51 /* YYClassInfo.h in Headers */,
-				66963F085A745A2006B08D59BA878E29 /* YYModel.h in Headers */,
+				84D4326AA99002FA84A23DE02C1F73E3 /* RECommonFunctions.h in Headers */,
+				EC79D7D14DF1EAB0AEBA249F04CF8EFF /* RESideMenu.h in Headers */,
+				EE73E659C371F31758399470003C4ED1 /* UIViewController+RESideMenu.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B7C15A3768ACB7BE38A3DD453625300 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6E277CA70064AE2D1F7361009CEB41B /* DateTools.h in Headers */,
+				DE6303DE14BD8A3A264FE96645E8075A /* DTConstants.h in Headers */,
+				70528E7EBDD7860D6CD13AB83B5FD74A /* DTError.h in Headers */,
+				9C3E095663A91660777D0C284588F704 /* DTTimePeriod.h in Headers */,
+				9DA2609B71A9860982B0687802F8D6CB /* DTTimePeriodChain.h in Headers */,
+				B41E7D31B34527CF5A001926809E5DC8 /* DTTimePeriodCollection.h in Headers */,
+				6C8E458BA1C159DDB8D24C215B0CFEE7 /* DTTimePeriodGroup.h in Headers */,
+				EAD8F7B9B19071EB9D3EAA582AD7FAAF /* NSDate+DateTools.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,16 +502,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E63043EA4BDAC4DA6BD38F022F1E6F89 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FF458CD0923328BDE0B4B94E0650CB2C /* RECommonFunctions.h in Headers */,
-				1867E55E2D752D2946D15F44F405C607 /* RESideMenu.h in Headers */,
-				6D88938CA74BDE200E7CE8BD67984574 /* UIViewController+RESideMenu.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		EF1C003613925663F17E023C73AF519C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -408,27 +510,68 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FACA0DF0145652DE5C7DE984B11001E4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74C48EFBDA0E387C6324AC50A75B3BF9 /* NSObject+YYModel.h in Headers */,
+				E8F4D6E6815D80D30338CB1A7C5BF3AD /* YYClassInfo.h in Headers */,
+				C970B0E8B954315B8570486CEBB9E911 /* YYModel.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		0E769AC16B545A9A8799FD8AB6F5EEAB /* Pods */ = {
+		31FF44B5E2FF8CF00090950A8B67AFF6 /* DateTools */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CF8BC8BC08A767BE1320C5605FE08AAD /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildConfigurationList = D080F77A97056851915A3DCE6F7F6EA5 /* Build configuration list for PBXNativeTarget "DateTools" */;
 			buildPhases = (
-				FA49504F84E568D021F1CBFB20699C4D /* Sources */,
-				D12A90F7AAE919E9126CDE5C064987E9 /* Frameworks */,
+				A862A599170D3CC6A194F9C6C9EB7143 /* Sources */,
+				530FD65C498B21E3CC0C04855EB59B4C /* Frameworks */,
+				5B7C15A3768ACB7BE38A3DD453625300 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				883CDC9EE46090FDE7A74D672CF2DCC9 /* PBXTargetDependency */,
-				2ABC50873470D68DBD1A011D0EDB6179 /* PBXTargetDependency */,
-				36751A129AD3C4E187604A4C4EB907D2 /* PBXTargetDependency */,
-				B76AC8D82D9BC78D24557CBB90D12EFA /* PBXTargetDependency */,
 			);
-			name = Pods;
-			productName = Pods;
-			productReference = 8D670D130CD2E7427F75566CA059A048 /* libPods.a */;
+			name = DateTools;
+			productName = DateTools;
+			productReference = 9DF81EBD60BE86A910007A7B71BC9CA2 /* libDateTools.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		4A7951144BD43D83588C673A15814EB2 /* RESideMenu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C24188C83E8DBDEC3BF6A5CB4793F52 /* Build configuration list for PBXNativeTarget "RESideMenu" */;
+			buildPhases = (
+				ACDC1ECA3071AD57A3D236D395C35B09 /* Sources */,
+				BE9703AA72FD39ACA5C46FCB17B1760C /* Frameworks */,
+				18046E87AF76047C089156531A68925B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RESideMenu;
+			productName = RESideMenu;
+			productReference = 4CC23DA9A0B9CFBD9B33BEBB78CBAADF /* libRESideMenu.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		51349825F0FFA52E6A06AFF90434564C /* YYModel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD7586CE6AA8C3709A6EEBC667B1A46E /* Build configuration list for PBXNativeTarget "YYModel" */;
+			buildPhases = (
+				A3361FE766FFBDA2FD9B8ED1D6888737 /* Sources */,
+				F19614C9E6985607ACAB3DA6D49C4B43 /* Frameworks */,
+				FACA0DF0145652DE5C7DE984B11001E4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YYModel;
+			productName = YYModel;
+			productReference = 0522E7596167987CC7F4DEE02FDF6CCD /* libYYModel.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		9F12FB4A63E20F601CFB2E64A65B57C1 /* FMDB */ = {
@@ -445,41 +588,28 @@
 			);
 			name = FMDB;
 			productName = FMDB;
-			productReference = 9CFE062261C4F4020858C67E83DD1EDE /* libFMDB.a */;
+			productReference = 516396EF0A92F755F8AD9FAA9E933E8B /* libFMDB.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		9FD431A5D530157DB4B0351E4D365193 /* YYModel */ = {
+		F7FF84B2BCD7FB75E1C6B5156572A53F /* Pods */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6305E8FA0077358767F612698F69D361 /* Build configuration list for PBXNativeTarget "YYModel" */;
+			buildConfigurationList = D006A025C151AD6DBD24BBCD25233CB3 /* Build configuration list for PBXNativeTarget "Pods" */;
 			buildPhases = (
-				0EEC8815F4CE1D52E135BE6E04305BD4 /* Sources */,
-				B7E5F05ACB9B2D6DBA69C0E766CD7DA2 /* Frameworks */,
-				4B4410FDF5EE47034FE3D042964B1733 /* Headers */,
+				1CB496FC57F547F603654008752CFD3C /* Sources */,
+				BE0C2F359A46BE6DB9D4AB5C1D9B52A2 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				EA4206C16170EA893E69FA9B3928F0D6 /* PBXTargetDependency */,
+				D707293270F0499E5E406650505DB8C1 /* PBXTargetDependency */,
+				0C192ED30401E51D3BD7F5D6AA9E8A98 /* PBXTargetDependency */,
+				67EE7A726CBD2F37388307F48386FFA7 /* PBXTargetDependency */,
+				0A03CBE7501978E00758C208B25FCA3E /* PBXTargetDependency */,
 			);
-			name = YYModel;
-			productName = YYModel;
-			productReference = 1DB00FFB2FB858778FDE5A7FD250FCF5 /* libYYModel.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		A6DD06FA9E4F9107B4A277100B2AE495 /* RESideMenu */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BD4D32552D14439F17BE926AED996878 /* Build configuration list for PBXNativeTarget "RESideMenu" */;
-			buildPhases = (
-				56A679D3F7AEA3B47A1C392AB377D9DB /* Sources */,
-				7CBC9F4853BBFEF949A09070DBDF6F21 /* Frameworks */,
-				E63043EA4BDAC4DA6BD38F022F1E6F89 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = RESideMenu;
-			productName = RESideMenu;
-			productReference = D66340AC5C9178FC7263A1D573DE54C3 /* libRESideMenu.a */;
+			name = Pods;
+			productName = Pods;
+			productReference = 763993C3E26523F7E6797CE6C085A325 /* libPods.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		FE2F1D7B9D9FCEA148517E4657B243F4 /* MBProgressHUD */ = {
@@ -496,7 +626,7 @@
 			);
 			name = MBProgressHUD;
 			productName = MBProgressHUD;
-			productReference = 719014E43EE22896EC37F1B1FDC0FA6A /* libMBProgressHUD.a */;
+			productReference = FDB91E904789114B106BB7B069CC5554 /* libMBProgressHUD.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -516,15 +646,16 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = D81F4D482C85A450521ACF449CEA7CEF /* Products */;
+			productRefGroup = 56EE51E404FD3BADB2A793CBBA4D9095 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				31FF44B5E2FF8CF00090950A8B67AFF6 /* DateTools */,
 				9F12FB4A63E20F601CFB2E64A65B57C1 /* FMDB */,
 				FE2F1D7B9D9FCEA148517E4657B243F4 /* MBProgressHUD */,
-				0E769AC16B545A9A8799FD8AB6F5EEAB /* Pods */,
-				A6DD06FA9E4F9107B4A277100B2AE495 /* RESideMenu */,
-				9FD431A5D530157DB4B0351E4D365193 /* YYModel */,
+				F7FF84B2BCD7FB75E1C6B5156572A53F /* Pods */,
+				4A7951144BD43D83588C673A15814EB2 /* RESideMenu */,
+				51349825F0FFA52E6A06AFF90434564C /* YYModel */,
 			);
 		};
 /* End PBXProject section */
@@ -552,77 +683,99 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0EEC8815F4CE1D52E135BE6E04305BD4 /* Sources */ = {
+		1CB496FC57F547F603654008752CFD3C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B4A73D35E82C90CF2DFAA8202899CD6 /* NSObject+YYModel.m in Sources */,
-				E5467FA9CF6E4431B1F5E9E0E8DBC25C /* YYClassInfo.m in Sources */,
-				033AB5D145306586422139FDCBD337CF /* YYModel-dummy.m in Sources */,
+				13A089AE10466FE5220E1D506EDF80BD /* Pods-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		56A679D3F7AEA3B47A1C392AB377D9DB /* Sources */ = {
+		A3361FE766FFBDA2FD9B8ED1D6888737 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				742ACC21D30BE4320221D1795B10FBD0 /* RECommonFunctions.m in Sources */,
-				F1E6BA0D109E2DD4968FF908C9384C28 /* RESideMenu-dummy.m in Sources */,
-				8F831F4E13667AC13BC217EB41553D02 /* RESideMenu.m in Sources */,
-				1F52877C49047CFF0113E7C05314ED3B /* UIViewController+RESideMenu.m in Sources */,
+				87F6857EA95527BE19E4C4317B02937D /* NSObject+YYModel.m in Sources */,
+				9FA5214185E65D17922869C0B36627AE /* YYClassInfo.m in Sources */,
+				9BB39E24A540F8ACB5F3912384561B41 /* YYModel-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FA49504F84E568D021F1CBFB20699C4D /* Sources */ = {
+		A862A599170D3CC6A194F9C6C9EB7143 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80A0199FFC33B43751E2754485286DB9 /* Pods-dummy.m in Sources */,
+				A6B1DF59915B1E66F5B492E3DC382FBD /* DateTools-dummy.m in Sources */,
+				AEF39CCCA47BF107AEC783739E8D6844 /* DTConstants.m in Sources */,
+				ECDC9BE70EBB30AFA33016F779BB7E3D /* DTError.m in Sources */,
+				EF8197F179C59888AD8DC30DF746D15E /* DTTimePeriod.m in Sources */,
+				3971D598267558B94FF665FECDA82111 /* DTTimePeriodChain.m in Sources */,
+				08DDB39F398641BB7B5DE3E676A8170F /* DTTimePeriodCollection.m in Sources */,
+				8DBAE4BE8A114ED7FA30E5811C7C9F15 /* DTTimePeriodGroup.m in Sources */,
+				0C118EA84A58649A57D7BDE7CF5BC9A7 /* NSDate+DateTools.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACDC1ECA3071AD57A3D236D395C35B09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				728A4BD9F3E427E5AF4DCB58998232FD /* RECommonFunctions.m in Sources */,
+				83D92013498D5D49260C25FD7FDAC766 /* RESideMenu-dummy.m in Sources */,
+				955D57A9B6A68BAE5CE2958C53A154B5 /* RESideMenu.m in Sources */,
+				76055803B99AE8B4EDE17DE198A223A1 /* UIViewController+RESideMenu.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2ABC50873470D68DBD1A011D0EDB6179 /* PBXTargetDependency */ = {
+		0A03CBE7501978E00758C208B25FCA3E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = YYModel;
+			target = 51349825F0FFA52E6A06AFF90434564C /* YYModel */;
+			targetProxy = 45CA127EA8E33D2F7FD19E1C6060FF5A /* PBXContainerItemProxy */;
+		};
+		0C192ED30401E51D3BD7F5D6AA9E8A98 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MBProgressHUD;
 			target = FE2F1D7B9D9FCEA148517E4657B243F4 /* MBProgressHUD */;
-			targetProxy = B284A4A50B9643B92536D73BE7788CC3 /* PBXContainerItemProxy */;
+			targetProxy = B8C14BD8A1F387CC4431A6398F105874 /* PBXContainerItemProxy */;
 		};
-		36751A129AD3C4E187604A4C4EB907D2 /* PBXTargetDependency */ = {
+		67EE7A726CBD2F37388307F48386FFA7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = RESideMenu;
-			target = A6DD06FA9E4F9107B4A277100B2AE495 /* RESideMenu */;
-			targetProxy = BAAC6B9DCB1CFA79019C4D0E481130DB /* PBXContainerItemProxy */;
+			target = 4A7951144BD43D83588C673A15814EB2 /* RESideMenu */;
+			targetProxy = 0B5C66AC28975C0EEEF82878610AD415 /* PBXContainerItemProxy */;
 		};
-		883CDC9EE46090FDE7A74D672CF2DCC9 /* PBXTargetDependency */ = {
+		D707293270F0499E5E406650505DB8C1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = FMDB;
 			target = 9F12FB4A63E20F601CFB2E64A65B57C1 /* FMDB */;
-			targetProxy = A108AB7BCDB650ABABB54CD66D7C5720 /* PBXContainerItemProxy */;
+			targetProxy = D6D7AEE11F42DDA10AE8FD82B6B71344 /* PBXContainerItemProxy */;
 		};
-		B76AC8D82D9BC78D24557CBB90D12EFA /* PBXTargetDependency */ = {
+		EA4206C16170EA893E69FA9B3928F0D6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = YYModel;
-			target = 9FD431A5D530157DB4B0351E4D365193 /* YYModel */;
-			targetProxy = EE3B4DDD1334DC03DF450B6A3B4E35FF /* PBXContainerItemProxy */;
+			name = DateTools;
+			target = 31FF44B5E2FF8CF00090950A8B67AFF6 /* DateTools */;
+			targetProxy = FFC78CC40BE128252FA43090FD937A16 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		040477F7FAB9EDD8E77BEBE5DA0EA97F /* Release */ = {
+		03D8E6F089F903BDD4737413FBDA0FD5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 98C98CDFB3F20F2925F6CD1F141BB14F /* Pods.release.xcconfig */;
+			baseConfigurationReference = BFB820700B0C5C81E3FB18AEC39B2748 /* YYModel.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/YYModel/YYModel-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MACH_O_TYPE = staticlib;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
@@ -662,47 +815,12 @@
 			};
 			name = Release;
 		};
-		3DAAC9E5091BC4034887A7FF3C38DB5F /* Debug */ = {
+		0ACAA887F36B0BBB84EA822DCC9FD11B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4E762F23EC34ED4A6FF3312D84E33A40 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = F54B55615DCD726A122D7CFD0AE6C287 /* DateTools.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		3F54ABFD4E0166DE9C63CC781718FE00 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 381DB89CFB4E2AF580BE13996A7934DD /* RESideMenu.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/RESideMenu/RESideMenu-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		639F3A8E4232458A7C9F7B4D35DDAB3F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F63CB6C25E89955AA3978FDB8C654668 /* YYModel.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/YYModel/YYModel-prefix.pch";
+				GCC_PREFIX_HEADER = "Target Support Files/DateTools/DateTools-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
@@ -717,7 +835,7 @@
 		};
 		641F071BD177C0FD805ECAF1D202F7CB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E41C16DE0E098CCC2EA844444D8412A1 /* FMDB.xcconfig */;
+			baseConfigurationReference = CA94802F2831C3D8BA687A855C2D267F /* FMDB.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/FMDB/FMDB-prefix.pch";
@@ -733,9 +851,27 @@
 			};
 			name = Release;
 		};
+		7E2F892899772C1B8C97C69FFB25E86B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFB820700B0C5C81E3FB18AEC39B2748 /* YYModel.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/YYModel/YYModel-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
 		8E22345807C46884D17DD8C2728A6201 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E41C16DE0E098CCC2EA844444D8412A1 /* FMDB.xcconfig */;
+			baseConfigurationReference = CA94802F2831C3D8BA687A855C2D267F /* FMDB.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/FMDB/FMDB-prefix.pch";
@@ -751,19 +887,18 @@
 			};
 			name = Debug;
 		};
-		B2C1184D2FAA8B38AF0A604F3E9A7DCD /* Release */ = {
+		9A4D4FA90100E73BF4C7892971EF4320 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 381DB89CFB4E2AF580BE13996A7934DD /* RESideMenu.xcconfig */;
+			baseConfigurationReference = 98C98CDFB3F20F2925F6CD1F141BB14F /* Pods.release.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/RESideMenu/RESideMenu-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACH_O_TYPE = staticlib;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
@@ -808,9 +943,80 @@
 			};
 			name = Debug;
 		};
+		B593A502F41DF58D7F7128D8DD91F8C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F47B0FED1892D0CC917E48229AA3D892 /* RESideMenu.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RESideMenu/RESideMenu-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		B7ECF67AC30C1AC10F5B79D2443D7D7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F54B55615DCD726A122D7CFD0AE6C287 /* DateTools.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DateTools/DateTools-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		B9EF4C6F678994CF319A5E623C0A238F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E762F23EC34ED4A6FF3312D84E33A40 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C331B72A9EB5216CDF6675D0980FBA10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F47B0FED1892D0CC917E48229AA3D892 /* RESideMenu.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RESideMenu/RESideMenu-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
 		C5AFFFCB54FD9036E7BC9BA54ADAAF30 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0208C83D6536F65E0E85FAD3D04E7805 /* MBProgressHUD.xcconfig */;
+			baseConfigurationReference = 6F33A6703C614822447A76D7F7DDFBB0 /* MBProgressHUD.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
@@ -828,7 +1034,7 @@
 		};
 		E7B8141DB24F5AA0D1F847AFEC0DB018 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0208C83D6536F65E0E85FAD3D04E7805 /* MBProgressHUD.xcconfig */;
+			baseConfigurationReference = 6F33A6703C614822447A76D7F7DDFBB0 /* MBProgressHUD.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
@@ -843,24 +1049,6 @@
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
-		};
-		E9630A73B9E447131A7A900EB0C6F514 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F63CB6C25E89955AA3978FDB8C654668 /* YYModel.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/YYModel/YYModel-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
@@ -883,29 +1071,38 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6305E8FA0077358767F612698F69D361 /* Build configuration list for PBXNativeTarget "YYModel" */ = {
+		4C24188C83E8DBDEC3BF6A5CB4793F52 /* Build configuration list for PBXNativeTarget "RESideMenu" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				639F3A8E4232458A7C9F7B4D35DDAB3F /* Debug */,
-				E9630A73B9E447131A7A900EB0C6F514 /* Release */,
+				C331B72A9EB5216CDF6675D0980FBA10 /* Debug */,
+				B593A502F41DF58D7F7128D8DD91F8C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BD4D32552D14439F17BE926AED996878 /* Build configuration list for PBXNativeTarget "RESideMenu" */ = {
+		BD7586CE6AA8C3709A6EEBC667B1A46E /* Build configuration list for PBXNativeTarget "YYModel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3F54ABFD4E0166DE9C63CC781718FE00 /* Debug */,
-				B2C1184D2FAA8B38AF0A604F3E9A7DCD /* Release */,
+				7E2F892899772C1B8C97C69FFB25E86B /* Debug */,
+				03D8E6F089F903BDD4737413FBDA0FD5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CF8BC8BC08A767BE1320C5605FE08AAD /* Build configuration list for PBXNativeTarget "Pods" */ = {
+		D006A025C151AD6DBD24BBCD25233CB3 /* Build configuration list for PBXNativeTarget "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3DAAC9E5091BC4034887A7FF3C38DB5F /* Debug */,
-				040477F7FAB9EDD8E77BEBE5DA0EA97F /* Release */,
+				B9EF4C6F678994CF319A5E623C0A238F /* Debug */,
+				9A4D4FA90100E73BF4C7892971EF4320 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D080F77A97056851915A3DCE6F7F6EA5 /* Build configuration list for PBXNativeTarget "DateTools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0ACAA887F36B0BBB84EA822DCC9FD11B /* Debug */,
+				B7ECF67AC30C1AC10F5B79D2443D7D7B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -15,5 +15,6 @@
 @property(nonatomic,copy)NSString *buyPrice;
 @property(nonatomic,copy)NSString *buyNumber;
 @property(nonatomic,assign)BOOL  ifTrade;
+@property(nonatomic,assign)BOOL  ifSell;
 
 @end

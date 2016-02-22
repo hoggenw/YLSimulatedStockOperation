@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class YLBuyStockModel;
 @interface YLRevokeTableViewCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UILabel *stockNane;
+@property (weak, nonatomic) IBOutlet UILabel *stockPrice;
+@property (weak, nonatomic) IBOutlet UILabel *stockNumbers;
+@property (weak, nonatomic) IBOutlet UIButton *cellButton;
+@property (weak, nonatomic) IBOutlet UILabel *buyOrSell;
 
+@property(nonatomic ,strong)YLBuyStockModel *model;
 @end
